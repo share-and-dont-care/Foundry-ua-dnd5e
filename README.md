@@ -3,6 +3,7 @@
 [![Foundry Shield 12]][Foundry URL]
 [![Version]][Version URL]
 [![MIT License]][MIT URL]
+[![Crowdin](https://badges.crowdin.net/foundry-ua-dnd5e-new/localized.svg)](https://crowdin.com)
 
 Неофіційний український переклад [DnD 5e](https://github.com/foundryvtt/dnd5e) для [Foundry Virtual Tabletop](http://foundryvtt.com). Цей модуль пропонується та може використовуватися відповідно до умов ліцензії Open Gaming License v1.0a та [Systems Reference Document 5.1 (SRD5)](http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf).
 
