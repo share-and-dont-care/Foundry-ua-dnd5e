@@ -698,7 +698,7 @@
   "DND5E.AC": "КЗ",
   "DND5E.ATTACK": {
     "Title": {
-      "one": "Attack",
+      "one": "Атака",
       "other": "Attacks"
     },
     "FIELDS": {
@@ -934,7 +934,7 @@
     }
   },
   "DND5E.CAST": {
-    "Title": "Cast",
+    "Title": "Створення чарів",
     "FIELDS": {
       "spell": {
         "label": "Casting Details",
@@ -1049,7 +1049,7 @@
     }
   },
   "DND5E.CHECK": {
-    "Title": "Check",
+    "Title": "Перевірка",
     "FIELDS": {
       "check": {
         "label": "Check Details",
@@ -1188,7 +1188,7 @@
   "DND5E.ComponentSomaticAbbr": "С",
   "DND5E.ComponentVerbal": "Вербальний",
   "DND5E.ComponentVerbalAbbr": "В",
-  "DND5E.Components": "Components",
+  "DND5E.Components": "Компоненти",
   "DND5E.Container": "Container",
   "DND5E.ContainerDeleteMessage": "This container will be permanently deleted and cannot be recovered and the {count} items contained within will be moved out.",
   "DND5E.ContainerDeleteContents": "Also delete all items within the container.",
@@ -1299,13 +1299,13 @@
     },
     "Type": {
       "Ammunition": {
-        "Label": "Ammunition",
-        "Arrow": "Arrow",
-        "Bolt": "Bolt",
-        "BulletFirearm": "Bullet, Firearm",
-        "BulletSling": "Bullet, Sling",
-        "EnergyCell": "Energy Cell",
-        "Needle": "Needle"
+        "Label": "Боєприпаси",
+        "Arrow": "Стріла",
+        "Bolt": "Болт",
+        "BulletFirearm": "Куля (вогнепальна зброя)",
+        "BulletSling": "Куля (праща)",
+        "EnergyCell": "Енергетичний елемент",
+        "Needle": "Голка"
       },
       "Food": {
         "Label": "Food"
@@ -1562,10 +1562,10 @@
   },
   "DND5E.Current": "Current",
   "DND5E.DAMAGE": {
-    "Title": "Damage",
+    "Title": "Ушкодження",
     "FIELDS": {
       "damage": {
-        "label": "Damage",
+        "label": "Ушкодження",
         "critical": {
           "allow": {
             "label": "Allow Critical",
@@ -1789,7 +1789,7 @@
   "DND5E.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
   "DND5E.EffectsSearch": "Search effects",
   "DND5E.ENCHANT": {
-    "Title": "Enchant",
+    "Title": "Зачарувати",
     "FIELDS": {
       "effects": {
         "FIELDS": {
@@ -2324,7 +2324,7 @@
   "DND5E.Flaws": "Вади",
   "DND5E.FormulaCannotContainDiceError": "{name} формула не може містити кістки.",
   "DND5E.FORWARD": {
-    "Title": "Forward",
+    "Title": "Заготовлена дія",
     "FIELDS": {
       "activity": {
         "label": "Triggered Activity"
@@ -2361,7 +2361,7 @@
   "DND5E.ItemRarityLegendary": "легендарний",
   "DND5E.ItemRarityArtifact": "артефакт",
   "DND5E.Eyes": "Eyes",
-  "DND5E.Faith": "Faith",
+  "DND5E.Faith": "Віра",
   "DND5E.FeatureActive": "Активні уміння",
   "DND5E.FeatureAdd": "Створити уміння",
   "DND5E.FeatureAttack": "Уміння атаки",
@@ -2426,7 +2426,7 @@
   "DND5E.FormulaMalformedError": "Problem preparing the {property} formula within {name}.",
   "DND5E.FormulaMissingReferenceWarn": "The {property} formula within {name} has references to missing data: {references}",
   "DND5E.Gear": "Gear",
-  "DND5E.Gender": "Gender",
+  "DND5E.Gender": "Стать",
   "DND5E.GlobalBonus": "Global Bonus",
   "DND5E.GrantedAbilities": "Отримані уміння",
   "DND5E.GroupInventory": "Inventory",
@@ -2482,7 +2482,7 @@
   "DND5E.Hair": "Hair",
   "DND5E.HalfProficient": "Наполовину майстерний",
   "DND5E.HEAL": {
-    "Title": "Heal",
+    "Title": "Зцілити",
     "FIELDS": {
       "healing": {
         "label": "Healing",
@@ -3099,7 +3099,7 @@
   "DND5E.MovementUnits": "Одиниці Виміру",
   "DND5E.SAVE": {
     "Title": {
-      "one": "Save",
+      "one": "Рятунок",
       "other": "Saves"
     },
     "FIELDS": {
@@ -3325,7 +3325,7 @@
   "DND5E.SpellCastConsume": "Використати чарунку?",
   "DND5E.SpellCastNoSlots": "У вас недостатньо чарунок {level} рівня для створення {name}",
   "DND5E.SpellCastNoSlotsLeft": "You have no available spell slots with which to cast {name}!",
-  "DND5E.SpellCastTime": "Casting Time",
+  "DND5E.SpellCastTime": "Час створення",
   "DND5E.SpellCastUpcast": "Створити рівнем",
   "DND5E.SpellcasterLevel": "Рівень чаротворця",
   "DND5E.SpellCastingHeader": "Створення чар",
@@ -3446,7 +3446,7 @@
   "DND5E.SubclassName": "Назва підкласу",
   "DND5E.Subtype": "Subtype",
   "DND5E.SUMMON": {
-    "Title": "Summon",
+    "Title": "Викликати",
     "FIELDS": {
       "bonuses": {
         "ac": {
@@ -3588,7 +3588,7 @@
     },
     "Action": {
       "Place": "Place Summons",
-      "Summon": "Summon",
+      "Summon": "Викликати",
       "View": "View Summon"
     },
     "CreatureChanges": {
