@@ -2482,7 +2482,7 @@
   "DND5E.Hair": "Hair",
   "DND5E.HalfProficient": "Наполовину майстерний",
   "DND5E.HEAL": {
-    "Title": "Зцілити",
+    "Title": "Зцілення",
     "FIELDS": {
       "healing": {
         "label": "Healing",
