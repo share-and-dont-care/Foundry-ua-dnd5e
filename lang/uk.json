@@ -3867,7 +3867,7 @@
   "DND5E.TimeDisp": "Until Dispelled",
   "DND5E.TimeDispTrig": "Until Dispelled or Triggered",
   "DND5E.TimeHour": "Години",
-  "DND5E.TimeHourAbbr": "h",
+  "DND5E.TimeHourAbbr": "год",
   "DND5E.TimeInst": "Миттєво",
   "DND5E.TimeMinute": "Хвилин",
   "DND5E.TimeMinuteAbbr": "m",
@@ -4019,7 +4019,7 @@
         "Label": "Day"
       },
       "Hour": {
-        "Label": "Hour"
+        "Label": "Година"
       },
       "Minute": {
         "Label": "Minute"
@@ -4720,11 +4720,11 @@
         "Name": "Proficiency Variant"
       },
       "Rest": {
-        "Epic": "Epic Heroism (LR: 1 hour, SR: 1 min)",
-        "Gritty": "Gritty Realism (LR: 7 days, SR: 8 hours)",
+        "Epic": "Епічний Героїзм (ТВ: 1 година, КВ: 1 хвилина)",
+        "Gritty": "Жорстокий Реалізм (ТВ: 7 днів, КВ: 8 годин)",
         "Hint": "Configure which rest variant should be used for games within this system.",
         "Name": "Rest Variant",
-        "Normal": "Player's Handbook (LR: 8 hours, SR: 1 hour)"
+        "Normal": "Книга Гравця (ТВ: 8 годин, КВ: 1 година)"
       },
       "SanityScore": {
         "Hint": "Enable the use of the optional Sanity ability score.",
