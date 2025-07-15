@@ -429,6 +429,14 @@
         "ModifyChoices": "Modify Choices"
       }
     },
+    "Migration": {
+      "Action": {
+        "Confirm": "Apply Migrations"
+      },
+      "Hint": "Select which of the following advancements will be added to {name}.",
+      "Selection": "Advancement Selection",
+      "Title": "Migrate Advancement"
+    },
     "ScaleValue": {
       "Action": {
         "CopyFormula": "Copy Formula"
@@ -631,9 +639,6 @@
   "DND5E.AdvancementLevelNoneHeader": "Без рівня",
   "DND5E.AdvancementLevelDownConfirmationMessage": "Пониження рівня цього класу також видалить всі вибрані варіанти розвитку. Ці зміни будуть застосовані до персонажа, якщо прапорець нижче встановлено.",
   "DND5E.AdvancementLevelDownConfirmationTitle": "Підтвердити зниження рівня",
-  "DND5E.AdvancementMigrationConfirm": "Apply Migrations",
-  "DND5E.AdvancementMigrationHint": "Select which of the following advancements will be added to {name}.",
-  "DND5E.AdvancementMigrationTitle": "Migrate Advancement",
   "DND5E.AdvancementModifyChoices": "Змінити вибір",
   "DND5E.AdvancementSaveButton": "Зберегти розвиток",
   "DND5E.AdvancementSelectionCreateButton": "Створити розвиток",
@@ -858,6 +863,11 @@
       "Gold": "{value} ({claimed})",
       "NoOrders": "No orders issued to special facilities this turn.",
       "Order": "{link} completed the <strong>{order}</strong> order."
+    },
+    "Trade": {
+      "Cancel": "Cancel Pending Trade",
+      "Invalid": "Removing a pending trade will invalidate your trade order.",
+      "Pending": "Pending trade"
     }
   },
   "DND5E.Biography": "Біографія",
@@ -1031,11 +1041,11 @@
   "DND5E.ChallengeRating": "Рівень Небезпеки",
   "DND5E.Charged": "Заряджено",
   "DND5E.Charges": "Заряди",
-  "DND5E.ChatContextDamage": "Нанести шкоду",
-  "DND5E.ChatContextHealing": "Зцілити",
-  "DND5E.ChatContextTempHP": "Застосувати тимчасові ПЗ",
-  "DND5E.ChatContextDoubleDamage": "Нанести подвійну шкоду",
-  "DND5E.ChatContextHalfDamage": "Нанести половину шкоди",
+  "DND5E.ChatContextDamage": "Apply As Damage",
+  "DND5E.ChatContextHealing": "Apply As Healing",
+  "DND5E.ChatContextTempHP": "Apply As Temporary HP",
+  "DND5E.ChatContextDoubleDamage": "Apply Double As Damage",
+  "DND5E.ChatContextHalfDamage": "Apply Half As Damage",
   "DND5E.ChatContextSelectHit": "Select Hit Targets",
   "DND5E.ChatContextSelectMiss": "Select Missed Targets",
   "DND5E.ChatFlavor": "Додатковий текст в чаті",
@@ -2704,6 +2714,13 @@
   "DND5E.ItemWeaponType": "Тип зброї",
   "DND5E.ItemWeaponUsage": "Використання зброї",
   "DND5E.JackOfAllTrades": "Майстер на всі руки",
+  "DND5E.JOURNALENTRY": {
+    "Navigation": {
+      "Next": "Next",
+      "Previous": "Previous",
+      "Up": "Up"
+    }
+  },
   "DND5E.LAIR": {
     "Label": "Lair",
     "Action": {
@@ -2875,43 +2892,6 @@
   "DND5E.PassivePerception": "Passive Perception",
   "DND5E.Period": "Period",
   "DND5E.PersonalityTraits": "Риси характеру",
-  "DND5E.Polymorph": "Перевтілення",
-  "DND5E.PolymorphAcceptSettings": "Власні налаштування",
-  "DND5E.PolymorphAddTemp": "Add the target's HP as temporary HP",
-  "DND5E.PolymorphCustomTransformation": "Custom Transformation",
-  "DND5E.PolymorphEffectTransformation": "Effect Transformation",
-  "DND5E.PolymorphKeepAE": "Keep all effects (overrides other effect retention options).",
-  "DND5E.PolymorphKeepBackgroundAE": "Keep effects that originate from your background?",
-  "DND5E.PolymorphKeepBio": "Залишити біографію",
-  "DND5E.PolymorphKeepClass": "Залишити бонус майстерності (залишає класові елементи в аркуші персонажа)",
-  "DND5E.PolymorphKeepClassAE": "Keep effects that originate from your class or subclass?",
-  "DND5E.PolymorphKeepEquipmentAE": "Keep effects that originate from your equipment?",
-  "DND5E.PolymorphKeepFeats": "Залишити уміння",
-  "DND5E.PolymorphKeepFeatureAE": "Keep effects that originate from your features?",
-  "DND5E.PolymorphKeepHP": "Keep HP & HD",
-  "DND5E.PolymorphKeepItems": "Залишити спорядження",
-  "DND5E.PolymorphKeepMental": "Зберегти значення ментальних здібностей (Інт, Муд, Хар)",
-  "DND5E.PolymorphKeepOriginAE": "Keep effects that originate from this actor (i.e. effects not attached to features, items, spells)",
-  "DND5E.PolymorphKeepOtherOriginAE": "Keep effects that originate from a different actor?",
-  "DND5E.PolymorphKeepPhysical": "Зберегти значення фізичних здібностей (Сил, Спр, Ста)",
-  "DND5E.PolymorphKeepSaves": "Залишити опановані рятівні кидки",
-  "DND5E.PolymorphKeepSelf": "Keep self (just change image and size i.e. for spells like Disguise Self)",
-  "DND5E.PolymorphKeepSkills": "Залишити опановані навички",
-  "DND5E.PolymorphKeepSpellAE": "Keep effects that originate from your spells?",
-  "DND5E.PolymorphKeepSpells": "Залишити чари",
-  "DND5E.PolymorphKeepType": "Keep creature type",
-  "DND5E.PolymorphKeepVision": "Зберегти бачення (персонаж і токен)",
-  "DND5E.PolymorphMergeSaves": "Об'єднати опановані рятівні кидки (залишити вищий)",
-  "DND5E.PolymorphMergeSkills": "Об'єднати опановані навички (залишити вищі)",
-  "DND5E.PolymorphPromptTitle": "Перевтілення актора",
-  "DND5E.PolymorphRestoreTransformation": "Скасувати перевтілення",
-  "DND5E.PolymorphRevertNoOriginalActorWarn": "No original actor was found with reference '{reference}'",
-  "DND5E.PolymorphRevertWarn": "Вам не дозволено скасовувати перевтілення цього актора.",
-  "DND5E.PolymorphSelf": "Appearance Only",
-  "DND5E.PolymorphTmpClass": "Тимчасовий клас",
-  "DND5E.PolymorphTokens": "Перевтілити всі зв'язані токени?",
-  "DND5E.PolymorphWarn": "Ви не можете використовувати перевтілення для цього актора!",
-  "DND5E.PolymorphWildShape": "Дика подоба",
   "DND5E.Portrait": "Portrait",
   "DND5E.Prepared": "Підготовлено",
   "DND5E.Prerequisites": {
@@ -3970,6 +3950,246 @@
   "DND5E.TraitWeaponProf": "Опанована зброя",
   "DND5E.Traits": "Traits",
   "DND5E.TraitsChosen": "Chosen Traits",
+  "DND5E.TRANSFORM": {
+    "Action": {
+      "Restore": "Restore Transformation",
+      "Transform": "Transform"
+    },
+    "Dialog": {
+      "Title": "Configure Transformation"
+    },
+    "FIELDS": {
+      "profiles": {
+        "cr": {
+          "label": "Challenge Rating",
+          "abbr": "CR",
+          "hint": "Maximum CR of the source creature."
+        },
+        "FIELDS": {
+          "cr": {
+            "label": "Challenge Rating",
+            "abbr": "CR",
+            "hint": "Maximum CR of the source creature."
+          },
+          "level": {
+            "label": "Level Limit",
+            "hint": "Range of levels required to use this profile.",
+            "max": {
+              "label": "Maximum Level"
+            },
+            "min": {
+              "label": "Minimum Level"
+            }
+          },
+          "movement": {
+            "hint": "Movement types that are not allowed on source creatures.",
+            "label": "Restricted Movement Types"
+          },
+          "name": {
+            "hint": "Name of the profile displayed in the usage dialog.",
+            "label": "Display Name"
+          },
+          "sizes": {
+            "hint": "List of creature sizes from which the source creature can be selected.",
+            "label": "Creature Sizes"
+          },
+          "types": {
+            "hint": "List of creature types from which the source creature can be selected.",
+            "label": "Creature Types"
+          }
+        },
+        "label": "Transform Profiles",
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this profile.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "movement": {
+          "hint": "Movement types that are not allowed on source creatures.",
+          "label": "Restricted Movement Types"
+        },
+        "name": {
+          "hint": "Name of the profile displayed in the usage dialog.",
+          "label": "Display Name"
+        },
+        "sizes": {
+          "hint": "List of creature sizes from which the source creature can be selected.",
+          "label": "Creature Sizes"
+        },
+        "types": {
+          "hint": "List of creature types from which the source creature can be selected.",
+          "label": "Creature Types"
+        }
+      },
+      "transform": {
+        "label": "Transformation Details",
+        "customize": {
+          "label": "Customize",
+          "hint": "Use custom transformation settings rather than the defaults provided by the selected preset."
+        },
+        "identifier": {
+          "label": "Class Identifier",
+          "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+        },
+        "mode": {
+          "label": "Mode",
+          "hint": "Sets how the transformation source creatures are selected.",
+          "Appearance": "Appearance Only",
+          "Default": "Compendium Browser",
+          "Direct": "Direct Link"
+        },
+        "preset": {
+          "label": "Preset"
+        }
+      }
+    },
+    "Preset": {
+      "Appearance": {
+        "Label": "Appearance Only"
+      },
+      "Default": "Default",
+      "Label": "Presets",
+      "Polymorph": {
+        "Label": "Polymorph"
+      },
+      "WildShape": {
+        "Label": "Wild Shape"
+      }
+    },
+    "Profile": {
+      "Action": {
+        "Create": "Create Profile",
+        "Delete": "Delete Profile"
+      },
+      "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
+      "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
+      "Label": "Transform Profile"
+    },
+    "SECTIONS": {
+      "Profiles": "Profiles",
+      "Settings": "Settings",
+      "Transformation": "Transformation"
+    },
+    "Setting": {
+      "Effects": {
+        "All": {
+          "Hint": "Keep all effects, ignoring any other effects settings.",
+          "Label": "All Effects"
+        },
+        "Background": {
+          "Label": "Background Effects"
+        },
+        "Class": {
+          "Label": "Class Effects"
+        },
+        "Equipment": {
+          "Label": "Equipment Effects"
+        },
+        "Feature": {
+          "Label": "Feature Effects"
+        },
+        "Origin": {
+          "Hint": "Keep any effects created directly on this source actor.",
+          "Label": "This Actor"
+        },
+        "OtherOrigin": {
+          "Hint": "Keep any effects imposed by an outside actor.",
+          "Label": "Other Actors"
+        },
+        "Spell": {
+          "Label": "Spell Effects"
+        }
+      },
+      "FIELDS": {
+        "effects": {
+          "label": "Active Effects"
+        },
+        "keep": {
+          "hint": "These details will be retained from the source actor.",
+          "label": "Keep"
+        },
+        "merge": {
+          "hint": "Merge these proficiencies, keeping whichever has the higher modifier.",
+          "label": "Merge"
+        },
+        "other": {
+          "label": "Other Options"
+        },
+        "tempFormula": {
+          "hint": "Formula for temp HP that will be added upon transformation.",
+          "label": "Temp Formula"
+        },
+        "transformTokens": {
+          "label": "Transform Tokens"
+        }
+      },
+      "Keep": {
+        "Biography": {
+          "Label": "Biography"
+        },
+        "CreatureType": {
+          "Label": "Creature Type"
+        },
+        "Equipment": {
+          "Label": "Equipment"
+        },
+        "Features": {
+          "Label": "Features"
+        },
+        "Health": {
+          "Label": "Hit Points & Hit Dice"
+        },
+        "Mental": {
+          "Hint": "Keep intelligence, wisdom, and charisma scores.",
+          "Label": "Mental Abilities"
+        },
+        "Physical": {
+          "Hint": "Keep strength, dexterity, and constitution scores.",
+          "Label": "Physical Abilities"
+        },
+        "Proficiency": {
+          "Label": "Proficiency Bonus"
+        },
+        "Saves": {
+          "Label": "Save Proficiencies"
+        },
+        "Self": {
+          "Hint": "Only change portrait and token artwork, other settings will be ignored.",
+          "Label": "Self"
+        },
+        "Skills": {
+          "Label": "Skill Proficiencies"
+        },
+        "Spells": {
+          "Label": "Spells"
+        },
+        "Vision": {
+          "Label": "Vision"
+        }
+      },
+      "Merge": {
+        "Saves": {
+          "Label": "Save Proficiencies"
+        },
+        "Skills": {
+          "Label": "Skill Proficiencies"
+        }
+      }
+    },
+    "TemporaryClass": "Temporary Class",
+    "Title": "Transform",
+    "Warning": {
+      "NoOwnership": "You do not have permission to transform this actor.",
+      "NoPermission": "Transformation permission haven't been granted to players.",
+      "OriginalActor": "No original actor was found with ID '{reference}'.",
+      "SourceActor": "No actor found to transform into."
+    }
+  },
   "DND5E.Treasure": {
     "Categories": {
       "Any": "Any",
@@ -4575,8 +4795,6 @@
   "MIGRATION.5eBegin": "Обробляємо дані системи DnD5E для версії {version}. Будь ласка, будьте терплячі та не закривайте вашу гру чи сервер.",
   "MIGRATION.5eComplete": "Оновлення системи DnD5E до версії {version} завершено!",
   "MIGRATION.5eVersionTooOldWarning": "Дані вашого світу DnD5e завантажені з занадто старої версії Foundry та не можуть бути надійно перенесені до останньої версії. Ви можете спробувати, але можуть виникнути помилки.",
-  "SETTINGS.5eAllowPolymorphingL": "Дозволити гравцям перевтілення власних акторів.",
-  "SETTINGS.5eAllowPolymorphingN": "Дозволити перевтілення",
   "SETTINGS.5eAutoCollapseCardL": "Автоматично згортати опис на картках предметів в чаті",
   "SETTINGS.5eAutoCollapseCardN": "Згортати картки предметів в чаті",
   "SETTINGS.5eAutoSpellTemplateL": "При створенні чарів буде автоматично створюватися вимірювальний шаблон (гравець повинен мати роль TRUSTED або вищу)",
@@ -4588,10 +4806,6 @@
   "SETTINGS.5eGridAlignedSquareTemplatesL": "When square templates are created as the result of casting a spell or using an item, they will be locked to the grid alignment and unable to be rotated.",
   "SETTINGS.5eGridAlignedSquareTemplatesN": "Grid-Aligned Square Templates",
   "SETTINGS.DND5E": {
-    "ALLOWSUMMONING": {
-      "Name": "Allow Summoning",
-      "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work."
-    },
     "BLOODIED": {
       "Name": "Bloodied Status",
       "Hint": "Configure whether the bloodied status is tracked automatically and its visibility.",
@@ -4676,6 +4890,16 @@
     "THEME": {
       "Name": "Theme",
       "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings."
+    },
+    "PERMISSIONS": {
+      "AllowSummoning": {
+        "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work.",
+        "Name": "Allow Summoning"
+      },
+      "AllowTransformation": {
+        "Hint": "Allow players to transform their own actors. Players must also have the Create Actor core permission for this to work.",
+        "Name": "Allow Transformation"
+      }
     },
     "RULESVERSION": {
       "Name": "Rules Version",
@@ -4763,6 +4987,8 @@
       "Light": "Light Mode"
     }
   },
-  "SOURCE.BOOK.SRD": "System Reference Document 5.1",
+  "SOURCE.BOOK.FreeRules": "Free Rules",
+  "SOURCE.BOOK.SRD51": "System Reference Document 5.1",
+  "SOURCE.BOOK.SRD52": "System Reference Document 5.2",
   "SIDEBAR.SortModePriority": "Sort by priority"
 }
