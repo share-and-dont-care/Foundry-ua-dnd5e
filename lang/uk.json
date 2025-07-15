@@ -1,6 +1,7 @@
 {
   "DOCUMENT.DND5E": {
     "Activity": "Діяльність",
+    "Advancement": "Advancement",
     "Warning": {
       "SelectType": "Для створення має бути обраний тип {name}."
     }
@@ -15,6 +16,10 @@
   "TYPES.Actor.groupPl": "Групи",
   "TYPES.ActiveEffect.enchantment": "Зачарування",
   "TYPES.ActiveEffect.enchantmentPl": "Зачарування",
+  "TYPES.ChatMessage": {
+    "rest": "Rest Message",
+    "turn": "Combat Turn Message"
+  },
   "TYPES.Item.background": "Передісторія",
   "TYPES.Item.backgroundPl": "Передісторії",
   "TYPES.Item.container": "Контейнер",
@@ -25,6 +30,8 @@
   "TYPES.Item.consumablePl": "Витратники",
   "TYPES.Item.equipment": "Спорядження",
   "TYPES.Item.equipmentPl": "Спорядження",
+  "TYPES.Item.facility": "Facility",
+  "TYPES.Item.facilityPl": "Facilities",
   "TYPES.Item.feat": "Уміння",
   "TYPES.Item.featurePl": "Уміння",
   "TYPES.Item.loot": "Здобич",
@@ -47,9 +54,25 @@
   "DND5E.AbbreviationDC": "КС",
   "DND5E.AbbreviationKg": "кг",
   "DND5E.AbbreviationLR": "ТВ",
-  "DND5E.AbbreviationLevel": "Рів.",
+  "DND5E.AbbreviationLevel": "Lvl",
   "DND5E.AbbreviationLbs": "фнт.",
   "DND5E.AbbreviationSR": "КВ",
+  "DND5E.ABILITY": {
+    "Configure": {
+      "Title": "Configure {ability}"
+    },
+    "SECTIONS": {
+      "Bonuses": {
+        "Label": "{ability} Bonuses",
+        "Hint": "These bonuses apply to checks & saves made with {ability}."
+      },
+      "Global": {
+        "Label": "Global Bonuses",
+        "Hint": "These bonuses apply to checks & saves made with any ability."
+      },
+      "Score": "{ability} Score"
+    }
+  },
   "DND5E.Ability": "Здібність",
   "DND5E.Abilities": "Здібності",
   "DND5E.AbilityStr": "Сила",
@@ -69,23 +92,15 @@
   "DND5E.AbilitySan": "Розсудливість",
   "DND5E.AbilitySanAbbr": "роз",
   "DND5E.AbilityScore": "Значення здібності",
+  "DND5E.AbilityScoreShort": "Score",
   "DND5E.AbilityScorePl": "Значення здібностей",
   "DND5E.AbilityScoreL": "Значення здібності {ability}",
   "DND5E.AbilityScoreMax": "Максимальне значення здібності",
+  "DND5E.AbilityScoreMaxShort": "Maximum",
   "DND5E.AbilityModifier": "Модифікатор здібності",
+  "DND5E.AbilityModifierShort": "Mod",
   "DND5E.AbilityPromptText": "Який тип перевірки здібності {ability}?",
   "DND5E.AbilityPromptTitle": "Перевірка здібності {ability}",
-  "DND5E.AbilityUseHint": "Налаштуйте використання {name} {type}.",
-  "DND5E.AbilityUseUnavailableHint": "Цей предмет більше не можна використати!",
-  "DND5E.AbilityUseChargedHint": "{type} має всі заряди. Можна використовувати!",
-  "DND5E.AbilityUseRechargeHint": "{type} більше не має зарядів. Необхідно перезарядити!",
-  "DND5E.AbilityUseNormalHint": "У {type} залишилося {value} використань із {max} можливих в {per}.",
-  "DND5E.AbilityUseConsumableChargeHint": "Використання {type} витратить 1 заряд із {value} що лишилися.",
-  "DND5E.AbilityUseConsumableQuantityHint": "Використання {type} витратить 1 штуку із {quantity} що лишилися",
-  "DND5E.AbilityUseConsumableDestroyHint": "Використання {type} витратить останній заряд, і предмет зруйнується.",
-  "DND5E.AbilityUseConsumableDestroyResourceHint": "Використання {type} витратить останній заряд і зруйнує {name}.",
-  "DND5E.AbilityUseConsume": "Витратити доступне використання?",
-  "DND5E.AbilityUseConsumeAction": "Витратити використання",
   "DND5E.AbilityUseChargesLabel": "{value} зарядів",
   "DND5E.AbilityUseConsumableLabel": "{max} в {per}",
   "DND5E.AbilityUseCast": "Створити чари",
@@ -139,10 +154,47 @@
       }
     },
     "Category": {
+      "Combat": "Combat",
+      "Monster": "Монстр",
+      "Rest": "Rest",
       "Standard": "Стандарт",
       "Time": "Час",
-      "Monster": "Монстр",
       "Vehicle": "Транспорт"
+    },
+    "Type": {
+      "Encounter": {
+        "Label": "Start of Encounter"
+      },
+      "Legendary": {
+        "Counted": {
+          "one": "{number} legendary action",
+          "other": "{number} legendary actions"
+        }
+      },
+      "LongRest": {
+        "Label": "End of a Long Rest"
+      },
+      "ShortRest": {
+        "Label": "End of a Short Rest"
+      },
+      "TurnEnd": {
+        "Label": "End of Turn"
+      },
+      "TurnStart": {
+        "Label": "Start of Turn"
+      }
+    },
+    "Warning": {
+      "NoActions": "No {type} are available, but activating this requires at least {required}.",
+      "NotEnoughActions": "Not enough {type} to activate, {required} required but only {available} available."
+    }
+  },
+  "DND5E.ACTIVEEFFECT": {
+    "FIELDS": {
+      "statuses": {
+        "label": "Status Conditions",
+        "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions."
+      }
     }
   },
   "DND5E.ACTIVITY": {
@@ -152,7 +204,7 @@
     },
     "Title": {
       "one": "Діяльність",
-      "other": "Діяльності"
+      "other": "Дії"
     },
     "FIELDS": {
       "description": {
@@ -178,6 +230,9 @@
       "Effect": "Ефект",
       "Identity": "Ідентичність",
       "Time": "Час"
+    },
+    "Warning": {
+      "UsageNotAllowed": "Using this activity isn't currently possible."
     }
   },
   "DND5E.ActorWarningInvalidItem": "{itemType} не може бути додано до {actorType}.",
@@ -190,13 +245,16 @@
   "DND5E.Advanced": "Розширені",
   "DND5E.ADVANCEMENT": {
     "AbilityScoreImprovement": {
-      "Title": "Підвищити значення здібностей",
-      "Hint": "Дозволити гравцю збільшити одне або декілька очок здібностей або обрати опціональне уміння.",
+      "Action": {
+        "Select": "Select Feat"
+      },
       "CapDisplay": {
         "one": "Максимум {points} очок на здібність",
         "other": "Максимум {points} очок на здібність"
       },
+      "Details": "Improvement Details",
       "Feat": {
+        "ASIName": "Ability Score Improvement Feat",
         "Hint": "Перетягніть уміння сюди або оберіть одне замість підвищити значення здібностей."
       },
       "FIELDS": {
@@ -206,7 +264,9 @@
         },
         "locked": {
           "label": "Заблоковано",
-          "hint": "Здібність не можна покращити."
+          "hint": "Здібність не можна покращити.",
+          "locked": "Ability cannot be improved.",
+          "unlocked": "Ability may be improved."
         },
         "fixed": {
           "label": "Фіксоване покращення",
@@ -219,31 +279,328 @@
           "increase": "Додати очки"
         }
       },
+      "Hint": "Дозволити гравцю збільшити одне або декілька очок здібностей або обрати опціональне уміння.",
+      "Journal": {
+        "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
+        "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
+        "Name": "Ability Score Improvement"
+      },
       "LockedHint": "Значення не можна змінити, якщо було обрано уміння.",
       "PointsRemaining": {
         "one": "Залишилось {points} очок",
         "other": "Залишилось {points} очок"
       },
+      "Title": "Підвищити значення здібностей",
       "Warning": {
         "Level": "Щоб отримати це уміння, ви маєте досягти принаймні {level} рівня.",
         "Type": "Обрані елементи мають відповідати типу \"уміння\"."
       }
     },
+    "Action": {
+      "Create": "Create Advancement",
+      "Delete": "Delete Advancement",
+      "Duplicate": "Duplicate Advancement",
+      "Edit": "Edit Advancement",
+      "View": "View Advancement"
+    },
+    "Config": {
+      "AnyLevel": "Any",
+      "Details": "Advancement Details"
+    },
+    "HitPoints": {
+      "Action": {
+        "Roll": "Roll {die}"
+      },
+      "Average": "Average",
+      "Hint": "Track the player's hit points for each level in the class.",
+      "MaxAtFirstLevel": "Max at 1st Level: <strong>{max}</strong>",
+      "Roll": "Roll {class} Hit Points",
+      "Starting": "Hit Points at 1st Level",
+      "TakeAverage": "Take Average",
+      "Title": "Hit Points",
+      "Warning": {
+        "Empty": "Hit points must be rolled or the average value must be taken.",
+        "Invalid": "Hit points must be a valid whole number."
+      }
+    },
+    "ItemChoice": {
+      "Choose": "choose {count}",
+      "Chosen": "Chosen: {current} of {max}",
+      "Details": "Choice Details",
+      "DropHint": "Drop Items here to add them to the list that can be chosen with this advancement.",
+      "FIELDS": {
+        "allowDrops": {
+          "hint": "Allow players to be able to drop their own choices into this advancement.",
+          "label": "Allow Drops"
+        },
+        "choices": {
+          "hint": "Specify how many choices are allowed at each level.",
+          "label": "Choices",
+          "FIELDS": {
+            "count": {
+              "label": "Count"
+            },
+            "replacement": {
+              "label": "Allow Replacement"
+            }
+          }
+        },
+        "pool": {
+          "label": "Item Options"
+        },
+        "restriction": {
+          "level": {
+            "Available": "Any Available Level",
+            "hint": "Only allow choices from spells of this level.",
+            "label": "Spell Level"
+          },
+          "subtype": {
+            "label": "Subtype"
+          },
+          "type": {
+            "label": "Type"
+          }
+        },
+        "type": {
+          "Any": "Anything",
+          "hint": "Restrict what Item types can be chosen.",
+          "label": "Item Type"
+        }
+      },
+      "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
+      "Replacement": {
+        "None": "No Replacement",
+        "Title": "replace"
+      },
+      "Title": "Choose Items",
+      "Warning": {
+        "FeatureLevel": "Must be at least level {level} to take this feature.",
+        "InvalidType": "Only {type} items can be selected for this choice.",
+        "NoOriginal": "Previously selected choice no longer available for replacement.",
+        "PreviouslyChosen": "This item has already been chosen at a previous level.",
+        "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
+        "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement."
+      }
+    },
+    "ItemGrant": {
+      "Details": "Grant Details",
+      "DropHint": "Drop Items here to add them to the list granted by this advancement.",
+      "FIELDS": {
+        "items": {
+          "label": "Items"
+        },
+        "optional": {
+          "label": "Optional",
+          "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted."
+        }
+      },
+      "Hint": "Grant the character items (such as equipment, features, or spells) when they reach a certain level.",
+      "Title": "Grant Items",
+      "Warning": {
+        "Container": "Container contents will not be added with containers.",
+        "Duplicate": "That item already exists on this advancement.",
+        "Recursive": "You cannot grant an item in its own advancement."
+      }
+    },
+    "Manager": {
+      "Action": {
+        "Complete": "Complete",
+        "NextStep": "Next",
+        "PreviousStep": "Previous",
+        "Restart": "Restart"
+      },
+      "ClosePrompt": {
+        "Action": {
+          "Continue": "Continue",
+          "Stop": "Stop Advancement"
+        },
+        "Message": "<p>If the advancement process is cancelled, choices made so far will be discarded and no changes will be made to the actor.</p>",
+        "Title": "Stop Advancement"
+      },
+      "RestartPrompt": {
+        "Message": "Are you sure you wish to undo all choices so far?",
+        "Title": "Restart Advancement Choices"
+      },
+      "Steps": "Step {current} of {total}",
+      "Title": {
+        "Default": "Advancement",
+        "LevelIncreased": "Level Up Character",
+        "LevelNewClass": "Add Class",
+        "ModifyChoices": "Modify Choices"
+      }
+    },
+    "ScaleValue": {
+      "Action": {
+        "CopyFormula": "Copy Formula"
+      },
+      "Details": "Scale Value Details",
+      "FIELDS": {
+        "distance": {
+          "units": {
+            "label": "Distance Units"
+          }
+        },
+        "identifier": {
+          "label": "Identifier"
+        },
+        "scale": {
+          "label": "Scale"
+        },
+        "type": {
+          "label": "Scale Type"
+        }
+      },
+      "Hint": "A single value that changes as a class increases in level that is made available in roll formulas (such as a Monk's martial arts die).",
+      "Title": "Scale Value",
+      "Type": {
+        "CR": {
+          "FIELDS": {
+            "value": {
+              "label": "CR"
+            }
+          },
+          "Hint": "Use this for representing creature challenge ratings for features like Wild Shape",
+          "Label": "Challenge Rating"
+        },
+        "Dice": {
+          "FIELDS": {
+            "faces": {
+              "label": "Faces"
+            },
+            "number": {
+              "label": "Number"
+            }
+          },
+          "Hint": "Use this for dice values like bardic inspiration, sneak attack, or superiority dice.",
+          "Identifier": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - whole formula (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - whole die (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - number of dice (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - number of faces (<code>6</code>)",
+          "Label": "Dice"
+        },
+        "Distance": {
+          "Hint": "Use this for numerical values that represent a distance, such as unarmored movement speed, or aura of protection radius.",
+          "Label": "Distance"
+        },
+        "Number": {
+          "Hint": "Use this for purely numerical values like rage damage bonus or number of uses per day.",
+          "Label": "Numeric"
+        },
+        "String": {
+          "FIELDS": {
+            "value": {
+              "label": "Value"
+            }
+          },
+          "Hint": "Use this if you are unsure of the type of the scale values, or if the type does not matter.",
+          "Identifier": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+          "Label": "Anything"
+        }
+      }
+    },
+    "Size": {
+      "DefaultHint": {
+        "Multiple": "Choose your size from either {sizes}.",
+        "Single": "Your size is {size}."
+      },
+      "FIELDS": {
+        "sizes": {
+          "label": "Sizes"
+        }
+      },
+      "Hint": "Set a character's size.",
+      "Title": "Size"
+    },
     "SPELLCONFIG": {
       "FIELDS": {
-        "uses": {
-          "requireSlot": {
-            "label": "Вимагати чарунку",
-            "hint": "Вимагати використання чарунки при активації предметів з обмеженим використанням. Якщо ця опція не вибрана, при активації чарунка використана не буде."
+        "spell": {
+          "label": "Spell Details",
+          "ability": {
+            "label": "Ability"
+          },
+          "preparation": {
+            "label": "Preparation Mode"
+          },
+          "uses": {
+            "max": {
+              "label": "Uses"
+            },
+            "per": {
+              "label": "Period"
+            },
+            "requireSlot": {
+              "label": "Require Slot",
+              "hint": "Require a spell slot to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a slot."
+            }
           }
         }
       },
       "FreeCasting": "Вільне створення чарів"
     },
     "Subclass": {
-      "Title": "Підклас",
+      "Action": {
+        "Select": "Select Subclass"
+      },
       "Hint": "Вкажіть, на якому рівні цього класу можна отримати підклас.",
-      "FlowHint": "Оберіть підклас у вкладці «Уміння» після завершення підвищення рівня."
+      "Title": "Підклас",
+      "Warning": {
+        "InvalidType": "Only subclasses may be selected."
+      }
+    },
+    "Trait": {
+      "Action": {
+        "AddChoice": "Add Choice",
+        "RemoveChoice": "Remove Choice"
+      },
+      "ChoicesRemaining": "Select {count} more {type}",
+      "Details": "Trait Details",
+      "FIELDS": {
+        "allowReplacements": {
+          "hint": "If a trait is already set on the actor, allow the player to choose from any other trait as a replacement.",
+          "label": "Allow Replacements"
+        },
+        "choices": {
+          "hint": "The following traits will be presented as a choice to the player.",
+          "label": "Choices",
+          "FIELDS": {
+            "count": {
+              "label": "Count"
+            },
+            "pool": {
+              "label": "Traits"
+            }
+          }
+        },
+        "grants": {
+          "hint": "The following traits will be granted to the character as long as they don't already possess that trait.",
+          "label": "Guaranteed"
+        },
+        "mode": {
+          "label": "Mode"
+        }
+      },
+      "Hint": "Grant a character certain traits or give them an option to select traits (such as proficiencies, skills, languages).",
+      "Mode": {
+        "Default": {
+          "Hint": "Gain a trait or proficiency.",
+          "Label": "Default"
+        },
+        "Expertise": {
+          "Hint": "Gain expertise in a trait in which you already have proficiency.",
+          "Label": "Expertise"
+        },
+        "Force": {
+          "Hint": "Gain expertise in a trait regardless of your previous proficiency level.",
+          "Label": "Forced Expertise"
+        },
+        "Mastery": {
+          "Hint": "Gain mastery with a weapon in which you already have proficiency.",
+          "Label": "Mastery"
+        },
+        "Upgrade": {
+          "Hint": "Gain proficiency in a trait unless you already have it, otherwise gain expertise.",
+          "Label": "Upgrade"
+        }
+      },
+      "TraitType": "Trait Type",
+      "Title": "Traits"
     }
   },
   "DND5E.AdvancementChoices": "варіанти",
@@ -261,125 +618,27 @@
   "DND5E.AdvancementConfigureDropAreaHint": "Drop Items here to add them to the pool from which a player can choose.",
   "DND5E.AdvancementConfiguredComplete": "Повністю налаштовано",
   "DND5E.AdvancementConfiguredIncomplete": "Не налаштовано",
-  "DND5E.AdvancementControlCreate": "Створити розвиток",
-  "DND5E.AdvancementControlDelete": "Видалити розвиток",
-  "DND5E.AdvancementControlDuplicate": "Дублювати розвиток",
-  "DND5E.AdvancementControlEdit": "Редагувати розвиток",
   "DND5E.AdvancementCustomIcon": "Довільна піктограма",
   "DND5E.AdvancementCustomTitle": "Довільна назва",
   "DND5E.AdvancementDeleteConfirmationLabel": "Прибрати зміни розвитку",
   "DND5E.AdvancementDeleteConfirmationMessage": "Видалення цього елементу також призведе до видалення всіх вибраних варіантів розвитку. Ці зміни будуть видалені з вашого персонажа, якщо прапорець нижче встановлено.",
   "DND5E.AdvancementDeleteConfirmationTitle": "Підтвердити видалення",
   "DND5E.AdvancementFlowDropAreaHint": "Drop an Item here to choose it.",
-  "DND5E.AdvancementHint": "Hint",
-  "DND5E.AdvancementHitPointsTitle": "Пункти здоров'я",
-  "DND5E.AdvancementHitPointsHint": "Відстежувати пункти здоров'я персонажа для кожного рівня в класі.",
-  "DND5E.AdvancementHitPointsAverage": "Вибрати середнє",
-  "DND5E.AdvancementHitPointsEmptyError": "Ви маєте кинути кістку здоров'я або вибрати середнє значення.",
-  "DND5E.AdvancementHitPointsInvalidError": "Пункти здоров'я повинні бути дійсним цілим числом.",
-  "DND5E.AdvancementHitPointsMaxAtFirstLevel": "Максимально на 1-му рівні: <strong>{max}</strong>",
-  "DND5E.AdvancementHitPointsRollMessage": "Кинути кістку здоров'я для класу {class}",
-  "DND5E.AdvancementHitPointsRollButton": "Кидок {die}",
-  "DND5E.AdvancementItemChoiceTitle": "Choose Items",
-  "DND5E.AdvancementItemChoiceHint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
-  "DND5E.AdvancementItemChoiceChoices": "Choices",
-  "DND5E.AdvancementItemChoiceChoose": "choose {count}",
-  "DND5E.AdvancementItemChoiceChosen": "Chosen: {current} of {max}",
-  "DND5E.AdvancementItemChoiceFeatureLevelWarning": "Must be at least level {level} to take this feature.",
-  "DND5E.AdvancementItemChoiceLevelsHint": "Specify how many choices are allowed at each level.",
-  "DND5E.AdvancementItemChoiceNoOriginalError": "Previously selected choice no longer available for replacement.",
-  "DND5E.AdvancementItemChoicePreviouslyChosenWarning": "This item has already been chosen at a previous level.",
-  "DND5E.AdvancementItemChoiceReplacement": "Allow Replacement",
-  "DND5E.AdvancementItemChoiceReplacementNone": "Без заміни",
-  "DND5E.AdvancementItemChoiceReplacementTitle": "замінити",
-  "DND5E.AdvancementItemChoiceSpellLevelAvailable": "Будь-який доступний рівень",
-  "DND5E.AdvancementItemChoiceSpellLevelAvailableWarning": "Лише чари рівня {level} або нижче можуть бути вибрані для цього розвитку.",
-  "DND5E.AdvancementItemChoiceSpellLevelSpecificWarning": "Лише чари рівня {level} можуть бути вибрані для цього розвитку.",
-  "DND5E.AdvancementItemChoiceSpellLevelHint": "Дозволити вибір чарів лише з цього рівня.",
-  "DND5E.AdvancementItemChoiceType": "Тип предмета",
-  "DND5E.AdvancementItemChoiceTypeHint": "Обмежити які типи предметів можуть бути вибрані.",
-  "DND5E.AdvancementItemChoiceTypeAny": "Будь-що",
-  "DND5E.AdvancementItemChoiceTypeWarning": "Для цього можуть бути вибрані тільки предмети типу {type}.",
-  "DND5E.AdvancementItemGrantTitle": "Надати предмети",
-  "DND5E.AdvancementItemGrantHint": "Надавати персонажам предмети (наприклад спорядження, уміння або чари), при досягненні певного рівня.",
-  "DND5E.AdvancementItemGrantDropHint": "Перетягніть предмети сюди, щоб додати їх в список нагород за цей розвиток.",
-  "DND5E.AdvancementItemGrantContainerWarning": "Container contents will not be added with containers.",
-  "DND5E.AdvancementItemGrantDuplicateWarning": "Цей елемент уже існує в цьому варіанті розвитку.",
-  "DND5E.AdvancementItemGrantRecursiveWarning": "Не можна додати предмет в розвиток самого себе.",
-  "DND5E.AdvancementItemGrantOptional": "Опціонально",
-  "DND5E.AdvancementItemGrantOptionalHint": "Якщо весь розвиток позначено як опціональний, гравці можуть відмовитися від будь-яких наступних елементів. В іншому випадку всі вони будуть видані персонажу.",
+  "DND5E.AdvancementHint": "Підказка",
   "DND5E.AdvancementItemTypeInvalidWarning": "{type} items cannot be added with this advancement type.",
   "DND5E.AdvancementLevelHeader": "Рівень {level}",
   "DND5E.AdvancementLevelAnyHeader": "Будь-який рівень",
   "DND5E.AdvancementLevelNoneHeader": "Без рівня",
   "DND5E.AdvancementLevelDownConfirmationMessage": "Пониження рівня цього класу також видалить всі вибрані варіанти розвитку. Ці зміни будуть застосовані до персонажа, якщо прапорець нижче встановлено.",
   "DND5E.AdvancementLevelDownConfirmationTitle": "Підтвердити зниження рівня",
-  "DND5E.AdvancementManagerCloseTitle": "Зупинити розвиток",
-  "DND5E.AdvancementManagerCloseMessage": "<p>Якщо розвиток буде скасовано, всі зроблені вами вибори до цього часу будуть відхилені й до персонажа нічого не буде застосовано.</p>",
-  "DND5E.AdvancementManagerCloseButtonContinue": "Продовжити",
-  "DND5E.AdvancementManagerCloseButtonStop": "Зупинити розвиток",
-  "DND5E.AdvancementManagerComplete": "Завершити",
-  "DND5E.AdvancementManagerLevelIncreasedTitle": "Підвищити рівень персонажа",
-  "DND5E.AdvancementManagerLevelNewClassTitle": "Додати клас",
-  "DND5E.AdvancementManagerModifyChoicesTitle": "Змінити вибір",
-  "DND5E.AdvancementManagerNextStep": "Далі",
-  "DND5E.AdvancementManagerPreviousStep": "Назад",
-  "DND5E.AdvancementManagerRestart": "Почати з початку",
-  "DND5E.AdvancementManagerRestartConfirm": "Ви впевнені, що хочете скасувати все що вибрали?",
-  "DND5E.AdvancementManagerRestartConfirmTitle": "Почати розвиток заново",
-  "DND5E.AdvancementManagerSteps": "Крок {current} із {total}",
-  "DND5E.AdvancementManagerTitle": "Розвиток",
   "DND5E.AdvancementMigrationConfirm": "Apply Migrations",
   "DND5E.AdvancementMigrationHint": "Select which of the following advancements will be added to {name}.",
   "DND5E.AdvancementMigrationTitle": "Migrate Advancement",
   "DND5E.AdvancementModifyChoices": "Змінити вибір",
   "DND5E.AdvancementSaveButton": "Зберегти розвиток",
-  "DND5E.AdvancementScaleValueTitle": "Значення масштабування",
-  "DND5E.AdvancementScaleValueHint": "Значення, яке змінюється під час підняття рівня класу і буде доступне в формулах кидків (наприклад, кістка бойових мистецтв Монаха).",
-  "DND5E.AdvancementScaleValueIdentifierHint": "Значення масштабування для поточного рівня стане доступним у формулах. Для цього викличте ключове слово<br><copyable-text>@scale.{class}.{identifier}</copyable-text> в формулі",
-  "DND5E.AdvancementScaleValueIdentifierDiceHint": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - whole formula (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - whole die (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - number of dice (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - number of faces (<code>6</code>)",
-  "DND5E.AdvancementScaleValueTypeCR": "Challenge Rating",
-  "DND5E.AdvancementScaleValueTypeDice": "Кістка",
-  "DND5E.AdvancementScaleValueTypeDistance": "Відстань",
-  "DND5E.AdvancementScaleValueTypeHintCR": "Use this for representing creature challenge ratings for features like Wild Shape.",
-  "DND5E.AdvancementScaleValueTypeHintDice": "Використовуйте це для значень кістки, таких як натхнення барда, прихована атака або кістка першості.",
-  "DND5E.AdvancementScaleValueTypeHintDistance": "Використовуйте це для числових значень, які представляють відстань, таких як неброньована швидкість руху або радіус аури.",
-  "DND5E.AdvancementScaleValueTypeHintNumber": "Використовуйте це для суто числових значень, таких як бонус шкоди від люті або кількість використань на день.",
-  "DND5E.AdvancementScaleValueTypeHintString": "Використовуйте це, якщо ви не впевнені в типі значення масштабування, або якщо тип неважливий.",
-  "DND5E.AdvancementScaleValueTypeLabel": "Тип Масштабування",
-  "DND5E.AdvancementScaleValueTypeNumber": "Число",
-  "DND5E.AdvancementScaleValueTypeString": "Інше",
   "DND5E.AdvancementSelectionCreateButton": "Створити розвиток",
   "DND5E.AdvancementSelectionTitle": "Виберіть тип розвитку",
-  "DND5E.AdvancementSizeTitle": "Size",
-  "DND5E.AdvancementSizeHint": "Set a character's size.",
-  "DND5E.AdvancementSizeFlowHintSingle": "Your size is {size}.",
-  "DND5E.AdvancementSizeflowHintMultiple": "Choose your size from either {sizes}.",
   "DND5E.AdvancementTitle": "Розвиток",
-  "DND5E.AdvancementTraitTitle": "Traits",
-  "DND5E.AdvancementTraitHint": "Grant a character certain traits or give them an option to select traits (such as proficiencies, skills, languages).",
-  "DND5E.AdvancementTraitActionAddChoice": "Add Choice",
-  "DND5E.AdvancementTraitActionRemoveChoice": "Remove Choice",
-  "DND5E.AdvancementTraitAllowReplacements": "Allow Replacements",
-  "DND5E.AdvancementTraitAllowReplacementsHint": "If a trait is already set on the actor, allow the player to choose from any other trait as a replacement.",
-  "DND5E.AdvancementTraitChoices": "Choices",
-  "DND5E.AdvancementTraitChoicesHint": "The following traits will be presented as a choice to the player.",
-  "DND5E.AdvancementTraitChoicesRemaining": "Select {count} more {type}",
-  "DND5E.AdvancementTraitCount": "Count",
-  "DND5E.AdvancementTraitGrants": "Guaranteed",
-  "DND5E.AdvancementTraitGrantsHint": "The following traits will be granted to the character as long as they don't already possess that trait.",
-  "DND5E.AdvancementTraitMode": "Mode",
-  "DND5E.AdvancementTraitModeDefaultLabel": "Default",
-  "DND5E.AdvancementTraitModeDefaultHint": "Gain a trait or proficiency.",
-  "DND5E.AdvancementTraitModeExpertiseLabel": "Expertise",
-  "DND5E.AdvancementTraitModeExpertiseHint": "Gain expertise in a trait in which you already have proficiency.",
-  "DND5E.AdvancementTraitModeForceLabel": "Forced Expertise",
-  "DND5E.AdvancementTraitModeForceHint": "Gain expertise in a trait regardless of your previous proficiency level.",
-  "DND5E.AdvancementTraitModeMasteryLabel": "Mastery",
-  "DND5E.AdvancementTraitModeMasteryHint": "Gain mastery with a weapon in which you already have proficiency.",
-  "DND5E.AdvancementTraitModeUpgradeLabel": "Upgrade",
-  "DND5E.AdvancementTraitModeUpgradeHint": "Gain proficiency in a trait unless you already have it, otherwise gain expertise.",
-  "DND5E.AdvancementTraitType": "Trait Type",
   "DND5E.Advantage": "Перевага",
   "DND5E.AdvantageMode": "Advantage Mode",
   "DND5E.Age": "Age",
@@ -426,19 +685,20 @@
   "DND5E.ArmorClassDraconic": "Стійкість дракона",
   "DND5E.ArmorClassUnarmoredMonk": "Захист без Обладунку (Монах)",
   "DND5E.ArmorClassUnarmoredBarbarian": "Захист без Обладунку (Варвар)",
-  "DND5E.ArmorClassUnarmoredBard": "Unarmored Defense (Bard)",
+  "DND5E.ArmorClassUnarmoredBard": "Захист без Обладунку (Бард)",
   "DND5E.ArmorClassCustom": "Власна формула",
   "DND5E.ArmorConfig": "Налаштувати броню",
   "DND5E.ArmorConfigHint": "Заповніть поле вище для перезапису автоматичного розрахунку класу захисту.",
   "DND5E.ArmorClassCalculation": "Розрахунок",
   "DND5E.ArmorClassFormula": "Формула",
-  "DND5E.ArmorHeavyProficiency": "Heavy",
-  "DND5E.ArmorLightProficiency": "Light",
-  "DND5E.ArmorMediumProficiency": "Medium",
+  "DND5E.ArmorHeavyProficiency": "Важка",
+  "DND5E.ArmorLightProficiency": "Легка",
+  "DND5E.ArmorMediumProficiency": "Середня",
+  "DND5E.ArmorValue": "Armor Value",
   "DND5E.AC": "КЗ",
   "DND5E.ATTACK": {
     "Title": {
-      "one": "Attack",
+      "one": "Атака",
       "other": "Attacks"
     },
     "FIELDS": {
@@ -501,10 +761,15 @@
       "Unarmed": "Unarmed",
       "Weapon": "Weapon"
     },
+    "Formatted": {
+      "2014": "{type} {classification} Attack",
+      "2024": "{type} Attack Roll"
+    },
     "Mode": {
       "Label": "Attack Mode",
       "Offhand": "Offhand",
       "OneHanded": "One-Handed",
+      "Ranged": "Ranged",
       "Thrown": "Thrown",
       "ThrownOffhand": "Offhand Throw",
       "TwoHanded": "Two-Handed"
@@ -546,37 +811,213 @@
   "DND5E.Background": "Передісторія",
   "DND5E.BackgroundAdd": "Add Background",
   "DND5E.BackgroundName": "Назва передісторії",
+  "DND5E.Bastion": {
+    "Action": {
+      "BastionTurn": "Advance Bastion Turn"
+    },
+    "Attack": {
+      "Automatic": "Resolve Automatically",
+      "Formula": "Attack Formula",
+      "NoActorWarning": "No character selected as target of the attack. Either select a token, or open their character sheet.",
+      "Resolve": "Resolve Attack",
+      "Result": {
+        "Damaged": "{link} damaged in the attack.",
+        "Deaths": {
+          "one": "<strong>{deaths}</strong> defender was slain in an attack on their bastion!",
+          "other": "<strong>{deaths}</strong> defenders were slain in an attack on their bastion!"
+        },
+        "NoDeaths": "Fended off an attack on their bastion with no casualties!",
+        "Undefended": "Undefended bastion attacked!"
+      },
+      "Title": "Bastion Attack"
+    },
+    "Button": {
+      "Label": "Show Bastion Turn Button",
+      "Hint": "Display a button for advancing bastion turns in the main game interface."
+    },
+    "Configuration": {
+      "Name": "Bastions",
+      "Label": "Configure Bastions",
+      "Hint": "Various configuration options for the Bastion system as presented in the DMG 2024."
+    },
+    "Confirm": "Advance one bastion turn?",
+    "Duration": {
+      "Label": "Bastion Turn Duration (days)"
+    },
+    "Enabled": {
+      "Label": "Enable Bastion Functionality",
+      "Hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them."
+    },
+    "Gold": {
+      "Claim": "Claim Income",
+      "Claimed": "claimed",
+      "Unclaimed": "unclaimed"
+    },
+    "Label": "Bastion",
+    "Summary": {
+      "Gold": "{value} ({claimed})",
+      "NoOrders": "No orders issued to special facilities this turn.",
+      "Order": "{link} completed the <strong>{order}</strong> order."
+    }
+  },
   "DND5E.Biography": "Біографія",
   "DND5E.BiographyPublic": "Public Biography",
   "DND5E.BiopgrahyPublicEdit": "Edit Public Biography",
   "DND5E.Bonds": "Зв'язки",
   "DND5E.Bonus": "Бонус",
-  "DND5E.BonusAbility": "Global Ability Bonuses",
-  "DND5E.BonusAbilityCheck": "Глобальний бонус перевірки здібностей",
-  "DND5E.BonusAbilitySave": "Глобальний бонус рятівного кидка",
-  "DND5E.BonusAbilitySaveTitle": "Global Saving Throws",
-  "DND5E.BonusAbilitySkill": "Глобальний бонус перевірки навички",
   "DND5E.BonusAction": "Бонусна Дія",
   "DND5E.BonusActionAbbr": "BA",
   "DND5E.BonusAttack": "Attack Bonus",
   "DND5E.BonusDamage": "Damage Bonus",
-  "DND5E.BonusMSAttack": "Бонус атаки чарами ближнього бою",
-  "DND5E.BonusMSDamage": "Бонус шкоди чарами ближнього бою",
-  "DND5E.BonusMWAttack": "Бонус атаки ближнього бою",
-  "DND5E.BonusMWDamage": "Бонус шкоди ближнього бою",
-  "DND5E.BonusRSAttack": "Бонус далекобійної атаки чарами",
-  "DND5E.BonusRSDamage": "Бонус шкоди далекобійної атаки чарами",
-  "DND5E.BonusRWAttack": "Бонус далекобійної атаки",
-  "DND5E.BonusRWDamage": "Бонус шкоди далекобійної атаки",
   "DND5E.BonusSaveForm": "Оновити бонуси",
-  "DND5E.BonusSpell": "Global Spell Bonuses",
-  "DND5E.BonusSpellDC": "Глобальний бонус КС чар",
   "DND5E.BonusTitle": "Налаштувати бонуси персонажа",
-  "DND5E.Bonuses": "Глобальні бонуси",
-  "DND5E.BonusesHint": "Задайте глобальний бонус у вигляді формули, що застосовується до деяких перевірок. Наприклад: 1d4 + 2",
-  "DND5E.BonusesInstructions": "Налаштуйте бонуси персонажа, що додаються до пов'язаних кидків",
+  "DND5E.BONUSES": {
+    "FIELDS": {
+      "bonuses": {
+        "label": "Global Bonuses",
+        "hint": "Global bonuses as formulas which are added to certain rolls.",
+        "abilities": {
+          "label": "Global Ability Bonuses",
+          "check": {
+            "label": "Global Ability Check Bonus"
+          },
+          "save": {
+            "label": "Global Saving Throw Bonus"
+          },
+          "skill": {
+            "label": "Global Skill Check Bonus"
+          }
+        },
+        "msak": {
+          "label": "Melee Spell Bonuses",
+          "attack": {
+            "label": "Melee Spell Attack Bonus"
+          },
+          "damage": {
+            "label": "Melee Spell Damage Bonus"
+          }
+        },
+        "mwak": {
+          "label": "Melee Weapon Bonuses",
+          "attack": {
+            "label": "Melee Weapon Attack Bonus"
+          },
+          "damage": {
+            "label": "Melee Weapon Damage Bonus"
+          }
+        },
+        "rsak": {
+          "label": "Ranged Spell Bonuses",
+          "attack": {
+            "label": "Ranged Spell Attack Bonus"
+          },
+          "damage": {
+            "label": "Ranged Spell Damage Bonus"
+          }
+        },
+        "rwak": {
+          "label": "Ranged Weapon Bonuses",
+          "attack": {
+            "label": "Ranged Weapon Attack Bonus"
+          },
+          "damage": {
+            "label": "Ranged Weapon Damage Bonus"
+          }
+        },
+        "spell": {
+          "label": "Global Spell Bonuses",
+          "dc": {
+            "label": "Global Spell DC Bonus"
+          }
+        }
+      }
+    }
+  },
+  "DND5E.CAST": {
+    "Title": "Створення чарів",
+    "FIELDS": {
+      "spell": {
+        "label": "Casting Details",
+        "ability": {
+          "label": "Casting Ability",
+          "hint": "Ability to override the creature's normal spellcasting ability."
+        },
+        "challenge": {
+          "attack": {
+            "label": "Attack Bonus",
+            "hint": "Flat to hit bonus in place of the spell's normal attack bonus."
+          },
+          "save": {
+            "label": "Save DC",
+            "hint": "Flat DC to use in place of the spell's normal save DC."
+          },
+          "override": {
+            "label": "Override Values",
+            "hint": "Override the spell's normal attack bonus & DC when casting."
+          }
+        },
+        "level": {
+          "label": "Casting Level",
+          "hint": "Base level to cast the spell, if different than the spell's level."
+        },
+        "properties": {
+          "label": "Ignored Properties",
+          "hint": "Spell components & tags to ignore while casting."
+        },
+        "spellbook": {
+          "label": "Display in Spellbook",
+          "hint": "Display spell in the Spells tab of the character sheet."
+        },
+        "uuid": {
+          "label": "Spell to Cast"
+        }
+      }
+    },
+    "SECTIONS": {
+      "Spell": "Spell",
+      "Spellbook": "Additional Spells"
+    },
+    "Action": {
+      "RemoveSpell": "Remove Spell"
+    },
+    "Enchantment": {
+      "Name": "Spell Changes"
+    }
+  },
   "DND5E.Casting": "Casting",
   "DND5E.Conditions": "Conditions",
+  "DND5E.CONTAINER": {
+    "Details": "Container Details",
+    "FIELDS": {
+      "capacity": {
+        "label": "Capacity",
+        "count": {
+          "label": "Item Count"
+        },
+        "volume": {
+          "label": "Volume Capacity",
+          "units": {
+            "label": "Volume Units"
+          },
+          "value": {
+            "label": "Maximum Volume"
+          }
+        },
+        "weight": {
+          "label": "Weight Capacity",
+          "units": {
+            "label": "Weight Units"
+          },
+          "value": {
+            "label": "Maximum Weight"
+          }
+        }
+      },
+      "properties": {
+        "label": "Container Properties"
+      }
+    }
+  },
   "DND5E.Controls": {
     "Hint": "Enable various hints throughout the UI for certain mouse and keyboard controls.",
     "LeftClick": "Left Click",
@@ -598,8 +1039,17 @@
   "DND5E.ChatContextSelectHit": "Select Hit Targets",
   "DND5E.ChatContextSelectMiss": "Select Missed Targets",
   "DND5E.ChatFlavor": "Додатковий текст в чаті",
+  "DND5E.CHATMESSAGE": {
+    "Activities": "Activities",
+    "Deltas": {
+      "Recovery": "Recovery"
+    },
+    "TURN": {
+      "NoCombatant": "Combatant no longer exists!"
+    }
+  },
   "DND5E.CHECK": {
-    "Title": "Check",
+    "Title": "Перевірка",
     "FIELDS": {
       "check": {
         "label": "Check Details",
@@ -632,11 +1082,15 @@
       "Title": "Multiclassing"
     },
     "FIELDS": {
-      "hitDice": {
-        "label": "Hit Point Die"
-      },
-      "hitDiceUsed": {
-        "label": "Spent Hit Dice"
+      "hd": {
+        "label": "Hit Point Die",
+        "additional": {
+          "label": "Additional Hit Dice",
+          "hint": "Formula for hit dice that are available for this class beyond the normal amount."
+        },
+        "spent": {
+          "label": "Spent Hit Dice"
+        }
       },
       "levels": {
         "label": "Class Levels"
@@ -663,6 +1117,18 @@
   "DND5E.ClassOriginal": "Початковий клас",
   "DND5E.ClassSaves": "Рятівний кидок",
   "DND5E.Confirm": "Confirm",
+  "DND5E.COMBAT": {
+    "Group": {
+      "ActiveCount": "{current} of {combatants}",
+      "Title": "{name} Group"
+    }
+  },
+  "DND5E.COMBATANT": {
+    "Counted": {
+      "one": "{number} combatant",
+      "other": "{number} combatants"
+    }
+  },
   "DND5E.CompendiumBrowser": {
     "Title": "Compendium Browser",
     "Action": {
@@ -722,7 +1188,7 @@
   "DND5E.ComponentSomaticAbbr": "С",
   "DND5E.ComponentVerbal": "Вербальний",
   "DND5E.ComponentVerbalAbbr": "В",
-  "DND5E.Components": "Components",
+  "DND5E.Components": "Компоненти",
   "DND5E.Container": "Container",
   "DND5E.ContainerDeleteMessage": "This container will be permanently deleted and cannot be recovered and the {count} items contained within will be moved out.",
   "DND5E.ContainerDeleteContents": "Also delete all items within the container.",
@@ -748,6 +1214,12 @@
   "DND5E.ConCharmed": "Причарований",
   "DND5E.ConDeafened": "Оглухлий",
   "DND5E.ConDiseased": "Хворий",
+  "DND5E.CONDITIONS": {
+    "RiderConditions": {
+      "label": "Separate Status Conditions",
+      "hint": "When this Active Effect is applied, these additional status conditions will be applied separately."
+    }
+  },
   "DND5E.ConExhaustion": "Виснаження",
   "DND5E.ConFrightened": "Наляканий",
   "DND5E.ConGrappled": "Схоплений",
@@ -827,12 +1299,13 @@
     },
     "Type": {
       "Ammunition": {
-        "Label": "Ammunition",
-        "Arrow": "Arrow",
-        "Bolt": "Bolt",
-        "BulletFirearm": "Bullet, Firearm",
-        "BulletSling": "Bullet, Sling",
-        "Needle": "Needle"
+        "Label": "Боєприпаси",
+        "Arrow": "Стріла",
+        "Bolt": "Болт",
+        "BulletFirearm": "Куля (вогнепальна зброя)",
+        "BulletSling": "Куля (праща)",
+        "EnergyCell": "Енергетичний елемент",
+        "Needle": "Голка"
       },
       "Food": {
         "Label": "Food"
@@ -933,11 +1406,15 @@
       "ThisItem": "This Item"
     },
     "Type": {
+      "Action": {
+        "Prompt": "Consume {type}?",
+        "PromptHint": "Spend {cost} ({available} available)."
+      },
       "ActivityUses": {
         "Label": "Activity Uses",
         "PromptDecrease": "Consume Activity Use?",
         "PromptIncrease": "Restore Activity Use?",
-        "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of this activity.",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of this activity ({available} {availableUse} available).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of this activity.",
         "Warning": "uses on {item}'s activity {activity}"
       },
@@ -945,15 +1422,15 @@
         "Label": "Attribute",
         "PromptDecrease": "Consume Attribute?",
         "PromptIncrease": "Restore Attribute?",
-        "PromptHintDecrease": "Decrease <code>{attribute}</code> by <strong>{cost}</strong>.",
-        "PromptHintIncrease": "Increase <code>{attribute}</code> by <strong>{cost}</strong>.",
+        "PromptHintDecrease": "Decrease <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
+        "PromptHintIncrease": "Increase <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
         "Warning": "{attribute} amount"
       },
       "HitDice": {
         "Label": "Hit Dice",
         "PromptDecrease": "Consume Hit Die?",
         "PromptIncrease": "Restore Hit Die?",
-        "PromptHintDecrease": "Spend <strong>{cost}</strong> {denomination} {die}.",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {denomination} {die} ({available} remaining).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {denomination} {die}.",
         "Warning": "{denomination} hit dice"
       },
@@ -965,7 +1442,7 @@
         "Label": "Item Uses",
         "PromptDecrease": "Consume Item Use?",
         "PromptIncrease": "Restore Item Use?",
-        "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of {item}.",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of {item} ({available} {availableUse} available).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of {item}.",
         "Warning": "uses on {name}"
       },
@@ -973,7 +1450,7 @@
         "Label": "Material",
         "PromptDecrease": "Consume Material?",
         "PromptIncrease": "Restore Material?",
-        "PromptHintDecrease": "Reduce quantity of {item} by <strong>{cost}</strong>.",
+        "PromptHintDecrease": "Reduce quantity of {item} by <strong>{cost}</strong> ({quantity} remaining).",
         "PromptHintIncrease": "Increase quantity of {item} by <strong>{cost}</strong>.",
         "Warning": "of {name}"
       },
@@ -985,7 +1462,7 @@
         "Label": "Spell Slots",
         "PromptDecrease": "Consume Spell Slot?",
         "PromptIncrease": "Restore Spell Slot?",
-        "PromptHintDecrease": "Spend <strong>{cost}</strong> {slot}.",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {slot} ({available} remaining).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {slot}.",
         "Warning": "{level} slots"
       },
@@ -1000,7 +1477,8 @@
       "MissingItem": "Item configured to be consumed by {activity} activity on {item} could not be found.",
       "MissingSpellSlot": "No {level} slots available.",
       "None": "No {type} available to spend, {cost} required.",
-      "NotEnough": "Not enough {type} available to spend, {cost} required and only {available} available."
+      "NotEnough": "Not enough {type} available to spend, {cost} required and only {available} available.",
+      "WillDestroy": "Consuming {item} will spend its final use and it will be destroyed."
     }
   },
   "DND5E.Consumed": "Витрачено",
@@ -1043,6 +1521,7 @@
   "DND5E.CreatureSwarm": "Рій",
   "DND5E.CreatureSwarmSize": "Розмір рою",
   "DND5E.CreatureSwarmPhrase": "Рій з {size} {type}",
+  "DND5E.CreatureTag": "{size} {type}, {alignment}",
   "DND5E.CreatureTypeConfig": "Налаштувати тип істоти",
   "DND5E.CreatureTypeSelectorCustom": "Власний тип",
   "DND5E.CreatureTypeSelectorSubtype": "Підтип",
@@ -1071,6 +1550,9 @@
       "Action": "Convert All Currency",
       "Hint": "Convert all carried currency to the highest possible denomination to reduce the amount of coinage carried by the character. Be wary, this action cannot be undone."
     },
+    "Error": {
+      "InsufficientFunds": "Failed to deduct {amount}{denomination} from {name}. Insufficient funds."
+    },
     "Transfer": {
       "Label": "Transfer",
       "Action": "Transfer Selected",
@@ -1080,10 +1562,10 @@
   },
   "DND5E.Current": "Current",
   "DND5E.DAMAGE": {
-    "Title": "Damage",
+    "Title": "Ушкодження",
     "FIELDS": {
       "damage": {
-        "label": "Damage",
+        "label": "Ушкодження",
         "critical": {
           "allow": {
             "label": "Allow Critical",
@@ -1155,8 +1637,10 @@
     },
     "Scaling": {
       "Half": "Every Other Level",
+      "HalfCantrip": "Half Cantrip Scaling",
       "None": "No Scaling",
-      "Whole": "Every Level"
+      "Whole": "Every Level",
+      "WholeCantrip": "Cantrip Scaling"
     }
   },
   "DND5E.DamImm": "Імунітет до ушкоджень",
@@ -1205,6 +1689,8 @@
   "DND5E.Dawn": "Dawn",
   "DND5E.Day": "День",
   "DND5E.DeathSave": "Рятівний кидок від смерті",
+  "DND5E.DeathSaveBonus": "Death Save Bonus",
+  "DND5E.DeathSaveConfigure": "Configure Death Saves",
   "DND5E.DeathSaveCriticalSuccess": "{name} досяг критичного успіху в рятівному кидку від смерті та відновив 1 ПЗ!",
   "DND5E.DeathSaveHide": "Hide Death Saves",
   "DND5E.DeathSaveShow": "Show Death Saves",
@@ -1239,6 +1725,7 @@
   "DND5E.Disadvantage": "Перешкода",
   "DND5E.Discord": "Discord",
   "DND5E.Disclaimer": "Попередження",
+  "DND5E.DisplayCard": "Display in Chat",
   "DND5E.DistAny": "Будь-яка",
   "DND5E.DistFt": "Фути",
   "DND5E.DistFtAbbr": "ft",
@@ -1302,7 +1789,7 @@
   "DND5E.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
   "DND5E.EffectsSearch": "Search effects",
   "DND5E.ENCHANT": {
-    "Title": "Enchant",
+    "Title": "Зачарувати",
     "FIELDS": {
       "effects": {
         "FIELDS": {
@@ -1330,6 +1817,31 @@
               "label": "Additional Items",
               "hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed."
             }
+          }
+        },
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this enchantment.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "riders": {
+          "label": "Attached",
+          "activity": {
+            "label": "Additional Activities",
+            "hint": "These additional activities will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
+          },
+          "effect": {
+            "label": "Additional Effects",
+            "hint": "These additional effects will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
+          },
+          "item": {
+            "label": "Additional Items",
+            "hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed."
           }
         }
       },
@@ -1416,43 +1928,345 @@
       "Entry": "{item} on <em>{actor}</em>"
     },
     "Label": "Enchantment",
+    "Period": {
+      "AtWill": "At Will",
+      "LongRest": "Long Rest",
+      "Never": "Never",
+      "ShortRest": "Short Rest"
+    },
     "Warning": {
       "NotOnActor": "Enchantments can only be added to items, not directly to actors.",
       "Override": "This value is being modified by an Enchantment and cannot be edited. Disable the enchantment in the effects tab to edit it."
     }
   },
   "DND5E.Environment": "Environment",
+  "DND5E.EQUIPMENT": {
+    "Type": {
+      "Clothing": {
+        "Label": "Clothing"
+      },
+      "Ring": {
+        "Label": "Ring"
+      },
+      "Rod": {
+        "Label": "Rod"
+      },
+      "Trinket": {
+        "Label": "Trinket"
+      },
+      "Vehicle": {
+        "Label": "Vehicle Equipment"
+      },
+      "Wand": {
+        "Label": "Wand"
+      },
+      "Wondrous": {
+        "Label": "Wondrous Item"
+      }
+    }
+  },
   "DND5E.EquipmentBonus": "Магічний Бонус",
-  "DND5E.EquipmentClothing": "Одяг",
   "DND5E.EquipmentHeavy": "Важкий обладунок",
   "DND5E.EquipmentLight": "Легкий обладунок",
   "DND5E.EquipmentMedium": "Середній обладунок",
   "DND5E.EquipmentNatural": "Природна броня",
   "DND5E.EquipmentShield": "Щит",
   "DND5E.EquipmentShieldProficiency": "Щити",
-  "DND5E.EquipmentTrinket": "Дрібничка",
-  "DND5E.EquipmentVehicle": "Спорядження транспорту",
   "DND5E.Equipped": "Споряджено",
   "DND5E.Exhaustion": "Виснаження",
   "DND5E.ExhaustionLevel": "Exhaustion Level {n}",
-  "DND5E.ExperiencePoints": "Experience Points",
-  "DND5E.ExperiencePointsAbbr": "XP",
-  "DND5E.ExperiencePointsBoons": {
-    "one": "{number} Boon",
-    "other": "{number} Boons"
+  "DND5E.ExperiencePoints": {
+    "Abbreviation": "XP",
+    "Boons": {
+      "one": "{number} Boon",
+      "other": "{number} Boons"
+    },
+    "Current": "Current XP",
+    "Format": "{value} XP",
+    "Label": "Experience Points",
+    "Progress": "Progress to next Level",
+    "StatBlock": {
+      "Standard": "XP {value}",
+      "Lair": "XP {value}, or {lair} in lair"
+    },
+    "Value": "XP Value"
   },
-  "DND5E.ExperiencePointsCurrent": "Current XP",
-  "DND5E.ExperiencePointsFormat": "{value} XP",
-  "DND5E.ExperiencePointsLabel": "Progress to next level",
-  "DND5E.ExperiencePointsMax": "XP for Next Level",
-  "DND5E.ExperiencePointsMin": "Minimum XP for This Level",
-  "DND5E.ExperiencePointsValue": "XP Value",
   "DND5E.Expertise": "Уміння",
+  "DND5E.FACILITY": {
+    "Action": {
+      "DeleteDefender": "Delete Defender",
+      "DeleteOccupant": "Delete Occupant",
+      "RemoveCraft": "Remove Craft"
+    },
+    "AvailableFacility": {
+      "basic": {
+        "build": "Build Facility",
+        "free": "Free Facility"
+      },
+      "special": {
+        "free": "Add Facility"
+      }
+    },
+    "Build": {
+      "Unbuilt": "Unbuilt"
+    },
+    "Costs": {
+      "Automatic": "Deduct Automatically",
+      "Days": "{days} days",
+      "Label": "Costs",
+      "Manual": "Mark as Paid",
+      "Paid": "paid",
+      "Unpaid": "unpaid"
+    },
+    "Craft": {
+      "BaseItem": {
+        "Label": "Purchase Base Item",
+        "Hint": "If checked, the base item will be purchased at full price instead of crafted."
+      },
+      "Hint": "The items that this facility is currently in the process of crafting or harvesting, if any."
+    },
+    "Description": "Description",
+    "FIELDS": {
+      "building": {
+        "built": {
+          "label": "Built",
+          "hint": "Basic facilities must be built first before they can be used."
+        }
+      },
+      "defenders": {
+        "max": {
+          "label": "Defenders"
+        }
+      },
+      "disabled": {
+        "hint": "Disabled facilities cannot be issued orders and are repaired at the beginning of the next turn.",
+        "label": "Disabled"
+      },
+      "enlargeable": {
+        "hint": "Certain special facilities may have their size categories increased for a cost.",
+        "label": "Can Be Enlarged"
+      },
+      "free": {
+        "hint": "Free facilities do not count towards your special facilities cap.",
+        "label": "Free Facility"
+      },
+      "hirelings": {
+        "max": {
+          "label": "Hirelings"
+        }
+      },
+      "level": {
+        "label": "Level Requirement"
+      },
+      "order": {
+        "label": "Order"
+      },
+      "progress": {
+        "max": {
+          "label": "Total"
+        },
+        "order": {
+          "label": "Executing"
+        },
+        "value": {
+          "label": "Current"
+        }
+      },
+      "size": {
+        "label": "Size"
+      },
+      "trade": {
+        "creatures": {
+          "max": {
+            "label": "Creature Capacity"
+          }
+        },
+        "profit": {
+          "label": "Profit Factor"
+        },
+        "stock": {
+          "stocked": {
+            "hint": "Appropriate for facilities that do not store a variable value of goods, but are instead considered either stocked or empty.",
+            "label": "Stocked"
+          },
+          "value": {
+            "label": "Value"
+          },
+          "max": {
+            "label": "Max"
+          }
+        }
+      },
+      "type": {
+        "subtype": {
+          "label": "Type"
+        },
+        "value": {
+          "label": "Category"
+        }
+      }
+    },
+    "Goods": "Goods",
+    "NoDefenders": "Bastion is undefended.",
+    "Occupants": "Occupants",
+    "Order": {
+      "Execute": "Execute Order",
+      "Issue": "Issue Order: {order}"
+    },
+    "Orders": {
+      "Label": "Orders",
+      "build": {
+        "inf": "Build",
+        "present": "Building"
+      },
+      "change": {
+        "inf": "Change",
+        "present": "Changing"
+      },
+      "craft": {
+        "inf": "Craft",
+        "present": "Crafting"
+      },
+      "empower": {
+        "inf": "Empower",
+        "present": "Empowering"
+      },
+      "enlarge": {
+        "inf": "Enlarge",
+        "present": "Enlarging"
+      },
+      "harvest": {
+        "inf": "Harvest",
+        "present": "Harvesting"
+      },
+      "maintain": {
+        "inf": "Maintain",
+        "present": "Maintaining"
+      },
+      "recruit": {
+        "inf": "Recruit",
+        "present": "Recruiting"
+      },
+      "repair": {
+        "inf": "Repair",
+        "present": "Repairing"
+      },
+      "research": {
+        "inf": "Research",
+        "present": "Researching"
+      },
+      "trade": {
+        "inf": "Trade",
+        "present": "Trading"
+      }
+    },
+    "Progress": "Progress",
+    "Properties": "Properties",
+    "Sizes": {
+      "cramped": "Cramped",
+      "roomy": "Roomy",
+      "vast": "Vast"
+    },
+    "Squares": "{squares} squares",
+    "Trade": {
+      "Buy": {
+        "Supplement": "Buy"
+      },
+      "Creatures": {
+        "Buy": "Drop animals that you wish to purchase into the slots above, and update the cost appropriately below."
+      },
+      "Price": {
+        "Label": "Base Price",
+        "Hint": "Select which stock to sell, and input the base price above."
+      },
+      "Sell": {
+        "Label": "Sell Stock",
+        "Supplement": "Sell"
+      },
+      "Stock": {
+        "Buy": "Buying",
+        "Sell": "Selling"
+      },
+      "Stocked": {
+        "Label": "Fully Stock",
+        "Hint": "Input the required cost to fully stock this facility below."
+      }
+    },
+    "Types": {
+      "Basic": {
+        "Label": {
+          "one": "Basic Facility",
+          "other": "Basic Facilities"
+        },
+        "Bedroom": "Bedroom",
+        "DiningRoom": "Dining Room",
+        "Parlor": "Parlor",
+        "Courtyard": "Courtyard",
+        "Kitchen": "Kitchen",
+        "Storage": "Storage"
+      },
+      "Special": {
+        "Label": {
+          "one": "Special Facility",
+          "other": "Special Facilities"
+        },
+        "ArcaneStudy": "Arcane Study",
+        "Armory": "Armory",
+        "Barrack": "Barrack",
+        "Garden": "Garden",
+        "Library": "Library",
+        "Sanctuary": "Sanctuary",
+        "Smithy": "Smithy",
+        "Storehouse": "Storehouse",
+        "Workshop": "Workshop",
+        "GamingHall": "Gaming Hall",
+        "Greenhouse": "Greenhouse",
+        "Laboratory": "Laboratory",
+        "Sacristy": "Sacristy",
+        "Scriptorium": "Scriptorium",
+        "Stable": "Stable",
+        "TeleportationCircle": "Teleportation Circle",
+        "Theater": "Theater",
+        "TrainingArea": "Training Area",
+        "TrophyRoom": "Trophy Room",
+        "Archive": "Archive",
+        "MeditationChamber": "Meditation Chamber",
+        "Menagerie": "Menagerie",
+        "Observatory": "Observatory",
+        "Pub": "Pub",
+        "Reliquary": "Reliquary",
+        "Demiplane": "Demiplane",
+        "Guildhall": "Guildhall",
+        "Sanctum": "Sanctum",
+        "WarRoom": "War Room"
+      }
+    },
+    "Use": {
+      "Description": "Issued the <strong>{order}</strong> order to their {link} {facilityType}."
+    }
+  },
   "DND5E.Favorite": "Favorite",
   "DND5E.FavoriteDrop": "Drop Favorite",
   "DND5E.FavoriteRemove": "Remove Favorite",
-  "DND5E.Favorites": "Favorites",
+  "DND5E.Favorites": "Обране",
   "DND5E.FeatureActionRecharge": "Перезарядка",
+  "DND5E.FEATURE": {
+    "FIELDS": {
+      "cover": {
+        "label": "Cover",
+        "hint": "Cover provided to crew by this vehicle feature."
+      },
+      "properties": {
+        "label": "Feature Properties"
+      },
+      "requirements": {
+        "label": "Requirements"
+      },
+      "type": {
+        "label": "Feature Type"
+      }
+    }
+  },
   "DND5E.Feature": {
     "Background": "Уміння від передісторії",
     "Class": {
@@ -1483,11 +2297,15 @@
     },
     "Monster": "Monster Feature",
     "Species": "Species Feature",
+    "SpeciesLegacy": "Race Feature",
     "SupernaturalGift": {
       "Label": "Supernatural Gift",
       "Blessing": "Blessing",
       "Charm": "Charm",
       "EpicBoon": "Epic Boon"
+    },
+    "Vehicle": {
+      "Label": "Vehicle Feature"
     }
   },
   "DND5E.Focus": {
@@ -1505,6 +2323,17 @@
   "DND5E.Loot.Treasure": "Treasure",
   "DND5E.Flaws": "Вади",
   "DND5E.FormulaCannotContainDiceError": "{name} формула не може містити кістки.",
+  "DND5E.FORWARD": {
+    "Title": "Заготовлена дія",
+    "FIELDS": {
+      "activity": {
+        "label": "Triggered Activity"
+      }
+    },
+    "Warning": {
+      "NoActivity": "Linked activity must be configured before Forward activity can be used."
+    }
+  },
   "DND5E.EffectCreate": "Створити ефект",
   "DND5E.EffectToggle": "Вкл/Викл ефект",
   "DND5E.EffectEdit": "Редагувати ефект",
@@ -1532,7 +2361,7 @@
   "DND5E.ItemRarityLegendary": "легендарний",
   "DND5E.ItemRarityArtifact": "артефакт",
   "DND5E.Eyes": "Eyes",
-  "DND5E.Faith": "Faith",
+  "DND5E.Faith": "Віра",
   "DND5E.FeatureActive": "Активні уміння",
   "DND5E.FeatureAdd": "Створити уміння",
   "DND5E.FeatureAttack": "Уміння атаки",
@@ -1560,7 +2389,7 @@
       "Hint": "Allow bonus action extra attacks using any melee weapon without the Two-Handed property."
     }
   },
-  "DND5E.FlagsInstructions": "Налаштуйте уміння, які впливають на персонажа в рамках системи DnD5e.",
+  "DND5E.FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the D&D Fifth Edition system.",
   "DND5E.FlagsSave": "Оновити особливі риси",
   "DND5E.FlagsTitle": "Налаштувати особливі риси",
   "DND5E.FlagsDiamondSoul": "Діамантова душа",
@@ -1574,7 +2403,8 @@
   "DND5E.FlagsInitiativeAdv": "Ініціатива з перевагою",
   "DND5E.FlagsInitiativeAdvHint": "Забезпечується уміннями чи магічними предметами.",
   "DND5E.FlagsAlert": "Уміння пильнувати",
-  "DND5E.FlagsAlertHint": "Додає +5 до Ініціативи.",
+  "DND5E.FlagsAlertHint": "Proficient in Initiative rolls.",
+  "DND5E.FlagsAlertHintLegacy": "Provides +5 to Initiative.",
   "DND5E.FlagsJOAT": "Майстер на Всі Руки",
   "DND5E.FlagsJOATHint": "Половина бонусу майстерності до перевірок не опанованих здібностей.",
   "DND5E.FlagsObservant": "Риса Уважний",
@@ -1595,7 +2425,9 @@
   "DND5E.Formula": "Формула",
   "DND5E.FormulaMalformedError": "Problem preparing the {property} formula within {name}.",
   "DND5E.FormulaMissingReferenceWarn": "The {property} formula within {name} has references to missing data: {references}",
-  "DND5E.Gender": "Gender",
+  "DND5E.Gear": "Gear",
+  "DND5E.Gender": "Стать",
+  "DND5E.GlobalBonus": "Global Bonus",
   "DND5E.GrantedAbilities": "Отримані уміння",
   "DND5E.GroupInventory": "Inventory",
   "DND5E.GroupHP": "Aggregate Hit Points",
@@ -1622,10 +2454,35 @@
       "other": "Vehicles"
     }
   },
+  "DND5E.Habitat": {
+    "Categories": {
+      "Any": "Any",
+      "Arctic": "Arctic",
+      "Coastal": "Coastal",
+      "Desert": "Desert",
+      "Forest": "Forest",
+      "Grassland": "Grassland",
+      "Hill": "Hill",
+      "Mountain": "Mountain",
+      "Planar": "Planar",
+      "Swamp": "Swamp",
+      "Underdark": "Underdark",
+      "Underwater": "Underwater",
+      "Urban": "Urban"
+    },
+    "Configuration": {
+      "Custom": "Custom",
+      "Label": "Habitat",
+      "Legend": "Categories",
+      "Subtype": "{type} Subtype",
+      "Title": "Configure Habitat"
+    },
+    "Subtype": "{type} ({subtype})"
+  },
   "DND5E.Hair": "Hair",
   "DND5E.HalfProficient": "Наполовину майстерний",
   "DND5E.HEAL": {
-    "Title": "Heal",
+    "Title": "Зцілення",
     "FIELDS": {
       "healing": {
         "label": "Healing",
@@ -1676,8 +2533,14 @@
   },
   "DND5E.Healing": "Зцілення",
   "DND5E.HealingRoll": "Healing Roll",
-  "DND5E.HealingTemp": "Зцілення (Тимчасове)",
+  "DND5E.HealingTemp": "Temporary Hit Points",
   "DND5E.Height": "Height",
+  "DND5E.HITPOINTS": {
+    "Counted": {
+      "one": "{number} hit point",
+      "other": "{number} hit points"
+    }
+  },
   "DND5E.HitPoints": "Пункти здоров'я",
   "DND5E.HitPointsBonusLevel": "Per Level Bonus",
   "DND5E.HitPointsBonusOverall": "Overall Bonus",
@@ -1685,22 +2548,31 @@
   "DND5E.HitPointsCurrent": "Поточні пункти здоров'я",
   "DND5E.HitPointsMax": "Макс. к-сть пунктів здоров'я",
   "DND5E.HitPointsMin": "Minimum Hit Points",
-  "DND5E.HitPointsOverride": "Maximum Hit Points Override",
+  "DND5E.HitPointsOverride": "Maximum Override",
+  "DND5E.HitPointsOverrideHint": "Override automatically calculated hit points, ignoring any HP from classes, bonuses, and ability modifier.",
   "DND5E.HitPointsTemp": "Тимчасові пункти здоров'я",
   "DND5E.HitPointsTempShort": "Temporary HP",
-  "DND5E.HitPointsTempMax": "Максимум тимчасових пунктів здоров'я",
+  "DND5E.HitPointsTempMax": "Temporary Maximum",
+  "DND5E.HitPointsTempMaxHint": "Temporary change to the maximum HP.",
   "DND5E.HitPointsTempMaxShort": "Temp Max HP",
   "DND5E.HP": "ПЗ",
-  "DND5E.HealthConditions": "Стан здоров'я",
   "DND5E.HPFormula": "Формула пунктів здоров'я",
   "DND5E.HPFormulaError": "The provided hit point formula could not be evaluated.",
   "DND5E.HPFormulaRollMessage": "Roll Hit Point Formula",
+  "DND5E.HITDICE": {
+    "Action": {
+      "Decrease": "Decrease",
+      "Increase": "Increase"
+    },
+    "Available": "{number} available",
+    "Config": "Adjust Hit Dice",
+    "Counted": {
+      "one": "{number} hit die",
+      "other": "{number} hit dice"
+    }
+  },
   "DND5E.HitDie": "Кістка здоров'я",
   "DND5E.HitDice": "Кістки здоров'я",
-  "DND5E.HitDiceAutoSpend": {
-    "Label": "Auto Spend HD",
-    "Hint": "Automatically spend hit dice until they run out or health is full."
-  },
   "DND5E.HitDiceConfig": "Налаштування кісток здоров'я",
   "DND5E.HitDiceConfigHint": "Налаштуйте кістки здоров'я для кожного класу.",
   "DND5E.HitDiceMax": "Максимум кісток здоров'я",
@@ -1742,14 +2614,6 @@
   "DND5E.ItemConsumableStatus": "Статус витратника",
   "DND5E.ItemConsumableSubtype": "{category} Type",
   "DND5E.ItemConsumableType": "Тип витратника",
-  "DND5E.ItemContainerCapacity": "Місткість",
-  "DND5E.ItemContainerCapacityItems": "Предмети",
-  "DND5E.ItemContainerCapacityMax": "Max Capacity",
-  "DND5E.ItemContainerCapacityType": "Тип місткості",
-  "DND5E.ItemContainerCapacityWeight": "Вага",
-  "DND5E.ItemContainerDetails": "Подробиці контейнера",
-  "DND5E.ItemContainerProperties": "Властивості контейнера",
-  "DND5E.ItemContainerStatus": "Container Status",
   "DND5E.ItemCreate": "Створити елемент",
   "DND5E.ItemCritThreshold": "Поріг критичної атаки",
   "DND5E.ItemCritExtraDamage": "Додаткова критична шкода",
@@ -1765,6 +2629,7 @@
   "DND5E.ItemEquipmentStealthDisav": "Перешкода для непомітності",
   "DND5E.ItemEquipmentType": "Тип спорядження",
   "DND5E.ItemEquipmentUsage": "Використання спорядження",
+  "DND5E.ItemFacilityDetails": "Facility Details",
   "DND5E.ItemFeatureDetails": "Feature Details",
   "DND5E.ItemFeatureProperties": "Feature Properties",
   "DND5E.ItemFeatureSubtype": "{category} Type",
@@ -1801,6 +2666,7 @@
       "Special": "Special",
       "StealthDisadvantage": "Stealth Disadvantage",
       "Thrown": "Thrown",
+      "Trait": "Passive Trait",
       "TwoHanded": "Two-Handed",
       "Versatile": "Versatile",
       "Verbal": "Verbal",
@@ -1815,8 +2681,10 @@
   "DND5E.ItemRecoveryRollMax": "{name} recovers all charges",
   "DND5E.ItemRecoveryFormulaWarning": "Unable to recover uses for {name}. Invalid recovery formula '{formula}' ({uuid}).",
   "DND5E.ItemRequiredStr": "Необхідна сила",
+  "DND5E.Items": "Items",
   "DND5E.ItemSiegeProperties": "Siege Properties",
   "DND5E.ItemSpeciesDetails": "Species Details",
+  "DND5E.ItemSpeciesDetailsLegacy": "Race Details",
   "DND5E.ItemSubclassDetails": "Subclass Details",
   "DND5E.ItemToolBase": "Базовий інструмент",
   "DND5E.ItemToolBonus": "Бонус інструмента",
@@ -1836,54 +2704,87 @@
   "DND5E.ItemWeaponType": "Тип зброї",
   "DND5E.ItemWeaponUsage": "Використання зброї",
   "DND5E.JackOfAllTrades": "Майстер на всі руки",
-  "DND5E.LairAct": "Використати дію лігва",
-  "DND5E.LairActionLabel": "Дія лігва",
-  "DND5E.LairActionInitiative": "Значення ініціативи дії лігва",
+  "DND5E.LAIR": {
+    "Label": "Lair",
+    "Action": {
+      "Label": "Lair Action",
+      "Initiative": "Lair Action Initiative Count",
+      "Uses": "Uses Lair Action"
+    },
+    "HasLair": "Has Lair",
+    "Inside": "Inside Lair"
+  },
+  "DND5E.Language": {
+    "All": "All Languages",
+    "Label": "Language",
+    "Category": {
+      "Exotic": "Exotic Languages",
+      "Rare": "Rare Languages",
+      "Standard": "Standard Languages"
+    },
+    "Communication": {
+      "Label": "Ranged Communication",
+      "Telepathy": "Telepathy"
+    },
+    "Language": {
+      "Aarakocra": "Ааракокрова",
+      "Abyssal": "Безоднева",
+      "Aquan": "Акванова",
+      "Auran": "Auran",
+      "Celestial": "Celestial",
+      "Common": "Common",
+      "CommonSign": "Common Sign Language",
+      "DeepSpeech": "Deep Speech",
+      "Draconic": "Draconic",
+      "Druidic": "Druidic",
+      "Dwarvish": "Dwarvish",
+      "Elvish": "Elvish",
+      "Giant": "Giant",
+      "Gith": "Gith",
+      "Gnoll": "Gnoll",
+      "Gnomish": "Gnomish",
+      "Goblin": "Goblin",
+      "Halfling": "Halfling",
+      "Ignan": "Ignan",
+      "Infernal": "Infernal",
+      "Orc": "Orc",
+      "Primordial": "Primordial",
+      "Sylvan": "Sylvan",
+      "Terran": "Terran",
+      "ThievesCant": "Thieves' Cant",
+      "Undercommon": "Undercommon"
+    }
+  },
   "DND5E.Languages": "Мови",
-  "DND5E.LanguagesAarakocra": "Ааракокрова",
-  "DND5E.LanguagesAbyssal": "Безоднева",
-  "DND5E.LanguagesAquan": "Акванова",
-  "DND5E.LanguagesAuran": "Ауран",
-  "DND5E.LanguagesCelestial": "Небесна",
-  "DND5E.LanguagesCommon": "Спільна",
-  "DND5E.LanguagesCommonSign": "Common Sign Language",
-  "DND5E.LanguagesDeepSpeech": "Глибинна",
-  "DND5E.LanguagesDraconic": "Драконова",
-  "DND5E.LanguagesDruidic": "Друїдська",
-  "DND5E.LanguagesDwarvish": "Дворфська",
-  "DND5E.LanguagesElvish": "Ельфійська",
-  "DND5E.LanguagesExotic": "Rare Languages",
-  "DND5E.LanguagesExoticLegacy": "Exotic Languages",
-  "DND5E.LanguagesGiant": "Велетова",
-  "DND5E.LanguagesGith": "Ґітів",
-  "DND5E.LanguagesGnoll": "Ґнолська",
-  "DND5E.LanguagesGnomish": "Гномська",
-  "DND5E.LanguagesGoblin": "Ґоблінська",
-  "DND5E.LanguagesHalfling": "Напівросликова",
-  "DND5E.LanguagesIgnan": "Ігнанська",
-  "DND5E.LanguagesInfernal": "Пекельна",
-  "DND5E.LanguagesOrc": "Оркська",
-  "DND5E.LanguagesPrimordial": "Первісна",
-  "DND5E.LanguagesStandard": "Standard Languages",
-  "DND5E.LanguagesSylvan": "Сильван",
-  "DND5E.LanguagesTerran": "Терран",
-  "DND5E.LanguagesThievesCant": "Злодійський жаргон",
-  "DND5E.LanguagesUndercommon": "Підморокова",
-  "DND5E.LegAct": "Легендарні дії",
-  "DND5E.LegActN.one": "1st Legendary Action",
-  "DND5E.LegActN.two": "2nd Legendary Action",
-  "DND5E.LegActN.few": "3rd Legendary Action",
-  "DND5E.LegActN.other": "{n}th Legendary Action",
-  "DND5E.LegActMax": "Максимум легендарних дій",
-  "DND5E.LegActRemaining": "Залишилось легендарних дій",
-  "DND5E.LegendaryActionLabel": "Легендарна дія",
-  "DND5E.LegRes": "Легендарний опір",
-  "DND5E.LegResN.one": "1st Legendary Resistance",
-  "DND5E.LegResN.two": "2nd Legendary Resistance",
-  "DND5E.LegResN.few": "3rd Legendary Resistance",
-  "DND5E.LegResN.other": "{n}th Legendary Resistance",
-  "DND5E.LegResMax": "Максимум легендарних опорів",
-  "DND5E.LegResRemaining": "Залишилось легендарних опорів",
+  "DND5E.LegendaryAction": {
+    "Description": "Legendary Action Uses: {uses}.",
+    "DescriptionLegacy": "The {name} can take {usesNamed}, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The {name} regains spent legendary actions at the start of its turn.",
+    "Label": "Legendary Action",
+    "LairUses": "{normal} ({lair} in Lair)",
+    "Max": "Maximum Legendary Actions",
+    "Ordinal": {
+      "one": "{n}st Legendary Action",
+      "two": "{n}nd Legendary Action",
+      "few": "{n}rd Legendary Action",
+      "other": "{n}th Legendary Action"
+    },
+    "Remaining": "Remaining Legendary Actions"
+  },
+  "DND5E.LegendaryResistance": {
+    "Action": {
+      "Resist": "Legendary Resistance"
+    },
+    "Label": "Legendary Resistance",
+    "Max": "Maximum Legendary Resistances",
+    "Ordinal": {
+      "one": "{n}st Legendary Resistance",
+      "two": "{n}nd Legendary Resistance",
+      "few": "{n}rd Legendary Resistance",
+      "other": "{n}th Legendary Resistance"
+    },
+    "Remaining": "Remaining Legendary Resistances",
+    "Resisted": "Used Legendary Resistance"
+  },
   "DND5E.Level": "Рівень",
   "DND5E.LevelPl": "Рівні",
   "DND5E.LevelActionDecrease": "Зменшити рівень",
@@ -1903,18 +2804,7 @@
   "DND5E.LimitedUsesPrompt": "Uses Prompt",
   "DND5E.LimitedUsesPromptTooltip": "If unchecked, the prompt to consume an available use will be suppressed.",
   "DND5E.Long": "Long",
-  "DND5E.LongRest": "Тривалий відпочинок",
-  "DND5E.LongRestNormal": "Тривалий відпочинок (8 годин)",
-  "DND5E.LongRestGritty": "Тривалий відпочинок (7 днів)",
-  "DND5E.LongRestEpic": "Тривалий відпочинок (1 година)",
-  "DND5E.LongRestOvernight": "Тривалий відпочинок (Новий день)",
-  "DND5E.LongRestHint": "Здійснити тривалий відпочинок? У кінці тривалого відпочинку персонаж відновлює всі витрачені ПЗ, а також половину від максимуму кісток здоров'я, заряди предметів й слоти заклинань.",
-  "DND5E.LongRestHintGroup": "Take a long rest? On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
-  "DND5E.LongRestRecovery": "Recovers after Long Rest",
-  "DND5E.LongRestResult": "{name} здійснює тривалий відпочинок, відновлюючи {health} ПЗ і {dice} кісток здоров'я.",
-  "DND5E.LongRestResultHitDice": "{name} здійснює тривалий відпочинок і відновлює {dice} кісток здоров'я.",
-  "DND5E.LongRestResultHitPoints": "{name} здійснює тривалий відпочинок і відновлює {health} пунктів здоров'я.",
-  "DND5E.LongRestResultShort": "{name} здійснює тривалий відпочинок.",
+  "DND5E.Loyalty": "Loyalty",
   "DND5E.MagicalBonus": "Magical Bonus",
   "DND5E.Materials": "Materials",
   "DND5E.Max": "Макс",
@@ -1943,9 +2833,43 @@
   "DND5E.Normal": "Звичайний",
   "DND5E.NotProficient": "Немає майстерності",
   "DND5E.Notes": "Notes",
-  "DND5E.NPC": "НІП",
+  "DND5E.NPC": {
+    "Label": "NPC",
+    "FIELDS": {
+      "traits": {
+        "important": {
+          "hint": "Important NPCs track death saves, hit dice, and loyalty (if enabled). Any NPC with class levels is considered important regardless of this setting.",
+          "label": "Important NPC"
+        }
+      }
+    },
+    "SECTIONS": {
+      "Actions": "Actions",
+      "BonusActions": "Bonus Actions",
+      "LegendaryActions": "Legendary Actions",
+      "Reactions": "Reactions",
+      "Traits": "Traits"
+    }
+  },
+  "DND5E.NUMBER": {
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine"
+  },
   "DND5E.Number": "Number",
   "DND5E.OtherFormula": "Інша формула",
+  "DND5E.ORDINAL": {
+    "one": "{number}st",
+    "two": "{number}nd",
+    "few": "{number}rd",
+    "other": "{number}th"
+  },
   "DND5E.PactMagic": "Магія договору",
   "DND5E.Passive": "Пасивна",
   "DND5E.PassivePerception": "Passive Perception",
@@ -1994,9 +2918,14 @@
     "Header": "Feature Prerequisites",
     "FIELDS": {
       "prerequisites": {
+        "label": "Prerequisites",
         "level": {
           "label": "Required Level",
           "hint": "Character or class level required to select this feature when levelling up."
+        },
+        "repeatable": {
+          "hint": "This feature can be chosen more than once.",
+          "label": "Repeatable"
         }
       }
     }
@@ -2004,9 +2933,11 @@
   "DND5E.Price": "Ціна",
   "DND5E.Proficiency": "Майстерність",
   "DND5E.ProficiencyBonus": "Proficiency Bonus",
+  "DND5E.ProficiencyBonusAbbr": "PB",
   "DND5E.ProficiencyConfigurationHint": "Configure proficiency and bonuses.",
   "DND5E.ProficiencyConfigureTitle": "Configure {label}",
   "DND5E.ProficiencyLevel": "Рівень майстерності",
+  "DND5E.ProficiencyOther": "Other",
   "DND5E.Proficient": "Опановано",
   "DND5E.Properties": "Властивості",
   "DND5E.PropertyBase": "Базовий",
@@ -2016,7 +2947,8 @@
   "DND5E.QuantityAbbr": "Qty",
   "DND5E.QuantityFormula": "Quantity Formula",
   "DND5E.QuantityRoll": "Roll Quantities",
-  "DND5E.RacialTraits": "Расові риси",
+  "DND5E.RacialTraits": "Species Traits",
+  "DND5E.RacialTraitsLegacy": "Racial Traits",
   "DND5E.RANGE": {
     "FIELDS": {
       "range": {
@@ -2045,6 +2977,10 @@
           "hint": "Value of the range in the specified units, if applicable."
         }
       }
+    },
+    "Formatted": {
+      "Range": "range {range}",
+      "Reach": "reach {reach}"
     }
   },
   "DND5E.Range": "Дальність",
@@ -2057,11 +2993,13 @@
   "DND5E.ReactionAbbr": "R",
   "DND5E.ReactionPl": "Реакції",
   "DND5E.Recharge": "Перезарядка",
+  "DND5E.RechargeLong": "Recharge after a Long Rest",
+  "DND5E.RechargeShort": "Recharge after a Short or Long Rest",
   "DND5E.Recovery": "Recovery",
   "DND5E.RecoveryFormula": "Recovery Formula",
   "DND5E.RequiredMaterials": "Необхідні Матеріали",
   "DND5E.Requirements": "Вимоги",
-  "DND5E.Resistances": "Resistances",
+  "DND5E.Resistances": "О́пори",
   "DND5E.Resources": "Resources",
   "DND5E.ResourceLabel": "Label",
   "DND5E.ResourceMax": "Resource Maximum",
@@ -2069,11 +3007,65 @@
   "DND5E.ResourcePrimary": "Ресурс 1",
   "DND5E.ResourceSecondary": "Ресурс 2",
   "DND5E.ResourceTertiary": "Ресурс 3",
-  "DND5E.Rest": "Відпочинок",
-  "DND5E.RestL": "Т. Відп.",
-  "DND5E.RestS": "К. Відп.",
+  "DND5E.REST": {
+    "Configuration": "Rest Configuration",
+    "HitDice": {
+      "AutoSpend": {
+        "Hint": "Automatically spend hit dice until they run out or health is full.",
+        "Label": "Auto Spend HD"
+      },
+      "None": "No Hit Dice remaining to roll during this rest.",
+      "Select": "Select Dice to Roll"
+    },
+    "Label": "Rest",
+    "Long": {
+      "Abbreviation": "LR",
+      "Hint": {
+        "Group": "On a long rest group members will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
+        "GroupLegacy": "On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
+        "Normal": "On a long rest you will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
+        "NormalLegacy": "On a long rest you will recover hit points, half your maximum hit dice, class resources, limited use item charges, and spell slots."
+      },
+      "Label": "Long Rest",
+      "LabelShort": "L. Rest",
+      "Recovery": "Recovers after Long Rest",
+      "Result": {
+        "Full": "{name} takes a long rest and recovers {health} and {dice}.",
+        "HitDice": "{name} takes a long rest and recovers {dice}.",
+        "HitPoints": "{name} takes a long rest and recovers {health}.",
+        "Short": "{name} takes a long rest."
+      }
+    },
+    "NewDay": {
+      "Hint": "Recover limited use abilities which recharge at dusk, dawn, or on a new day.",
+      "Label": "New Day"
+    },
+    "Short": {
+      "Abbreviation": "SR",
+      "Hint": {
+        "Group": "On a short rest group members can spend Hit Dice and will recover item uses.",
+        "Normal": "On a short rest you may spend remaining Hit Dice and recover item uses."
+      },
+      "Label": "Short Rest",
+      "LabelShort": "S. Rest",
+      "Recovery": "Recovers after Short Rest",
+      "Result": {
+        "Full": "{name} takes a short rest spending {dice} to recover {health}.",
+        "Short": "{name} takes a short rest."
+      }
+    }
+  },
   "DND5E.Ritual": "Ритуал",
   "DND5E.RitualAbbr": "Р",
+  "DND5E.ROLL": {
+    "Range": {
+      "Label": "Roll Range",
+      "Maximum": "Maximum Roll",
+      "Minimum": "Minimum Roll"
+    },
+    "Section": "{label} Rolls",
+    "Status": "Status"
+  },
   "DND5E.Roll": "Кидок",
   "DND5E.RollConfiguration": {
     "Title": "Configure Roll",
@@ -2105,11 +3097,9 @@
   "DND5E.MovementAir": "Air",
   "DND5E.MovementSpeeds": "Movement Speeds",
   "DND5E.MovementUnits": "Одиниці Виміру",
-  "DND5E.NewDay": "Це Новий День?",
-  "DND5E.NewDayHint": "Відновити здібності з обмеженням \"в день\"?",
   "DND5E.SAVE": {
     "Title": {
-      "one": "Save",
+      "one": "Рятунок",
       "other": "Saves"
     },
     "FIELDS": {
@@ -2136,8 +3126,8 @@
       "save": {
         "label": "Save Details",
         "ability": {
-          "label": "Challenge Ability",
-          "hint": "Ability that must be rolled to attempt to save."
+          "label": "Challenge Abilities",
+          "hint": "Abilities that may be rolled to attempt to save."
         },
         "dc": {
           "label": "Difficulty Class",
@@ -2203,6 +3193,7 @@
   "DND5E.SavingThrow": "Рятівний Кидок",
   "DND5E.SavingThrowDC": "DC {dc} {ability} Saving Throw",
   "DND5E.SavingThrowRoll": "Roll {ability} Saving Throw",
+  "DND5E.SavingThrowShort": "Save",
   "DND5E.SaveDC": "КС {dc} {ability}",
   "DND5E.SavePromptTitle": "Рятівний Кидок {ability}",
   "DND5E.ScalingFormula": "Формула Підвищення Рівня",
@@ -2217,18 +3208,6 @@
   "DND5E.SchoolIll": "Ілюзія",
   "DND5E.SchoolNec": "Некромантія",
   "DND5E.SchoolTrs": "Перетворення",
-  "DND5E.ShortRest": "Короткий Відпочинок",
-  "DND5E.ShortRestNormal": "Короткий Відпочинок (1 година)",
-  "DND5E.ShortRestGritty": "Короткий Відпочинок (8 годин)",
-  "DND5E.ShortRestEpic": "Короткий Відпочинок (5 хвилин)",
-  "DND5E.ShortRestOvernight": "Короткий Відпочинок (Новий День)",
-  "DND5E.ShortRestHint": "Здійснити короткий відпочинок? При короткому відпочинку ви можете використовувати Кістки Здоров'я для зцілення та відновити деякі ресурси.",
-  "DND5E.ShortRestHintGroup": "Take a short rest? On a short rest group members can spend Hit Dice and will recover item uses.",
-  "DND5E.ShortRestNoHD": "Не залишилося кісток здоров'я",
-  "DND5E.ShortRestRecovery": "Recovers after Short Rest",
-  "DND5E.ShortRestResult": "{name} здійснює короткий відпочинок, витрачаючи {dice} кісток здоров'я та відновлюючи {health} здоров'я.",
-  "DND5E.ShortRestResultShort": "{name} здійснює короткий відпочинок.",
-  "DND5E.ShortRestSelect": "Виберіть кістку здоров'я",
   "DND5E.Size": "Розмір",
   "DND5E.SizeGargantuan": "Гігантський",
   "DND5E.SizeGargantuanAbbr": "Gt",
@@ -2242,6 +3221,19 @@
   "DND5E.SizeSmallAbbr": "Sm",
   "DND5E.SizeTiny": "Крихітний",
   "DND5E.SizeTinyAbbr": "Tn",
+  "DND5E.SKILL": {
+    "SECTIONS": {
+      "Details": "{label} Details",
+      "Bonuses": {
+        "Label": "{label} Bonuses",
+        "Hint": "These bonuses apply to passive scores & checks made with {label}."
+      },
+      "Global": {
+        "Label": "Global Bonuses",
+        "Hint": "These bonuses apply to checks made with any skill."
+      }
+    }
+  },
   "DND5E.Skill": "Skill",
   "DND5E.Skills": "Skills",
   "DND5E.SkillAcr": "Акробатика",
@@ -2262,7 +3254,7 @@
   "DND5E.SkillSlt": "Спритність Рук",
   "DND5E.SkillSte": "Непомітність",
   "DND5E.SkillSur": "Виживання",
-  "DND5E.SkillPromptTitle": "Перевірка {skill}",
+  "DND5E.SkillPromptTitle": "{ability} ({skill}) Check",
   "DND5E.SkillConfigureTitle": "Налаштувати {skill}",
   "DND5E.SkillConfigure": "Налаштувати навичку",
   "DND5E.SkillsConfig": "Configure Skills",
@@ -2319,11 +3311,12 @@
   "DND5E.Species": {
     "Label": "Species",
     "Add": "Add Species",
+    "AddLegacy": "Add Race",
     "Features": "Species Features",
+    "FeaturesLegacy": "Race Features",
     "Name": "Species Name"
   },
   "DND5E.Speed": "Швидкість",
-  "DND5E.SpeedConditions": "Speed Conditions",
   "DND5E.SpeedSpecial": "Особливе переміщення",
   "DND5E.SpellAbility": "Чаротворча здібність",
   "DND5E.SpellAbilitySet": "Set as Primary Spellcasting Ability",
@@ -2332,7 +3325,7 @@
   "DND5E.SpellCastConsume": "Використати чарунку?",
   "DND5E.SpellCastNoSlots": "У вас недостатньо чарунок {level} рівня для створення {name}",
   "DND5E.SpellCastNoSlotsLeft": "You have no available spell slots with which to cast {name}!",
-  "DND5E.SpellCastTime": "Casting Time",
+  "DND5E.SpellCastTime": "Час створення",
   "DND5E.SpellCastUpcast": "Створити рівнем",
   "DND5E.SpellcasterLevel": "Рівень чаротворця",
   "DND5E.SpellCastingHeader": "Створення чар",
@@ -2402,6 +3395,7 @@
   "DND5E.SpellSlotN.two": "{n}nd spell slot",
   "DND5E.SpellSlotN.few": "{n}rd spell slot",
   "DND5E.SpellSlotN.other": "{n}th spell slot",
+  "DND5E.SpellSlotTemporary": "Temporary Spell Slot",
   "DND5E.SpellSlotsN.one": "{n}st Level Slots",
   "DND5E.SpellSlotsN.two": "{n}nd Level Slots",
   "DND5E.SpellSlotsN.few": "{n}rd Level Slots",
@@ -2452,7 +3446,7 @@
   "DND5E.SubclassName": "Назва підкласу",
   "DND5E.Subtype": "Subtype",
   "DND5E.SUMMON": {
-    "Title": "Summon",
+    "Title": "Викликати",
     "FIELDS": {
       "bonuses": {
         "ac": {
@@ -2489,6 +3483,10 @@
         "hint": "Summoned creature will be changed to this type. If more than one type is selected, then the player will be able to choose from these types when summoning."
       },
       "match": {
+        "ability": {
+          "label": "Match Ability",
+          "hint": "Specific ability to use when when matching attacks and save DCs."
+        },
         "attacks": {
           "label": "Match Attacks",
           "hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner."
@@ -2503,7 +3501,14 @@
         }
       },
       "profiles": {
-        "label": "Summons Profiles",
+        "count": {
+          "label": "Count"
+        },
+        "cr": {
+          "label": "Challenge Rating",
+          "abbr": "CR",
+          "hint": "Maximum CR of the summoned creature."
+        },
         "FIELDS": {
           "count": {
             "label": "Count"
@@ -2534,6 +3539,28 @@
           "uuid": {
             "label": "Linked Creature"
           }
+        },
+        "label": "Summons Profiles",
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this profile.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "name": {
+          "label": "Display Name",
+          "hint": "Name of the profile displayed in the usage dialog."
+        },
+        "types": {
+          "label": "Creature Types",
+          "hint": "List of creature types from which the summoned creature can be selected."
+        },
+        "uuid": {
+          "label": "Linked Creature"
         }
       },
       "summon": {
@@ -2561,7 +3588,7 @@
     },
     "Action": {
       "Place": "Place Summons",
-      "Summon": "Summon",
+      "Summon": "Викликати",
       "View": "View Summon"
     },
     "CreatureChanges": {
@@ -2598,6 +3625,13 @@
   "DND5E.Supply": "Припаси",
   "DND5E.Suppressed": "Suppressed",
   "DND5E.TARGET": {
+    "Action": {
+      "PlaceTemplate": "Place Measured Template"
+    },
+    "Count": {
+      "Any": "Any",
+      "Every": "Every"
+    },
     "FIELDS": {
       "target": {
         "label": "Targeting",
@@ -2661,8 +3695,156 @@
         }
       }
     },
-    "Action": {
-      "PlaceTemplate": "Place Measured Template"
+    "Formatted": "{count} {type}",
+    "Type": {
+      "Ally": {
+        "Label": "Ally",
+        "Counted": {
+          "any": "any allies",
+          "every": "every ally",
+          "one": "{number} ally",
+          "other": "{number} allies"
+        }
+      },
+      "Any": {
+        "Label": "Any"
+      },
+      "Circle": {
+        "Label": "Circle",
+        "Counted": {
+          "one": "{number} circle",
+          "other": "{number} circles"
+        }
+      },
+      "Cone": {
+        "Label": "Cone",
+        "Counted": {
+          "one": "{number} cone",
+          "other": "{number} cones"
+        }
+      },
+      "Creature": {
+        "Label": "Creature",
+        "Counted": {
+          "any": "any creatures",
+          "every": "every creature",
+          "one": "{number} creature",
+          "other": "{number} creatures"
+        }
+      },
+      "CreatureOrObject": {
+        "Label": "Creature or Object",
+        "Counted": {
+          "any": "any creatures or objects",
+          "every": "every creature or object",
+          "one": "{number} creature or object",
+          "other": "{number} creatures or objects"
+        }
+      },
+      "Cube": {
+        "Label": "Cube",
+        "Counted": {
+          "one": "{number} cube",
+          "other": "{number} cubes"
+        }
+      },
+      "Cylinder": {
+        "Label": "Cylinder",
+        "Counted": {
+          "one": "{number} cylinder",
+          "other": "{number} cylinders"
+        }
+      },
+      "Emanation": {
+        "Label": "Emanation",
+        "Counted": {
+          "one": "{number} emanation",
+          "other": "{number} emanations"
+        }
+      },
+      "Enemy": {
+        "Label": "Enemy",
+        "Counted": {
+          "any": "any enemies",
+          "every": "every enemy",
+          "one": "{number} enemy",
+          "other": "{number} enemies"
+        }
+      },
+      "Line": {
+        "Label": "Line",
+        "Counted": {
+          "one": "{number} line",
+          "other": "{number} lines"
+        }
+      },
+      "Object": {
+        "Label": "Object",
+        "Counted": {
+          "any": "any objects",
+          "every": "every object",
+          "one": "{number} object",
+          "other": "{number} objects"
+        }
+      },
+      "Radius": {
+        "Label": "Radius",
+        "Counted": {
+          "one": "{number} radius",
+          "other": "{number} radii"
+        }
+      },
+      "Self": {
+        "Label": "Self"
+      },
+      "Sphere": {
+        "Label": "Sphere",
+        "Counted": {
+          "one": "{number} sphere",
+          "other": "{number} spheres"
+        }
+      },
+      "Space": {
+        "Label": "Space",
+        "Counted": {
+          "any": "any spaces",
+          "every": "every space",
+          "one": "{number} space",
+          "other": "{number} spaces"
+        }
+      },
+      "Square": {
+        "Label": "Square",
+        "Counted": {
+          "one": "{number} square",
+          "other": "{number} squares"
+        }
+      },
+      "Target": {
+        "Label": "Target",
+        "Counted": {
+          "any": "any targets",
+          "every": "every target",
+          "one": "{number} target",
+          "other": "{number} targets"
+        }
+      },
+      "Wall": {
+        "Label": "Wall",
+        "Counted": {
+          "one": "{number} wall",
+          "other": "{number} walls"
+        }
+      },
+      "WillingCreature": {
+        "Label": "Willing Creature",
+        "Counted": {
+          "any": "any willing creatures",
+          "every": "every willing creature",
+          "one": "{number} willing creature",
+          "other": "{number} willing creatures"
+        }
+      }
     },
     "Warning": {
       "PlaceTemplate": "Failed to place measured template."
@@ -2670,32 +3852,12 @@
   },
   "DND5E.Target": "Ціль",
   "DND5E.TargetPl": "Targets",
-  "DND5E.TargetAlly": "Союзник",
-  "DND5E.TargetAny": "Any",
-  "DND5E.TargetCircle": "Circle",
-  "DND5E.TargetCone": "Конус",
-  "DND5E.TargetCreature": "Істота",
-  "DND5E.TargetCreatureOrObject": "Creature or Object",
-  "DND5E.TargetCube": "Куб",
-  "DND5E.TargetCylinder": "Циліндр",
-  "DND5E.TargetEnemy": "Ворог",
-  "DND5E.TargetEvery": "Every",
-  "DND5E.TargetLine": "Лінія",
-  "DND5E.TargetObject": "Об'єкт",
-  "DND5E.TargetRadius": "Радіус",
-  "DND5E.TargetRadiusLegacy": "Radius",
-  "DND5E.TargetSelf": "На себе",
-  "DND5E.TargetSpace": "Простір",
-  "DND5E.TargetSphere": "Сфера",
-  "DND5E.TargetSquare": "Квадрат",
   "DND5E.TargetType": "Target Type",
   "DND5E.TargetTypeArea": "Area",
   "DND5E.TargetTypeIndividual": "Individual",
   "DND5E.TargetUnits": "Area of Effect Units",
   "DND5E.TargetValue": "Target Length or Count",
-  "DND5E.TargetWall": "Стіна",
   "DND5E.TargetWidth": "Ширина лінії",
-  "DND5E.TargetWilling": "Willing Creature",
   "DND5E.TemplatePrompt": "Template Prompt",
   "DND5E.TemplatePromptTooltip": "If unchecked, the prompt for placing a Measured Template will be suppressed.",
   "DND5E.Temp": "Тимчасове",
@@ -2705,7 +3867,7 @@
   "DND5E.TimeDisp": "Until Dispelled",
   "DND5E.TimeDispTrig": "Until Dispelled or Triggered",
   "DND5E.TimeHour": "Години",
-  "DND5E.TimeHourAbbr": "h",
+  "DND5E.TimeHourAbbr": "год",
   "DND5E.TimeInst": "Миттєво",
   "DND5E.TimeMinute": "Хвилин",
   "DND5E.TimeMinuteAbbr": "m",
@@ -2740,6 +3902,19 @@
     "Title": "Dynamic Ring"
   },
   "DND5E.ToggleDescription": "Toggle Description",
+  "DND5E.TOOL": {
+    "SECTIONS": {
+      "Details": "{label} Details",
+      "Bonuses": {
+        "Label": "{label} Bonuses",
+        "Hint": "These bonuses apply to checks made with {label}."
+      },
+      "Global": {
+        "Label": "Global Bonuses",
+        "Hint": "These bonuses apply to checks made with any tool."
+      }
+    }
+  },
   "DND5E.ToolArtisans": "Ремісничі інструменти",
   "DND5E.ToolBonuses": "Tool Bonuses",
   "DND5E.ToolCheck": "Перевірка інструменту",
@@ -2771,8 +3946,10 @@
   "DND5E.TraitConfigChooseWrapper": "Choose {choices}",
   "DND5E.TraitDIPlural.one": "Damage Immunity",
   "DND5E.TraitDIPlural.other": "Damage Immunities",
+  "DND5E.TraitDMPlural.one": "Damage Modification",
+  "DND5E.TraitDMPlural.other": "Damage Modifications",
   "DND5E.TraitDRPlural.one": "Damage Resistance",
-  "DND5E.TraitDRPlural.other": "Damage Resistances",
+  "DND5E.TraitDRPlural.other": "Опір до ушкоджень",
   "DND5E.TraitDVPlural.one": "Damage Vulnerability",
   "DND5E.TraitDVPlural.other": "Damage Vulnerabilities",
   "DND5E.TraitGenericPlural.one": "Trait",
@@ -2793,6 +3970,21 @@
   "DND5E.TraitWeaponProf": "Опанована зброя",
   "DND5E.Traits": "Traits",
   "DND5E.TraitsChosen": "Chosen Traits",
+  "DND5E.Treasure": {
+    "Categories": {
+      "Any": "Any",
+      "Arcana": "Arcana",
+      "Armaments": "Armaments",
+      "Implements": "Implements",
+      "Individual": "Individual",
+      "None": "None",
+      "Relics": "Relics"
+    },
+    "Configuration": {
+      "Label": "Treasure",
+      "Title": "Configure Treasure"
+    }
+  },
   "DND5E.Trigger": "Trigger",
   "DND5E.Type": "Тип",
   "DND5E.Uncrewed": "Без екіпажу",
@@ -2801,6 +3993,140 @@
   "DND5E.Unidentified.Notice": "You must identify this item to learn its details.",
   "DND5E.Unidentified.Title": "Unidentified",
   "DND5E.Unidentified.Value": "???",
+  "DND5E.Unit": "Unit",
+  "DND5E.UNITS": {
+    "DISTANCE": {
+      "Label": "Distance Units",
+      "Foot": {
+        "Label": "Feet",
+        "Abbreviation": "ft"
+      },
+      "Kilometer": {
+        "Label": "Kilometers",
+        "Abbreviation": "km"
+      },
+      "Meter": {
+        "Label": "Meters",
+        "Abbreviation": "m"
+      },
+      "Mile": {
+        "Label": "Miles",
+        "Abbreviation": "mi"
+      }
+    },
+    "TIME": {
+      "Day": {
+        "Label": "Day"
+      },
+      "Hour": {
+        "Label": "Година"
+      },
+      "Minute": {
+        "Label": "Minute"
+      },
+      "Month": {
+        "Label": "Month"
+      },
+      "Round": {
+        "Label": "Round",
+        "Counted": {
+          "narrow": "{number}r",
+          "one": "{number} round",
+          "other": "{number} rounds"
+        }
+      },
+      "Second": {
+        "Label": "Second"
+      },
+      "Turn": {
+        "Label": "Turn",
+        "Abbreviation": "t",
+        "Counted": {
+          "narrow": "{number}t",
+          "one": "{number} turn",
+          "other": "{number} turns"
+        }
+      },
+      "Week": {
+        "Label": "Week"
+      },
+      "Year": {
+        "Label": "Year"
+      }
+    },
+    "VOLUME": {
+      "Label": "Volume Units",
+      "CubicFoot": {
+        "Label": "Cubic Feet",
+        "Abbreviation": "ft³",
+        "Counted": {
+          "narrow": {
+            "one": "{number}ft³",
+            "other": "{number}ft³"
+          },
+          "short": {
+            "one": "{number} cu ft",
+            "other": "{number} cu ft"
+          },
+          "long": {
+            "one": "{number} cubic foot",
+            "other": "{number} cubic feet"
+          }
+        }
+      },
+      "Liter": {
+        "Label": "Liters",
+        "Abbreviation": "L"
+      }
+    },
+    "WEIGHT": {
+      "Label": "Weight Units",
+      "Kilogram": {
+        "Label": "Kilogram",
+        "Abbreviation": "kg"
+      },
+      "Megagram": {
+        "Label": "Tonnes",
+        "Abbreviation": "t",
+        "Counted": {
+          "narrow": {
+            "one": "{number}t",
+            "other": "{number}t"
+          },
+          "short": {
+            "one": "{number} t",
+            "other": "{number} t"
+          },
+          "long": {
+            "one": "{number} tonne",
+            "other": "{number} tonnes"
+          }
+        }
+      },
+      "Pound": {
+        "Label": "Pounds",
+        "Abbreviation": "lb"
+      },
+      "Ton": {
+        "Label": "Tons",
+        "Abbreviation": "tn",
+        "Counted": {
+          "narrow": {
+            "one": "{number}tn",
+            "other": "{number}tn"
+          },
+          "short": {
+            "one": "{number} tn",
+            "other": "{number} tn"
+          },
+          "long": {
+            "one": "{number} ton",
+            "other": "{number} tons"
+          }
+        }
+      }
+    }
+  },
   "DND5E.Unknown": "Невідомо",
   "DND5E.Unlimited": "Необмежено",
   "DND5E.USAGE": {
@@ -2818,20 +4144,8 @@
   "DND5E.UsesMax": "Maximum Uses",
   "DND5E.UsesPeriod": "Recovery Period",
   "DND5E.UsesPeriods": {
-    "AtWill": "At Will",
     "Charges": "Charges",
-    "ChargesAbbreviation": "Charges",
-    "Dawn": "Dawn",
-    "DawnAbbreviation": "Dawn",
-    "Day": "Day",
-    "DayAbbreviation": "Day",
-    "Dusk": "Dusk",
-    "DuskAbbreviation": "Dusk",
-    "Lr": "Long Rest",
-    "LrAbbreviation": "LR",
-    "Never": "Never",
-    "Sr": "Short Rest",
-    "SrAbbreviation": "SR"
+    "ChargesAbbreviation": "Charges"
   },
   "DND5E.USES": {
     "FIELDS": {
@@ -2870,10 +4184,47 @@
         "Create": "Create Recovery Profile",
         "Delete": "Delete Recovery Profile"
       },
+      "Combat": "Combat",
+      "Never": "Never",
+      "Period": {
+        "Dawn": {
+          "Label": "Dawn"
+        },
+        "Day": {
+          "Label": "Day"
+        },
+        "Dusk": {
+          "Label": "Dusk"
+        },
+        "Initiative": {
+          "Label": "Initiative"
+        },
+        "LongRest": {
+          "Label": "Long Rest",
+          "Abbreviation": "LR"
+        },
+        "ShortRest": {
+          "Label": "Short Rest",
+          "Abbreviation": "SR"
+        },
+        "Turn": {
+          "Label": "Each Turn"
+        },
+        "TurnEnd": {
+          "Label": "End of Turn",
+          "Abbreviation": "Turn End"
+        },
+        "TurnStart": {
+          "Label": "Start of Turn",
+          "Abbreviation": "Turn Start"
+        }
+      },
       "Recharge": {
         "Label": "Recharge",
         "Range": "Recharge {range}"
       },
+      "Special": "Special",
+      "Time": "Time",
       "Type": {
         "Formula": "Custom Formula",
         "LoseAll": "Lose All Uses",
@@ -2882,10 +4233,10 @@
     }
   },
   "DND5E.UTILITY": {
-    "Title": "Utility",
+    "Title": "Use",
     "FIELDS": {
       "roll": {
-        "label": "Utility Roll",
+        "label": "Roll",
         "formula": {
           "label": "Roll Formula",
           "hint": "Formula for an arbitrary roll."
@@ -2895,7 +4246,7 @@
           "hint": "Display name for the rolling button."
         },
         "prompt": {
-          "label": "Utility Roll Prompt",
+          "label": "Roll Prompt",
           "hint": "Should the roll configuration dialog be displayed when rolling?"
         },
         "visible": {
@@ -2906,6 +4257,42 @@
     }
   },
   "DND5E.Value": "Value",
+  "DND5E.VEHICLE": {
+    "MOUNTABLE": {
+      "FIELDS": {
+        "cover": {
+          "label": "Cover",
+          "hint": "Cover provided to crew operating this equipment."
+        },
+        "crewed": {
+          "label": "Crewed"
+        },
+        "hp": {
+          "label": "Hit Points",
+          "conditions": {
+            "label": "Health Conditions"
+          },
+          "dt": {
+            "label": "Damage Threshold"
+          },
+          "max": {
+            "label": "Max HP"
+          },
+          "value": {
+            "label": "Current HP"
+          }
+        },
+        "speed": {
+          "conditions": {
+            "label": "Speed Conditions"
+          },
+          "value": {
+            "label": "Speed"
+          }
+        }
+      }
+    }
+  },
   "DND5E.Vehicle": "Транспорт",
   "DND5E.VehicleActions": "Actions",
   "DND5E.VehicleActionsHint": "Дії з повним екіпажем",
@@ -2950,6 +4337,11 @@
           "label": "Ammunition Type"
         }
       },
+      "armor": {
+        "value": {
+          "label": "Armor Class"
+        }
+      },
       "damage": {
         "hint": "Intrinsic damage dice from the weapon. Ability modifier and additional damage parts will be provided automatically when attacking."
       },
@@ -2977,31 +4369,11 @@
   "DND5E.WeaponMartialProficiency": "Бойова зброя",
   "DND5E.WeaponMartialR": "Бойова далекобійна",
   "DND5E.WeaponNatural": "Природна",
-  "DND5E.WeaponOtherProficiency": "Other",
   "DND5E.WeaponSiege": "Облогова зброя",
   "DND5E.WeaponSimpleM": "Проста ближнього бою",
   "DND5E.WeaponSimpleProficiency": "Проста зброя",
   "DND5E.WeaponSimpleR": "Проста далекобійна",
   "DND5E.Weight": "Вага",
-  "DND5E.WeightUnit": {
-    "Label": "Weight Units",
-    "Kilograms": {
-      "Label": "Kilograms",
-      "Abbreviation": "kg"
-    },
-    "Megagrams": {
-      "Label": "Tonnes",
-      "Abbreviation": "t"
-    },
-    "Pounds": {
-      "Label": "Pounds",
-      "Abbreviation": "lb"
-    },
-    "Tons": {
-      "Label": "Tons",
-      "Abbreviation": "tn"
-    }
-  },
   "DND5E.WhisperedTo": "Whispered to",
   "DND5E.Wiki": "Wiki",
   "DND5E.available": "доступно",
@@ -3011,15 +4383,22 @@
   "DND5E.spell": "чари",
   "EDITOR.DND5E.Inline": {
     "ApplyStatus": "Apply Status to Selected Tokens",
+    "AttackExtended": "<em>{type}</em>: {parts}",
+    "AttackLong": "{formula} to hit",
+    "AttackShort": "{formula}",
     "AwardEach": "{award} each",
     "CheckShort": "{check}",
     "CheckLong": "{check} check",
+    "DamageExtended": "<em>Hit:</em> {damage} damage",
+    "DamageDouble": "{first} plus {second}",
     "DamageShort": "{formula} {type}",
     "DamageLong": "{average} ({formula}) {type}",
     "DC": "DC {dc} {check}",
     "DCPassiveShort": "DC {dc} passive {check}",
     "DCPassiveLong": "passive {check} score of {dc} or higher",
     "NoActorWarning": "No selected or assigned actor could be found to execute this roll.",
+    "PassiveShort": "passive {check}",
+    "PassiveLong": "passive {check} score",
     "RequestRoll": "Request Roll",
     "RollRequest": "Roll Request",
     "SaveShort": "{save}",
@@ -3184,9 +4563,11 @@
       "NoValidSubclass": "No valid subclass selected, press the edit button to add a subclass."
     }
   },
+  "KEYBINDINGS.DND5E.DragCopy": "Force Copy when Dragging Document",
+  "KEYBINDINGS.DND5E.DragMove": "Force Move when Dragging Document",
   "KEYBINDINGS.DND5E.SkipDialogNormal": "Skip Dialog",
   "KEYBINDINGS.DND5E.SkipDialogAdvantage": "Skip Dialog (roll with Advantage/Critical)",
-  "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "Skip Dialog (roll with Disadvantage)",
+  "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "Skip Dialog (roll with Disadvantage/Non-Critical)",
   "MACRO.5eMissingTargetWarn": "Ваш контрольований актор '{actor}' не має {type} з назвою '{name}'.",
   "MACRO.5eMultipleTargetsWarn": "Ваш контрольований актор '{actor}' має більше одного {type} з назвою '{name}'. Буде обраний перший предмет.",
   "MACRO.5eNoActorSelected": "Не знайдено вибраних або прив'язаних акторів для використання макроса.",
@@ -3200,69 +4581,12 @@
   "SETTINGS.5eAutoCollapseCardN": "Згортати картки предметів в чаті",
   "SETTINGS.5eAutoSpellTemplateL": "При створенні чарів буде автоматично створюватися вимірювальний шаблон (гравець повинен мати роль TRUSTED або вищу)",
   "SETTINGS.5eAutoSpellTemplateN": "Завжди розміщувати шаблон чарів",
-  "SETTINGS.5eAttackRollVisibility": {
-    "Name": "Attack Result Visibility",
-    "Hint": "Control visibility of attack roll results in chat cards for players.",
-    "All": "Show results & target ACs",
-    "HideAC": "Show only results",
-    "None": "Hide all"
-  },
-  "SETTINGS.5eChallengeVisibility": {
-    "Name": "Challenge Visibility",
-    "Hint": "Control what roll DCs are visible to the players and whether successes/failures are highlighted.",
-    "All": "Show all",
-    "None": "Hide all",
-    "Player": "Show only from other players"
-  },
-  "SETTINGS.5eCriticalMaxDiceN": "Критична шкода максимізує значення кістки шкоди",
-  "SETTINGS.5eCriticalMaxDiceL": "Зробіть критичний удар більш смертельним, максимізуючи значення на кістці шкоди.",
-  "SETTINGS.5eCriticalModifiersN": "Критична шкода подвоює модифікатори",
-  "SETTINGS.5eCriticalModifiersL": "Зробіть критичний удар більш смертельним, помноживши інші модифікатори на додачу до кісток.",
-  "SETTINGS.5eCurWtL": "Монети впливають на навантаження згідно PHB ст. 143.",
-  "SETTINGS.5eCurWtN": "Враховувати вагу валюти",
-  "SETTINGS.5eDiagEuclidean": "Евклідова (7.07 фт.)",
-  "SETTINGS.5eDiagL": "Налаштуйте, які правила руху по діагоналі слід використовувати для ігор у цій системі.",
-  "SETTINGS.5eDiagN": "Правила діагонального Руху",
-  "SETTINGS.5eDiagPHB": "PHB: Без діагоналей (5/5/5)",
-  "SETTINGS.5eDiagDMG": "DMG: Альтернативний (5/10/5)",
-  "SETTINGS.5eEncumbrance": {
-    "Hint": "Enable automatic tracking of encumbrance and the application of status effects for characters carrying too much.",
-    "Name": "Encumbrance Tracking",
-    "None": "None",
-    "Normal": "Normal (max carrying capacity)",
-    "Variant": "Variant (encumbered & heavily encumbered)"
-  },
-  "SETTINGS.5eFeatsL": "Allow players to choose a feat rather than taking an ability score improvement during class advancement.",
-  "SETTINGS.5eFeatsN": "Allow Feats",
-  "SETTINGS.5eHonorL": "Увімкнути використання необов'язкового правила Честі. Після цього потрібно перезавантажити світ.",
-  "SETTINGS.5eHonorN": "Значення честі",
-  "SETTINGS.5eInitTBL": "Використовувати показник Спритності для вирішення нічиєї при перевірці ініціативи.",
-  "SETTINGS.5eInitTBN": "Додавати Спритність до Ініціативи",
-  "SETTINGS.5eMetricN": "Використовувати метричну систему для ваги",
-  "SETTINGS.5eMetricL": "Заміна системи ваг на метричні, а саме фунти на кілограми та оновити навантаження для розрахунку в метричній системі.",
   "SETTINGS.5eNoAdvancementsN": "Вимкнути автоматичне підвищення рівня",
   "SETTINGS.5eNoAdvancementsL": "Не показувати вікно підвищення рівня і вибору варіантів розвитку персонажа.",
   "SETTINGS.5eNoConcentrationN": "Disable concentration tracking",
   "SETTINGS.5eNoConcentrationL": "Disable the system's automated tracking of concentration.",
-  "SETTINGS.5eProfBonus": "PHB: Бонус (+2, +3, +4, +5, +6)",
-  "SETTINGS.5eProfDice": "DMG: Кістка (1d4, 1d6, 1d8, 1d10, 1d12)",
-  "SETTINGS.5eProfL": "Налаштуйте модифікатор майстерності для використання фіксованого бонусу або кидка кістки. Перезавантажте світ для застосування змін.",
-  "SETTINGS.5eProfN": "Варіанти опанування",
-  "SETTINGS.5eReset": "Скинути",
-  "SETTINGS.5eRestL": "Налаштуйте, які правила відпочинку слід використовувати у вашій грі.",
-  "SETTINGS.5eRestN": "Варіанти відпочинку",
-  "SETTINGS.5eRestPHB": "Книга Гравця (ТВ: 8 годин, КВ: 1 година)",
-  "SETTINGS.5eRestGritty": "Жорстокий Реалізм (ТВ: 7 днів, КВ: 8 годин)",
-  "SETTINGS.5eRestEpic": "Епічний Героїзм (ТВ: 1 годину, КВ: 1 хв)",
   "SETTINGS.5eGridAlignedSquareTemplatesL": "When square templates are created as the result of casting a spell or using an item, they will be locked to the grid alignment and unable to be rotated.",
   "SETTINGS.5eGridAlignedSquareTemplatesN": "Grid-Aligned Square Templates",
-  "SETTINGS.5eSanityL": "Увімкнути використання необов'язкової характеристики Розсудливості. Після цього потрібно перезавантажити світ.",
-  "SETTINGS.5eSanityN": "Значення Розсудливості",
-  "SETTINGS.5eUndoChanges": "Скасовувати зміни",
-  "SETTINGS.5eTokenRings": {
-    "Name": "Disable Dynamic Token Rings",
-    "Hint": "Disabling the token ring animations can improve performance."
-  },
   "SETTINGS.DND5E": {
     "ALLOWSUMMONING": {
       "Name": "Allow Summoning",
@@ -3282,16 +4606,72 @@
       "Older": "Collapse Older Trays",
       "Never": "Expand All"
     },
+    "COMBAT": {
+      "Hint": "Various configuration options that affect combat.",
+      "Label": "Configure Combat",
+      "Name": "Combat",
+      "DexTiebreaker": {
+        "Name": "Dexterity Tiebreaker",
+        "Hint": "Append the raw Dexterity ability score to break ties in Initiative."
+      },
+      "InitiativeScore": {
+        "Name": "Initiative Score",
+        "Hint": "Use a creature's initiative score (10 + bonus) rather than rolling for initiative.",
+        "All": "Use Score for Everyone",
+        "None": "Always Roll for Initiative",
+        "NPCs": "Use Score for GM NPCs"
+      }
+    },
+    "CRITICAL": {
+      "Name": "Critical Damage",
+      "MaxDice": {
+        "Name": "Maximize Dice",
+        "Hint": "Make critical hits more deadly by maximizing the values of base damage dice."
+      },
+      "MultiplyModifiers": {
+        "Name": "Multiply Modifiers",
+        "Hint": "Make critical hits more deadly by multiplying non-dice modifiers in addition to rolled dice."
+      }
+    },
     "DEFAULTSKILLS": {
       "Name": "Default Skills",
       "Hint": "Навички за замовчуванням, які з'являються на аркушах НІП незалежно від рівня майстерності."
     },
-    "LEVELING": {
-      "Name": "Leveling Mode",
-      "Hint": "Determine how the players gain new levels.",
-      "NoXP": "Level Advancement without XP",
-      "XP": "Experience Points",
-      "XPBoons": "Experience Points with Epic Boons"
+    "General": "General",
+    "LOYALTY": {
+      "Hint": "Enable optional Loyalty tracking.",
+      "Name": "Loyalty Score"
+    },
+    "METRIC": {
+      "LengthUnits": {
+        "Name": "Use Metric Length Units",
+        "Hint": "Defaults to using meters instead of feet for movement and senses."
+      },
+      "VolumeUnits": {
+        "Name": "Use Metric Volume Units",
+        "Hint": "Defaults to using liters instead of cubic feet for container capacity."
+      },
+      "WeightUnits": {
+        "Name": "Use Metric Weight Units",
+        "Hint": "Replaces all reference to lbs with kgs and updates the encumbrance calculations to use metric weight units."
+      }
+    },
+    "NPCS": {
+      "Name": "NPCs",
+      "AutoRecharge": {
+        "Name": "Recharge Abilities",
+        "Hint": "Roll to recharge NPC abilities automatically at the start of the NPC's turn.",
+        "No": "Do not recharge automatically",
+        "Silent": "Recharge without creating chat card",
+        "Yes": "Recharge and display chat card"
+      },
+      "AutoRollNPCHP": {
+        "Name": "Hit Points",
+        "Hint": "Configure whether to roll for NPC max HP whenever a new token is created.",
+        "No": "Do not roll",
+        "Silent": "Roll without creating chat card",
+        "Yes": "Roll and create chat card"
+      }
     },
     "THEME": {
       "Name": "Theme",
@@ -3302,6 +4682,77 @@
       "Hint": "Change handling of various rules between the 2024 and 2014 rule sets.",
       "Legacy": "Legacy Rules (2014)",
       "Modern": "Modern Rules (2024)"
+    },
+    "VARIANT": {
+      "Hint": "Enable and configure rules variations offered by the system.",
+      "Label": "Configure Variant Rules",
+      "Name": "Variant Rules",
+      "AllowFeats": {
+        "Hint": "Allow players to choose a feat rather than taking an ability score improvement during class advancement when using the Legacy rules.",
+        "Name": "Allow Feats"
+      },
+      "CurrencyWeight": {
+        "Hint": "Carried currency affects character encumbrance.",
+        "Name": "Track Currency Weight"
+      },
+      "Encumbrance": {
+        "Hint": "Enable automatic tracking of encumbrance and the application of status effects for characters carrying too much.",
+        "Name": "Encumbrance Tracking",
+        "None": "None",
+        "Normal": "Normal (max carrying capacity)",
+        "Variant": "Variant (encumbered & heavily encumbered)"
+      },
+      "HonorScore": {
+        "Hint": "Enable the use of the optional Honor ability score.",
+        "Name": "Honor Ability Score"
+      },
+      "LevelingMode": {
+        "Hint": "Determine how the players gain new levels.",
+        "Name": "Leveling Mode",
+        "NoXP": "Level Advancement without XP",
+        "XP": "Experience Points",
+        "XPBoons": "Experience Points with Epic Boons"
+      },
+      "ProficiencyModifier": {
+        "Bonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
+        "Dice": "DMG: Dice (1d4, 1d6, 1d8, 1d10, 1d12)",
+        "Hint": "Configure proficiency modifier to use a fixed bonus or a dice roll.",
+        "Name": "Proficiency Variant"
+      },
+      "Rest": {
+        "Epic": "Епічний Героїзм (ТВ: 1 година, КВ: 1 хвилина)",
+        "Gritty": "Жорстокий Реалізм (ТВ: 7 днів, КВ: 8 годин)",
+        "Hint": "Configure which rest variant should be used for games within this system.",
+        "Name": "Rest Variant",
+        "Normal": "Книга Гравця (ТВ: 8 годин, КВ: 1 година)"
+      },
+      "SanityScore": {
+        "Hint": "Enable the use of the optional Sanity ability score.",
+        "Name": "Sanity Ability Score"
+      }
+    },
+    "VISIBILITY": {
+      "Hint": "Various configuration options that affect player visibility of certain information that the DM may wish to keep secret.",
+      "Label": "Configure Visibility",
+      "Name": "Visibility",
+      "Attack": {
+        "Name": "Attack Result Visibility",
+        "Hint": "Control visibility of attack roll results in chat cards for players.",
+        "All": "Show results & target ACs",
+        "HideAC": "Show only results",
+        "None": "Hide all"
+      },
+      "Challenge": {
+        "All": "Show all",
+        "Hint": "Control what roll DCs are visible to the players and whether successes/failures are highlighted.",
+        "Name": "Challenge Visibility",
+        "None": "Hide all",
+        "Player": "Show only from other players"
+      },
+      "ItemDescriptions": {
+        "Hint": "Hide the descriptions of NPC items from players when posted to chat by the DM. Will only hide the descriptions for items without a Chat Description set.",
+        "Name": "Conceal NPC Descriptions"
+      }
     }
   },
   "SHEETS.DND5E": {
