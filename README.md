@@ -22,13 +22,11 @@
 
 ## Інше
  - [Переклад Інтерфейсу Foundry VTT](https://github.com/roleplaysolovinoiu/Foundryvtt-ua)
- - [Переклад WoD 5e](https://github.com/InqShanila/vtm5e-ukrainian)
- - [Discord сервер «RolePlay Солов'їною»](https://discord.gg/pMTtejFJJv)
 
 [Foundry Shield 12]: https://img.shields.io/badge/Foundry-12-informational?style=flat-square
 [Foundry URL]: https://foundryvtt.com
 
-[Version]: https://img.shields.io/badge/Version-0.9.5-orange?style=flat-square
+[Version]: https://img.shields.io/badge/Version-0.12.1-orange?style=flat-square
 [Version URL]: https://github.com/GMonlineua/Foundry-ua-dnd5e
 
 [MIT License]: https://img.shields.io/badge/License-OGL-green?style=flat-square

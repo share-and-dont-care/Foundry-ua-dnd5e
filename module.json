@@ -20,13 +20,13 @@
   "compatibility": {
     "minimum": 10,
     "verified": 12,
-    "maximum": 12
+    "maximum": 13
   },
   "url": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e",
   "license": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/blob/master/LICENSE.md",
   "readme": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/blob/master/README.md",
-  "manifest": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.11.1/module.json",
-  "download": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.11.1/0.11.1.zip",
+  "manifest": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.12.1/module.json",
+  "download": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.12.1/0.12.1.zip",
   "relationships": {
     "systems": [
       {
@@ -34,7 +34,7 @@
         "type": "system",
         "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
         "compatibility": {
-          "verified": "3.3.1"
+          "verified": "4.3.5"
         }
       }
     ]
