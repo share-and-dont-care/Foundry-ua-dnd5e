@@ -1,7 +1,7 @@
 {
   "DOCUMENT.DND5E": {
     "Activity": "Діяльність",
-    "Advancement": "Advancement",
+    "Advancement": "Розвиток",
     "Warning": {
       "SelectType": "Для створення має бути обраний тип {name}."
     }
@@ -17,7 +17,7 @@
   "TYPES.ActiveEffect.enchantment": "Зачарування",
   "TYPES.ActiveEffect.enchantmentPl": "Зачарування",
   "TYPES.ChatMessage": {
-    "rest": "Rest Message",
+    "rest": "Повідомлення при відпочинку",
     "turn": "Combat Turn Message"
   },
   "TYPES.Item.background": "Передісторія",
@@ -30,8 +30,8 @@
   "TYPES.Item.consumablePl": "Витратники",
   "TYPES.Item.equipment": "Спорядження",
   "TYPES.Item.equipmentPl": "Спорядження",
-  "TYPES.Item.facility": "Facility",
-  "TYPES.Item.facilityPl": "Facilities",
+  "TYPES.Item.facility": "Заклад",
+  "TYPES.Item.facilityPl": "Заклади",
   "TYPES.Item.feat": "Уміння",
   "TYPES.Item.featurePl": "Уміння",
   "TYPES.Item.loot": "Здобич",
@@ -54,23 +54,23 @@
   "DND5E.AbbreviationDC": "КС",
   "DND5E.AbbreviationKg": "кг",
   "DND5E.AbbreviationLR": "ТВ",
-  "DND5E.AbbreviationLevel": "Lvl",
+  "DND5E.AbbreviationLevel": "Рів",
   "DND5E.AbbreviationLbs": "фнт.",
   "DND5E.AbbreviationSR": "КВ",
   "DND5E.ABILITY": {
     "Configure": {
-      "Title": "Configure {ability}"
+      "Title": "Налаштування {ability}"
     },
     "SECTIONS": {
       "Bonuses": {
-        "Label": "{ability} Bonuses",
+        "Label": "Бонуси {ability}",
         "Hint": "These bonuses apply to checks & saves made with {ability}."
       },
       "Global": {
         "Label": "Глобальні бонуси",
         "Hint": "Ці бонуси застосовуються до перевірок і ряткидків з будь-якою характеристикою."
       },
-      "Score": "{ability} Score"
+      "Score": "Значення здібності {ability}"
     }
   },
   "DND5E.Ability": "Здібність",
@@ -92,13 +92,13 @@
   "DND5E.AbilitySan": "Розсудливість",
   "DND5E.AbilitySanAbbr": "роз",
   "DND5E.AbilityScore": "Значення здібності",
-  "DND5E.AbilityScoreShort": "Score",
+  "DND5E.AbilityScoreShort": "Знач",
   "DND5E.AbilityScorePl": "Значення здібностей",
   "DND5E.AbilityScoreL": "Значення здібності {ability}",
   "DND5E.AbilityScoreMax": "Максимальне значення здібності",
   "DND5E.AbilityScoreMaxShort": "Максимум",
   "DND5E.AbilityModifier": "Модифікатор здібності",
-  "DND5E.AbilityModifierShort": "Mod",
+  "DND5E.AbilityModifierShort": "Мод",
   "DND5E.AbilityPromptText": "Який тип перевірки здібності {ability}?",
   "DND5E.AbilityPromptTitle": "Перевірка здібності {ability}",
   "DND5E.AbilityUseChargesLabel": "{value} зарядів",
@@ -168,7 +168,7 @@
       "Legendary": {
         "Counted": {
           "one": "Легендарна дія {number}",
-          "other": "{number} legendary actions"
+          "other": "{number} легендарних дій"
         }
       },
       "LongRest": {
@@ -246,7 +246,7 @@
   "DND5E.ADVANCEMENT": {
     "AbilityScoreImprovement": {
       "Action": {
-        "Select": "Select Feat"
+        "Select": "Оберіть уміння"
       },
       "CapDisplay": {
         "one": "Максимум {points} очок на здібність",
@@ -297,14 +297,14 @@
       }
     },
     "Action": {
-      "Create": "Create Advancement",
+      "Create": "Створити розвиток",
       "Delete": "Delete Advancement",
       "Duplicate": "Duplicate Advancement",
       "Edit": "Edit Advancement",
       "View": "View Advancement"
     },
     "Config": {
-      "AnyLevel": "Any",
+      "AnyLevel": "Будь-який",
       "Details": "Advancement Details"
     },
     "HitPoints": {
@@ -2267,7 +2267,7 @@
         "hint": "Cover provided to crew by this vehicle feature."
       },
       "properties": {
-        "label": "Feature Properties"
+        "label": "Властивості уміння"
       },
       "requirements": {
         "label": "Requirements"
@@ -2640,7 +2640,7 @@
   "DND5E.ItemEquipmentType": "Тип спорядження",
   "DND5E.ItemEquipmentUsage": "Використання спорядження",
   "DND5E.ItemFacilityDetails": "Facility Details",
-  "DND5E.ItemFeatureDetails": "Feature Details",
+  "DND5E.ItemFeatureDetails": "Деталі уміння",
   "DND5E.ItemFeatureProperties": "Feature Properties",
   "DND5E.ItemFeatureSubtype": "{category} Type",
   "DND5E.ItemFeatureType": "Feature Type",
@@ -2676,7 +2676,7 @@
       "Special": "Special",
       "StealthDisadvantage": "Stealth Disadvantage",
       "Thrown": "Thrown",
-      "Trait": "Passive Trait",
+      "Trait": "Пасивна риса",
       "TwoHanded": "Two-Handed",
       "Versatile": "Versatile",
       "Verbal": "Verbal",
@@ -2761,7 +2761,7 @@
       "Gnoll": "Ґнолська",
       "Gnomish": "Гномська",
       "Goblin": "Гоблінська",
-      "Halfling": "Halfling",
+      "Halfling": "Півросликова",
       "Ignan": "Ігнанська",
       "Infernal": "Пекельна",
       "Orc": "Орча",
@@ -2901,10 +2901,10 @@
         "label": "Prerequisites",
         "level": {
           "label": "Необхідний рівень",
-          "hint": "Character or class level required to select this feature when levelling up."
+          "hint": "Рівень персонажа або класу, необхідний для вибору цього уміння при підвищенні рівня."
         },
         "repeatable": {
-          "hint": "This feature can be chosen more than once.",
+          "hint": "Це уміння можна вибрати більше одного разу.",
           "label": "Може повторюватися"
         }
       }
@@ -4631,34 +4631,34 @@
     }
   },
   "EFFECT.DND5E": {
-    "StatusBleeding": "Bleeding",
-    "StatusBloodied": "Bloodied",
-    "StatusBurning": "Burning",
-    "StatusBurrowing": "Burrowing",
-    "StatusConcentrating": "Concentrating",
-    "StatusCursed": "Cursed",
-    "StatusDead": "Dead",
-    "StatusDehydration": "Dehydration",
-    "StatusDodging": "Dodging",
+    "StatusBleeding": "Стікає кров'ю",
+    "StatusBloodied": "Закривавлений",
+    "StatusBurning": "Горить",
+    "StatusBurrowing": "Заривається",
+    "StatusConcentrating": "Концентрується",
+    "StatusCursed": "Проклято",
+    "StatusDead": "Мрець",
+    "StatusDehydration": "Зневоднення",
+    "StatusDodging": "Ухиляється",
     "StatusEncumbered": "Перевантаження",
     "StatusEthereal": "Етемерний",
     "StatusExceedingCarryingCapacity": "Перевищення вантажопідйомності",
-    "StatusFalling": "Falling",
-    "StatusFlying": "Flying",
-    "StatusHalfCover": "Half Cover",
+    "StatusFalling": "Падає",
+    "StatusFlying": "Літає",
+    "StatusHalfCover": "Пів укриття",
     "StatusHeavilyEncumbered": "Сильно перевантажений",
-    "StatusHiding": "Hiding",
-    "StatusHovering": "Hovering",
-    "StatusMalnutrition": "Malnutrition",
-    "StatusMarked": "Marked",
-    "StatusSilenced": "Silenced",
-    "StatusSleeping": "Sleeping",
-    "StatusStable": "Stable",
-    "StatusSuffocation": "Suffocation",
-    "StatusSurprised": "Surprised",
-    "StatusThreeQuartersCover": "Three-Quarters Cover",
-    "StatusTotalCover": "Total Cover",
-    "StatusTransformed": "Transformed"
+    "StatusHiding": "Ховається",
+    "StatusHovering": "Парить",
+    "StatusMalnutrition": "Недоїдання",
+    "StatusMarked": "Позначено",
+    "StatusSilenced": "Німота",
+    "StatusSleeping": "Спить",
+    "StatusStable": "Стабілізовано",
+    "StatusSuffocation": "Задихається",
+    "StatusSurprised": "Заскочено зненацька",
+    "StatusThreeQuartersCover": "Три чверті укриття",
+    "StatusTotalCover": "Повне укриття",
+    "StatusTransformed": "Перетворено"
   },
   "TYPES.JournalEntryPage.class": "Class Summary",
   "TYPES.JournalEntryPage.map": "Map Location",
