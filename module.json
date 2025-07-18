@@ -25,8 +25,8 @@
   "url": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e",
   "license": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/blob/master/LICENSE.md",
   "readme": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/blob/master/README.md",
-  "manifest": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.12.1/module.json",
-  "download": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.12.1/0.12.1.zip",
+  "manifest": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.12.2/module.json",
+  "download": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/releases/download/0.12.2/0.12.2.zip",
   "relationships": {
     "systems": [
       {
