@@ -1,7 +1,7 @@
 {
   "DOCUMENT.DND5E": {
     "Activity": "Діяльність",
-    "Advancement": "Advancement",
+    "Advancement": "Розвиток",
     "Warning": {
       "SelectType": "Для створення має бути обраний тип {name}."
     }
@@ -17,7 +17,7 @@
   "TYPES.ActiveEffect.enchantment": "Зачарування",
   "TYPES.ActiveEffect.enchantmentPl": "Зачарування",
   "TYPES.ChatMessage": {
-    "rest": "Rest Message",
+    "rest": "Повідомлення при відпочинку",
     "turn": "Combat Turn Message"
   },
   "TYPES.Item.background": "Передісторія",
@@ -30,8 +30,8 @@
   "TYPES.Item.consumablePl": "Витратники",
   "TYPES.Item.equipment": "Спорядження",
   "TYPES.Item.equipmentPl": "Спорядження",
-  "TYPES.Item.facility": "Facility",
-  "TYPES.Item.facilityPl": "Facilities",
+  "TYPES.Item.facility": "Заклад",
+  "TYPES.Item.facilityPl": "Заклади",
   "TYPES.Item.feat": "Уміння",
   "TYPES.Item.featurePl": "Уміння",
   "TYPES.Item.loot": "Здобич",
@@ -54,23 +54,23 @@
   "DND5E.AbbreviationDC": "КС",
   "DND5E.AbbreviationKg": "кг",
   "DND5E.AbbreviationLR": "ТВ",
-  "DND5E.AbbreviationLevel": "Lvl",
+  "DND5E.AbbreviationLevel": "Рів",
   "DND5E.AbbreviationLbs": "фнт.",
   "DND5E.AbbreviationSR": "КВ",
   "DND5E.ABILITY": {
     "Configure": {
-      "Title": "Configure {ability}"
+      "Title": "Налаштування {ability}"
     },
     "SECTIONS": {
       "Bonuses": {
-        "Label": "{ability} Bonuses",
+        "Label": "Бонуси {ability}",
         "Hint": "These bonuses apply to checks & saves made with {ability}."
       },
       "Global": {
-        "Label": "Global Bonuses",
-        "Hint": "These bonuses apply to checks & saves made with any ability."
+        "Label": "Глобальні бонуси",
+        "Hint": "Ці бонуси застосовуються до перевірок і ряткидків з будь-якою характеристикою."
       },
-      "Score": "{ability} Score"
+      "Score": "Значення здібності {ability}"
     }
   },
   "DND5E.Ability": "Здібність",
@@ -92,13 +92,13 @@
   "DND5E.AbilitySan": "Розсудливість",
   "DND5E.AbilitySanAbbr": "роз",
   "DND5E.AbilityScore": "Значення здібності",
-  "DND5E.AbilityScoreShort": "Score",
+  "DND5E.AbilityScoreShort": "Знач",
   "DND5E.AbilityScorePl": "Значення здібностей",
   "DND5E.AbilityScoreL": "Значення здібності {ability}",
   "DND5E.AbilityScoreMax": "Максимальне значення здібності",
-  "DND5E.AbilityScoreMaxShort": "Maximum",
+  "DND5E.AbilityScoreMaxShort": "Максимум",
   "DND5E.AbilityModifier": "Модифікатор здібності",
-  "DND5E.AbilityModifierShort": "Mod",
+  "DND5E.AbilityModifierShort": "Мод",
   "DND5E.AbilityPromptText": "Який тип перевірки здібності {ability}?",
   "DND5E.AbilityPromptTitle": "Перевірка здібності {ability}",
   "DND5E.AbilityUseChargesLabel": "{value} зарядів",
@@ -154,34 +154,34 @@
       }
     },
     "Category": {
-      "Combat": "Combat",
+      "Combat": "Бій",
       "Monster": "Монстр",
-      "Rest": "Rest",
+      "Rest": "Відпочинок",
       "Standard": "Стандарт",
       "Time": "Час",
       "Vehicle": "Транспорт"
     },
     "Type": {
       "Encounter": {
-        "Label": "Start of Encounter"
+        "Label": "Початок сутички"
       },
       "Legendary": {
         "Counted": {
-          "one": "{number} legendary action",
-          "other": "{number} legendary actions"
+          "one": "Легендарна дія {number}",
+          "other": "{number} легендарних дій"
         }
       },
       "LongRest": {
-        "Label": "End of a Long Rest"
+        "Label": "Після довгого відпочинку"
       },
       "ShortRest": {
-        "Label": "End of a Short Rest"
+        "Label": "Після короткого відпочинку"
       },
       "TurnEnd": {
-        "Label": "End of Turn"
+        "Label": "Кінець ходу"
       },
       "TurnStart": {
-        "Label": "Start of Turn"
+        "Label": "Початок ходу"
       }
     },
     "Warning": {
@@ -192,8 +192,8 @@
   "DND5E.ACTIVEEFFECT": {
     "FIELDS": {
       "statuses": {
-        "label": "Status Conditions",
-        "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions."
+        "label": "Стани",
+        "hint": "Поки діє цей Активний Ефект, ціль вважається такою, що має ці додаткові стани."
       }
     }
   },
@@ -246,7 +246,7 @@
   "DND5E.ADVANCEMENT": {
     "AbilityScoreImprovement": {
       "Action": {
-        "Select": "Select Feat"
+        "Select": "Оберіть уміння"
       },
       "CapDisplay": {
         "one": "Максимум {points} очок на здібність",
@@ -297,14 +297,14 @@
       }
     },
     "Action": {
-      "Create": "Create Advancement",
+      "Create": "Створити розвиток",
       "Delete": "Delete Advancement",
       "Duplicate": "Duplicate Advancement",
       "Edit": "Edit Advancement",
       "View": "View Advancement"
     },
     "Config": {
-      "AnyLevel": "Any",
+      "AnyLevel": "Будь-який",
       "Details": "Advancement Details"
     },
     "HitPoints": {
@@ -428,6 +428,14 @@
         "LevelNewClass": "Add Class",
         "ModifyChoices": "Modify Choices"
       }
+    },
+    "Migration": {
+      "Action": {
+        "Confirm": "Apply Migrations"
+      },
+      "Hint": "Select which of the following advancements will be added to {name}.",
+      "Selection": "Advancement Selection",
+      "Title": "Migrate Advancement"
     },
     "ScaleValue": {
       "Action": {
@@ -631,16 +639,13 @@
   "DND5E.AdvancementLevelNoneHeader": "Без рівня",
   "DND5E.AdvancementLevelDownConfirmationMessage": "Пониження рівня цього класу також видалить всі вибрані варіанти розвитку. Ці зміни будуть застосовані до персонажа, якщо прапорець нижче встановлено.",
   "DND5E.AdvancementLevelDownConfirmationTitle": "Підтвердити зниження рівня",
-  "DND5E.AdvancementMigrationConfirm": "Apply Migrations",
-  "DND5E.AdvancementMigrationHint": "Select which of the following advancements will be added to {name}.",
-  "DND5E.AdvancementMigrationTitle": "Migrate Advancement",
   "DND5E.AdvancementModifyChoices": "Змінити вибір",
   "DND5E.AdvancementSaveButton": "Зберегти розвиток",
   "DND5E.AdvancementSelectionCreateButton": "Створити розвиток",
   "DND5E.AdvancementSelectionTitle": "Виберіть тип розвитку",
   "DND5E.AdvancementTitle": "Розвиток",
   "DND5E.Advantage": "Перевага",
-  "DND5E.AdvantageMode": "Advantage Mode",
+  "DND5E.AdvantageMode": "Режим переваги",
   "DND5E.Age": "Age",
   "DND5E.Alignment": "Світогляд",
   "DND5E.AlignmentCE": "Хаотично Злий",
@@ -858,6 +863,11 @@
       "Gold": "{value} ({claimed})",
       "NoOrders": "No orders issued to special facilities this turn.",
       "Order": "{link} completed the <strong>{order}</strong> order."
+    },
+    "Trade": {
+      "Cancel": "Cancel Pending Trade",
+      "Invalid": "Removing a pending trade will invalidate your trade order.",
+      "Pending": "Pending trade"
     }
   },
   "DND5E.Biography": "Біографія",
@@ -874,7 +884,7 @@
   "DND5E.BONUSES": {
     "FIELDS": {
       "bonuses": {
-        "label": "Global Bonuses",
+        "label": "Глобальні бонуси",
         "hint": "Global bonuses as formulas which are added to certain rolls.",
         "abilities": {
           "label": "Global Ability Bonuses",
@@ -882,7 +892,7 @@
             "label": "Global Ability Check Bonus"
           },
           "save": {
-            "label": "Global Saving Throw Bonus"
+            "label": "Глобальний бонус ряткидка"
           },
           "skill": {
             "label": "Global Skill Check Bonus"
@@ -1031,11 +1041,11 @@
   "DND5E.ChallengeRating": "Рівень Небезпеки",
   "DND5E.Charged": "Заряджено",
   "DND5E.Charges": "Заряди",
-  "DND5E.ChatContextDamage": "Нанести шкоду",
-  "DND5E.ChatContextHealing": "Зцілити",
-  "DND5E.ChatContextTempHP": "Застосувати тимчасові ПЗ",
-  "DND5E.ChatContextDoubleDamage": "Нанести подвійну шкоду",
-  "DND5E.ChatContextHalfDamage": "Нанести половину шкоди",
+  "DND5E.ChatContextDamage": "Apply As Damage",
+  "DND5E.ChatContextHealing": "Apply As Healing",
+  "DND5E.ChatContextTempHP": "Apply As Temporary HP",
+  "DND5E.ChatContextDoubleDamage": "Apply Double As Damage",
+  "DND5E.ChatContextHalfDamage": "Apply Half As Damage",
   "DND5E.ChatContextSelectHit": "Select Hit Targets",
   "DND5E.ChatContextSelectMiss": "Select Missed Targets",
   "DND5E.ChatFlavor": "Додатковий текст в чаті",
@@ -1138,7 +1148,7 @@
       "Icon": "Icon",
       "Name": "Name",
       "Results": "Results",
-      "Source": "Source"
+      "Source": "Джерело"
     },
     "Filters": {
       "Label": "Filters",
@@ -1216,8 +1226,8 @@
   "DND5E.ConDiseased": "Хворий",
   "DND5E.CONDITIONS": {
     "RiderConditions": {
-      "label": "Separate Status Conditions",
-      "hint": "When this Active Effect is applied, these additional status conditions will be applied separately."
+      "label": "Окремі стани",
+      "hint": "Коли цей Активний Ефект застосовується, ці додаткові стани накладаються окремо."
     }
   },
   "DND5E.ConExhaustion": "Виснаження",
@@ -1488,7 +1498,7 @@
   "DND5E.CoverHalf": "Наполовину",
   "DND5E.CoverThreeQuarters": "На три четвертих",
   "DND5E.CoverTotal": "Повне",
-  "DND5E.Cost": "Cost",
+  "DND5E.Cost": "Вартість",
   "DND5E.CostGP": "Ціна (ЗМ)",
   "DND5E.CreatureAberration": "Аберація",
   "DND5E.CreatureAberrationPl": "Аберації",
@@ -1622,7 +1632,7 @@
               }
             },
             "types": {
-              "label": "Damage Types",
+              "label": "Типи шкоди",
               "hint": "Type of damage inflicted or multiple for the user to select from."
             }
           }
@@ -1644,7 +1654,7 @@
     }
   },
   "DND5E.DamImm": "Імунітет до ушкоджень",
-  "DND5E.DamMod": "Damage Modification",
+  "DND5E.DamMod": "Модифікатор шкоди",
   "DND5E.DamRes": "Опір до ушкоджень",
   "DND5E.DamVuln": "Вразливість до ушкоджень",
   "DND5E.Damage": "Ушкодження",
@@ -1666,15 +1676,15 @@
   "DND5E.DamageForce": "Чистою енергією",
   "DND5E.DamageLightning": "Блискавкою",
   "DND5E.DamageModification": {
-    "Label": "Damage Modification",
-    "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
+    "Label": "Модифікатор шкоди",
+    "Hint": "Формули значень, які буде додано до ушкоджень певного типу, застосованих до цього актора.\nВід’ємні значення зменшуватимуть отримані ушкодження.",
     "BypassHint": "These weapon properties will bypass damage modification for physical damage."
   },
   "DND5E.DamageNecrotic": "Некротичною енергією",
   "DND5E.DamagePiercing": "Колоті",
   "DND5E.DamagePhysical": "Не магічні фізичні",
-  "DND5E.DamagePhysicalBypass": "Physical Bypasses",
-  "DND5E.DamagePhysicalBypassHint": "These weapon properties will bypass damage resistance for physical damage.",
+  "DND5E.DamagePhysicalBypass": "Зброя, що долає опір",
+  "DND5E.DamagePhysicalBypassHint": "Властивості цієї зброї долатимуть стійкість до фізичних ушкоджень.",
   "DND5E.DamagePhysicalBypasses": "{damageTypes} from attacks that are not {bypassTypes}",
   "DND5E.DamagePhysicalBypassesShort": "Bypassed by {type} Sources",
   "DND5E.DamagePoison": "Отрутою",
@@ -1685,12 +1695,12 @@
   "DND5E.DamageThreshold": "Поріг ушкодження",
   "DND5E.DamageThunder": "Громом",
   "DND5E.DamageType": "Damage Type",
-  "DND5E.DamageTypes": "Damage Types",
+  "DND5E.DamageTypes": "Типи шкоди",
   "DND5E.Dawn": "Dawn",
   "DND5E.Day": "День",
   "DND5E.DeathSave": "Рятівний кидок від смерті",
-  "DND5E.DeathSaveBonus": "Death Save Bonus",
-  "DND5E.DeathSaveConfigure": "Configure Death Saves",
+  "DND5E.DeathSaveBonus": "Бонус ряткидків від смерті",
+  "DND5E.DeathSaveConfigure": "Налаштування ряткидка від смерті",
   "DND5E.DeathSaveCriticalSuccess": "{name} досяг критичного успіху в рятівному кидку від смерті та відновив 1 ПЗ!",
   "DND5E.DeathSaveHide": "Hide Death Saves",
   "DND5E.DeathSaveShow": "Show Death Saves",
@@ -1725,7 +1735,7 @@
   "DND5E.Disadvantage": "Перешкода",
   "DND5E.Discord": "Discord",
   "DND5E.Disclaimer": "Попередження",
-  "DND5E.DisplayCard": "Display in Chat",
+  "DND5E.DisplayCard": "Показати в чаті",
   "DND5E.DistAny": "Будь-яка",
   "DND5E.DistFt": "Фути",
   "DND5E.DistFtAbbr": "ft",
@@ -1742,10 +1752,10 @@
   "DND5E.DURATION": {
     "FIELDS": {
       "duration": {
-        "label": "Duration",
+        "label": "Тривалість",
         "concentration": {
-          "label": "Concentration",
-          "hint": "Creature must maintain concentration while active."
+          "label": "Концентрація",
+          "hint": "Істота повинна підтримувати концентрацію, поки ефект активний."
         },
         "override": {
           "label": "Override Duration",
@@ -1768,7 +1778,7 @@
   },
   "DND5E.Duration": "Тривалість",
   "DND5E.DurationPermanent": "Permanent",
-  "DND5E.DurationTime": "Time",
+  "DND5E.DurationTime": "Тривалість",
   "DND5E.DurationType": "Duration Type",
   "DND5E.DurationUnits": "Duration Units",
   "DND5E.DurationValue": "Duration Value",
@@ -1787,7 +1797,7 @@
   "DND5E.EffectsApplyTokens": "Apply to selected tokens",
   "DND5E.EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
   "DND5E.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
-  "DND5E.EffectsSearch": "Search effects",
+  "DND5E.EffectsSearch": "Пошук ефектів",
   "DND5E.ENCHANT": {
     "Title": "Зачарувати",
     "FIELDS": {
@@ -1931,7 +1941,7 @@
     "Period": {
       "AtWill": "At Will",
       "LongRest": "Long Rest",
-      "Never": "Never",
+      "Never": "Ніколи",
       "ShortRest": "Short Rest"
     },
     "Warning": {
@@ -2257,7 +2267,7 @@
         "hint": "Cover provided to crew by this vehicle feature."
       },
       "properties": {
-        "label": "Feature Properties"
+        "label": "Властивості уміння"
       },
       "requirements": {
         "label": "Requirements"
@@ -2630,7 +2640,7 @@
   "DND5E.ItemEquipmentType": "Тип спорядження",
   "DND5E.ItemEquipmentUsage": "Використання спорядження",
   "DND5E.ItemFacilityDetails": "Facility Details",
-  "DND5E.ItemFeatureDetails": "Feature Details",
+  "DND5E.ItemFeatureDetails": "Деталі уміння",
   "DND5E.ItemFeatureProperties": "Feature Properties",
   "DND5E.ItemFeatureSubtype": "{category} Type",
   "DND5E.ItemFeatureType": "Feature Type",
@@ -2646,9 +2656,9 @@
       "Physical": "Physical"
     },
     "Property": {
-      "Adamantine": "Adamantine",
+      "Adamantine": "Адамантієва",
       "Ammunition": "Ammunition",
-      "Concentration": "Concentration",
+      "Concentration": "Концентрація",
       "Finesse": "Finesse",
       "Firearm": "Firearm",
       "Focus": "Focus",
@@ -2656,17 +2666,17 @@
       "Light": "Light",
       "Loading": "Loading",
       "Material": "Material",
-      "Magical": "Magical",
+      "Magical": "Магічна",
       "Reach": "Reach",
       "Reload": "Reload",
       "Returning": "Returning",
       "Ritual": "Ritual",
-      "Silvered": "Silvered",
+      "Silvered": "Посріблена",
       "Somatic": "Somatic",
       "Special": "Special",
       "StealthDisadvantage": "Stealth Disadvantage",
       "Thrown": "Thrown",
-      "Trait": "Passive Trait",
+      "Trait": "Пасивна риса",
       "TwoHanded": "Two-Handed",
       "Versatile": "Versatile",
       "Verbal": "Verbal",
@@ -2704,10 +2714,17 @@
   "DND5E.ItemWeaponType": "Тип зброї",
   "DND5E.ItemWeaponUsage": "Використання зброї",
   "DND5E.JackOfAllTrades": "Майстер на всі руки",
+  "DND5E.JOURNALENTRY": {
+    "Navigation": {
+      "Next": "Next",
+      "Previous": "Previous",
+      "Up": "Up"
+    }
+  },
   "DND5E.LAIR": {
     "Label": "Lair",
     "Action": {
-      "Label": "Lair Action",
+      "Label": "Дія лігва",
       "Initiative": "Lair Action Initiative Count",
       "Uses": "Uses Lair Action"
     },
@@ -2715,51 +2732,51 @@
     "Inside": "Inside Lair"
   },
   "DND5E.Language": {
-    "All": "All Languages",
-    "Label": "Language",
+    "All": "Усі мови",
+    "Label": "Мова",
     "Category": {
-      "Exotic": "Exotic Languages",
-      "Rare": "Rare Languages",
-      "Standard": "Standard Languages"
+      "Exotic": "Екзотичні мови",
+      "Rare": "Рідкісні мови",
+      "Standard": "Стандартні мови"
     },
     "Communication": {
-      "Label": "Ranged Communication",
-      "Telepathy": "Telepathy"
+      "Label": "Дальня комунікація",
+      "Telepathy": "Телепатія"
     },
     "Language": {
       "Aarakocra": "Ааракокрова",
       "Abyssal": "Безоднева",
       "Aquan": "Акванова",
-      "Auran": "Auran",
-      "Celestial": "Celestial",
-      "Common": "Common",
-      "CommonSign": "Common Sign Language",
-      "DeepSpeech": "Deep Speech",
-      "Draconic": "Draconic",
-      "Druidic": "Druidic",
-      "Dwarvish": "Dwarvish",
-      "Elvish": "Elvish",
-      "Giant": "Giant",
-      "Gith": "Gith",
-      "Gnoll": "Gnoll",
-      "Gnomish": "Gnomish",
-      "Goblin": "Goblin",
-      "Halfling": "Halfling",
-      "Ignan": "Ignan",
-      "Infernal": "Infernal",
-      "Orc": "Orc",
-      "Primordial": "Primordial",
-      "Sylvan": "Sylvan",
-      "Terran": "Terran",
-      "ThievesCant": "Thieves' Cant",
-      "Undercommon": "Undercommon"
+      "Auran": "Ауранова",
+      "Celestial": "Небесна",
+      "Common": "Загальна",
+      "CommonSign": "Загальна мова жестів",
+      "DeepSpeech": "Глибинна",
+      "Draconic": "Драконяча",
+      "Druidic": "Друїдична",
+      "Dwarvish": "Дворфська",
+      "Elvish": "Ельфійська",
+      "Giant": "Велетська",
+      "Gith": "Ґітська",
+      "Gnoll": "Ґнолська",
+      "Gnomish": "Гномська",
+      "Goblin": "Гоблінська",
+      "Halfling": "Півросликова",
+      "Ignan": "Ігнанська",
+      "Infernal": "Пекельна",
+      "Orc": "Орча",
+      "Primordial": "Первісна",
+      "Sylvan": "Сильванська",
+      "Terran": "Терранська",
+      "ThievesCant": "Злодійський жаргон",
+      "Undercommon": "Підморокова"
     }
   },
   "DND5E.Languages": "Мови",
   "DND5E.LegendaryAction": {
     "Description": "Legendary Action Uses: {uses}.",
     "DescriptionLegacy": "The {name} can take {usesNamed}, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The {name} regains spent legendary actions at the start of its turn.",
-    "Label": "Legendary Action",
+    "Label": "Легендарна дія",
     "LairUses": "{normal} ({lair} in Lair)",
     "Max": "Maximum Legendary Actions",
     "Ordinal": {
@@ -2824,7 +2841,7 @@
   "DND5E.ModuleArtPriorityIncrease": "Increase Priority",
   "DND5E.Multiple": "Multiple",
   "DND5E.Multiplier": "Multiplier",
-  "DND5E.MythicActionLabel": "Mythic Action",
+  "DND5E.MythicActionLabel": "Міфічна дія",
   "DND5E.Name": "Ім'я персонажа",
   "DND5E.NameUnidentified": "Unidentified Name",
   "DND5E.NoCharges": "Немає зарядів",
@@ -2875,43 +2892,6 @@
   "DND5E.PassivePerception": "Passive Perception",
   "DND5E.Period": "Period",
   "DND5E.PersonalityTraits": "Риси характеру",
-  "DND5E.Polymorph": "Перевтілення",
-  "DND5E.PolymorphAcceptSettings": "Власні налаштування",
-  "DND5E.PolymorphAddTemp": "Add the target's HP as temporary HP",
-  "DND5E.PolymorphCustomTransformation": "Custom Transformation",
-  "DND5E.PolymorphEffectTransformation": "Effect Transformation",
-  "DND5E.PolymorphKeepAE": "Keep all effects (overrides other effect retention options).",
-  "DND5E.PolymorphKeepBackgroundAE": "Keep effects that originate from your background?",
-  "DND5E.PolymorphKeepBio": "Залишити біографію",
-  "DND5E.PolymorphKeepClass": "Залишити бонус майстерності (залишає класові елементи в аркуші персонажа)",
-  "DND5E.PolymorphKeepClassAE": "Keep effects that originate from your class or subclass?",
-  "DND5E.PolymorphKeepEquipmentAE": "Keep effects that originate from your equipment?",
-  "DND5E.PolymorphKeepFeats": "Залишити уміння",
-  "DND5E.PolymorphKeepFeatureAE": "Keep effects that originate from your features?",
-  "DND5E.PolymorphKeepHP": "Keep HP & HD",
-  "DND5E.PolymorphKeepItems": "Залишити спорядження",
-  "DND5E.PolymorphKeepMental": "Зберегти значення ментальних здібностей (Інт, Муд, Хар)",
-  "DND5E.PolymorphKeepOriginAE": "Keep effects that originate from this actor (i.e. effects not attached to features, items, spells)",
-  "DND5E.PolymorphKeepOtherOriginAE": "Keep effects that originate from a different actor?",
-  "DND5E.PolymorphKeepPhysical": "Зберегти значення фізичних здібностей (Сил, Спр, Ста)",
-  "DND5E.PolymorphKeepSaves": "Залишити опановані рятівні кидки",
-  "DND5E.PolymorphKeepSelf": "Keep self (just change image and size i.e. for spells like Disguise Self)",
-  "DND5E.PolymorphKeepSkills": "Залишити опановані навички",
-  "DND5E.PolymorphKeepSpellAE": "Keep effects that originate from your spells?",
-  "DND5E.PolymorphKeepSpells": "Залишити чари",
-  "DND5E.PolymorphKeepType": "Keep creature type",
-  "DND5E.PolymorphKeepVision": "Зберегти бачення (персонаж і токен)",
-  "DND5E.PolymorphMergeSaves": "Об'єднати опановані рятівні кидки (залишити вищий)",
-  "DND5E.PolymorphMergeSkills": "Об'єднати опановані навички (залишити вищі)",
-  "DND5E.PolymorphPromptTitle": "Перевтілення актора",
-  "DND5E.PolymorphRestoreTransformation": "Скасувати перевтілення",
-  "DND5E.PolymorphRevertNoOriginalActorWarn": "No original actor was found with reference '{reference}'",
-  "DND5E.PolymorphRevertWarn": "Вам не дозволено скасовувати перевтілення цього актора.",
-  "DND5E.PolymorphSelf": "Appearance Only",
-  "DND5E.PolymorphTmpClass": "Тимчасовий клас",
-  "DND5E.PolymorphTokens": "Перевтілити всі зв'язані токени?",
-  "DND5E.PolymorphWarn": "Ви не можете використовувати перевтілення для цього актора!",
-  "DND5E.PolymorphWildShape": "Дика подоба",
   "DND5E.Portrait": "Portrait",
   "DND5E.Prepared": "Підготовлено",
   "DND5E.Prerequisites": {
@@ -2920,12 +2900,12 @@
       "prerequisites": {
         "label": "Prerequisites",
         "level": {
-          "label": "Required Level",
-          "hint": "Character or class level required to select this feature when levelling up."
+          "label": "Необхідний рівень",
+          "hint": "Рівень персонажа або класу, необхідний для вибору цього уміння при підвищенні рівня."
         },
         "repeatable": {
-          "hint": "This feature can be chosen more than once.",
-          "label": "Repeatable"
+          "hint": "Це уміння можна вибрати більше одного разу.",
+          "label": "Може повторюватися"
         }
       }
     }
@@ -2937,7 +2917,7 @@
   "DND5E.ProficiencyConfigurationHint": "Configure proficiency and bonuses.",
   "DND5E.ProficiencyConfigureTitle": "Configure {label}",
   "DND5E.ProficiencyLevel": "Рівень майстерності",
-  "DND5E.ProficiencyOther": "Other",
+  "DND5E.ProficiencyOther": "Інші",
   "DND5E.Proficient": "Опановано",
   "DND5E.Properties": "Властивості",
   "DND5E.PropertyBase": "Базовий",
@@ -2995,7 +2975,7 @@
   "DND5E.Recharge": "Перезарядка",
   "DND5E.RechargeLong": "Recharge after a Long Rest",
   "DND5E.RechargeShort": "Recharge after a Short or Long Rest",
-  "DND5E.Recovery": "Recovery",
+  "DND5E.Recovery": "Відновлення",
   "DND5E.RecoveryFormula": "Recovery Formula",
   "DND5E.RequiredMaterials": "Необхідні Матеріали",
   "DND5E.Requirements": "Вимоги",
@@ -3017,7 +2997,7 @@
       "None": "No Hit Dice remaining to roll during this rest.",
       "Select": "Select Dice to Roll"
     },
-    "Label": "Rest",
+    "Label": "Відпочинок",
     "Long": {
       "Abbreviation": "LR",
       "Hint": {
@@ -3059,7 +3039,7 @@
   "DND5E.RitualAbbr": "Р",
   "DND5E.ROLL": {
     "Range": {
-      "Label": "Roll Range",
+      "Label": "Діапазон кидка",
       "Maximum": "Maximum Roll",
       "Minimum": "Minimum Roll"
     },
@@ -3070,7 +3050,7 @@
   "DND5E.RollConfiguration": {
     "Title": "Configure Roll",
     "Configuration": "Configuration",
-    "Rolls": "Rolls"
+    "Rolls": "Кидок"
   },
   "DND5E.RollExample": "напр. 1d4",
   "DND5E.RollMode": "Режим Кидка",
@@ -3169,7 +3149,7 @@
   "DND5E.SenseBlindsight": "Сліпий зір",
   "DND5E.SenseTremorsense": "Чуття вібрацій",
   "DND5E.SenseTruesight": "Істинний зір",
-  "DND5E.SenseUnits": "Units",
+  "DND5E.SenseUnits": "Одиниці Виміру",
   "DND5E.SenseSpecial": "Особливі Відчуття",
   "DND5E.Shape": "Shape",
   "DND5E.SheetClassCharacter": "Стандартний 5e Аркуш Персонажа",
@@ -3229,7 +3209,7 @@
         "Hint": "These bonuses apply to passive scores & checks made with {label}."
       },
       "Global": {
-        "Label": "Global Bonuses",
+        "Label": "Глобальні бонуси",
         "Hint": "These bonuses apply to checks made with any skill."
       }
     }
@@ -3273,7 +3253,7 @@
   "DND5E.SOURCE": {
     "FIELDS": {
       "source": {
-        "label": "Source",
+        "label": "Джерело",
         "book": {
           "label": "Book"
         },
@@ -3306,7 +3286,7 @@
     }
   },
   "DND5E.Special": "Особливе",
-  "DND5E.SpecialHint": "Special values separated by semi-colons.",
+  "DND5E.SpecialHint": "Особливі значення, розділені крапкою з комою.",
   "DND5E.SpecialTraits": "Спеціальні риси",
   "DND5E.Species": {
     "Label": "Species",
@@ -3407,7 +3387,7 @@
   "DND5E.SpellUnprepared": "Непідготовано",
   "DND5E.SpellUsage": "Використання чарів",
   "DND5E.Spellbook": "Чари",
-  "DND5E.Spent": "Spent",
+  "DND5E.Spent": "Витрачено",
   "DND5E.StartingEquipment": {
     "Title": "Starting Equipment",
     "Action": {
@@ -3659,8 +3639,8 @@
           "hint": "Use these target values instead of the item's when using this activity."
         },
         "prompt": {
-          "label": "Measured Template Prompt",
-          "hint": "Should the player be prompted to place a measured template? Players will still be able to place templates from the chat card if prompt is disabled."
+          "label": "Підказка для шаблону зони дії",
+          "hint": "Чи потрібно підказувати гравцеві розмістити вимірювальний шаблон? Гравці зможуть розміщувати шаблони з картки чату навіть якщо підказка вимкнена."
         },
         "template": {
           "label": "Area of Effect",
@@ -3910,7 +3890,7 @@
         "Hint": "These bonuses apply to checks made with {label}."
       },
       "Global": {
-        "Label": "Global Bonuses",
+        "Label": "Глобальні бонуси",
         "Hint": "These bonuses apply to checks made with any tool."
       }
     }
@@ -3937,7 +3917,7 @@
   "DND5E.TraitArmorLegacyPlural.other": "Armor Proficiencies",
   "DND5E.TraitArmorLegacyProf": "Armor Proficiencies",
   "DND5E.TraitCIPlural.one": "Condition Immunity",
-  "DND5E.TraitCIPlural.other": "Condition Immunities",
+  "DND5E.TraitCIPlural.other": "Імунітет до станів",
   "DND5E.TraitConfig": "Налаштувати {trait}",
   "DND5E.TraitConfigChooseAnyCounted": "any {count} {type}",
   "DND5E.TraitConfigChooseAnyUncounted": "any {type}",
@@ -3946,7 +3926,7 @@
   "DND5E.TraitConfigChooseWrapper": "Choose {choices}",
   "DND5E.TraitDIPlural.one": "Damage Immunity",
   "DND5E.TraitDIPlural.other": "Damage Immunities",
-  "DND5E.TraitDMPlural.one": "Damage Modification",
+  "DND5E.TraitDMPlural.one": "Модифікатор шкоди",
   "DND5E.TraitDMPlural.other": "Damage Modifications",
   "DND5E.TraitDRPlural.one": "Damage Resistance",
   "DND5E.TraitDRPlural.other": "Опір до ушкоджень",
@@ -3970,6 +3950,246 @@
   "DND5E.TraitWeaponProf": "Опанована зброя",
   "DND5E.Traits": "Traits",
   "DND5E.TraitsChosen": "Chosen Traits",
+  "DND5E.TRANSFORM": {
+    "Action": {
+      "Restore": "Restore Transformation",
+      "Transform": "Transform"
+    },
+    "Dialog": {
+      "Title": "Configure Transformation"
+    },
+    "FIELDS": {
+      "profiles": {
+        "cr": {
+          "label": "Challenge Rating",
+          "abbr": "CR",
+          "hint": "Maximum CR of the source creature."
+        },
+        "FIELDS": {
+          "cr": {
+            "label": "Challenge Rating",
+            "abbr": "CR",
+            "hint": "Maximum CR of the source creature."
+          },
+          "level": {
+            "label": "Level Limit",
+            "hint": "Range of levels required to use this profile.",
+            "max": {
+              "label": "Maximum Level"
+            },
+            "min": {
+              "label": "Minimum Level"
+            }
+          },
+          "movement": {
+            "hint": "Movement types that are not allowed on source creatures.",
+            "label": "Restricted Movement Types"
+          },
+          "name": {
+            "hint": "Name of the profile displayed in the usage dialog.",
+            "label": "Display Name"
+          },
+          "sizes": {
+            "hint": "List of creature sizes from which the source creature can be selected.",
+            "label": "Creature Sizes"
+          },
+          "types": {
+            "hint": "List of creature types from which the source creature can be selected.",
+            "label": "Creature Types"
+          }
+        },
+        "label": "Transform Profiles",
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this profile.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "movement": {
+          "hint": "Movement types that are not allowed on source creatures.",
+          "label": "Restricted Movement Types"
+        },
+        "name": {
+          "hint": "Name of the profile displayed in the usage dialog.",
+          "label": "Display Name"
+        },
+        "sizes": {
+          "hint": "List of creature sizes from which the source creature can be selected.",
+          "label": "Creature Sizes"
+        },
+        "types": {
+          "hint": "List of creature types from which the source creature can be selected.",
+          "label": "Creature Types"
+        }
+      },
+      "transform": {
+        "label": "Transformation Details",
+        "customize": {
+          "label": "Customize",
+          "hint": "Use custom transformation settings rather than the defaults provided by the selected preset."
+        },
+        "identifier": {
+          "label": "Class Identifier",
+          "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+        },
+        "mode": {
+          "label": "Mode",
+          "hint": "Sets how the transformation source creatures are selected.",
+          "Appearance": "Appearance Only",
+          "Default": "Compendium Browser",
+          "Direct": "Direct Link"
+        },
+        "preset": {
+          "label": "Preset"
+        }
+      }
+    },
+    "Preset": {
+      "Appearance": {
+        "Label": "Appearance Only"
+      },
+      "Default": "Default",
+      "Label": "Presets",
+      "Polymorph": {
+        "Label": "Polymorph"
+      },
+      "WildShape": {
+        "Label": "Wild Shape"
+      }
+    },
+    "Profile": {
+      "Action": {
+        "Create": "Create Profile",
+        "Delete": "Delete Profile"
+      },
+      "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
+      "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
+      "Label": "Transform Profile"
+    },
+    "SECTIONS": {
+      "Profiles": "Profiles",
+      "Settings": "Settings",
+      "Transformation": "Transformation"
+    },
+    "Setting": {
+      "Effects": {
+        "All": {
+          "Hint": "Keep all effects, ignoring any other effects settings.",
+          "Label": "All Effects"
+        },
+        "Background": {
+          "Label": "Background Effects"
+        },
+        "Class": {
+          "Label": "Class Effects"
+        },
+        "Equipment": {
+          "Label": "Equipment Effects"
+        },
+        "Feature": {
+          "Label": "Feature Effects"
+        },
+        "Origin": {
+          "Hint": "Keep any effects created directly on this source actor.",
+          "Label": "This Actor"
+        },
+        "OtherOrigin": {
+          "Hint": "Keep any effects imposed by an outside actor.",
+          "Label": "Other Actors"
+        },
+        "Spell": {
+          "Label": "Spell Effects"
+        }
+      },
+      "FIELDS": {
+        "effects": {
+          "label": "Active Effects"
+        },
+        "keep": {
+          "hint": "These details will be retained from the source actor.",
+          "label": "Keep"
+        },
+        "merge": {
+          "hint": "Merge these proficiencies, keeping whichever has the higher modifier.",
+          "label": "Merge"
+        },
+        "other": {
+          "label": "Other Options"
+        },
+        "tempFormula": {
+          "hint": "Formula for temp HP that will be added upon transformation.",
+          "label": "Temp Formula"
+        },
+        "transformTokens": {
+          "label": "Transform Tokens"
+        }
+      },
+      "Keep": {
+        "Biography": {
+          "Label": "Biography"
+        },
+        "CreatureType": {
+          "Label": "Creature Type"
+        },
+        "Equipment": {
+          "Label": "Equipment"
+        },
+        "Features": {
+          "Label": "Features"
+        },
+        "Health": {
+          "Label": "Hit Points & Hit Dice"
+        },
+        "Mental": {
+          "Hint": "Keep intelligence, wisdom, and charisma scores.",
+          "Label": "Mental Abilities"
+        },
+        "Physical": {
+          "Hint": "Keep strength, dexterity, and constitution scores.",
+          "Label": "Physical Abilities"
+        },
+        "Proficiency": {
+          "Label": "Proficiency Bonus"
+        },
+        "Saves": {
+          "Label": "Save Proficiencies"
+        },
+        "Self": {
+          "Hint": "Only change portrait and token artwork, other settings will be ignored.",
+          "Label": "Self"
+        },
+        "Skills": {
+          "Label": "Skill Proficiencies"
+        },
+        "Spells": {
+          "Label": "Spells"
+        },
+        "Vision": {
+          "Label": "Vision"
+        }
+      },
+      "Merge": {
+        "Saves": {
+          "Label": "Save Proficiencies"
+        },
+        "Skills": {
+          "Label": "Skill Proficiencies"
+        }
+      }
+    },
+    "TemporaryClass": "Temporary Class",
+    "Title": "Transform",
+    "Warning": {
+      "NoOwnership": "You do not have permission to transform this actor.",
+      "NoPermission": "Transformation permission haven't been granted to players.",
+      "OriginalActor": "No original actor was found with ID '{reference}'.",
+      "SourceActor": "No actor found to transform into."
+    }
+  },
   "DND5E.Treasure": {
     "Categories": {
       "Any": "Any",
@@ -3998,19 +4218,19 @@
     "DISTANCE": {
       "Label": "Distance Units",
       "Foot": {
-        "Label": "Feet",
+        "Label": "Фути",
         "Abbreviation": "ft"
       },
       "Kilometer": {
-        "Label": "Kilometers",
+        "Label": "Кілометри",
         "Abbreviation": "km"
       },
       "Meter": {
-        "Label": "Meters",
+        "Label": "Метри",
         "Abbreviation": "m"
       },
       "Mile": {
-        "Label": "Miles",
+        "Label": "Милі",
         "Abbreviation": "mi"
       }
     },
@@ -4224,7 +4444,7 @@
         "Range": "Recharge {range}"
       },
       "Special": "Special",
-      "Time": "Time",
+      "Time": "Час",
       "Type": {
         "Formula": "Custom Formula",
         "LoseAll": "Lose All Uses",
@@ -4233,25 +4453,25 @@
     }
   },
   "DND5E.UTILITY": {
-    "Title": "Use",
+    "Title": "Використання",
     "FIELDS": {
       "roll": {
-        "label": "Roll",
+        "label": "Кидок",
         "formula": {
           "label": "Roll Formula",
-          "hint": "Formula for an arbitrary roll."
+          "hint": "Формула для довільного кидка."
         },
         "name": {
-          "label": "Roll Label",
-          "hint": "Display name for the rolling button."
+          "label": "Назва кидка",
+          "hint": "Назва, яка відображається на кнопці кидка."
         },
         "prompt": {
-          "label": "Roll Prompt",
-          "hint": "Should the roll configuration dialog be displayed when rolling?"
+          "label": "Запит кидка",
+          "hint": "Чи слід показувати діалогове вікно налаштувань перед кидком?"
         },
         "visible": {
-          "label": "Visible to All",
-          "hint": "Should the rolling button be visible to all players?"
+          "label": "Видима всім",
+          "hint": "Чи повинна кнопка кидка бути видимою для всіх гравців?"
         }
       }
     }
@@ -4411,34 +4631,34 @@
     }
   },
   "EFFECT.DND5E": {
-    "StatusBleeding": "Bleeding",
-    "StatusBloodied": "Bloodied",
-    "StatusBurning": "Burning",
-    "StatusBurrowing": "Burrowing",
-    "StatusConcentrating": "Concentrating",
-    "StatusCursed": "Cursed",
-    "StatusDead": "Dead",
-    "StatusDehydration": "Dehydration",
-    "StatusDodging": "Dodging",
-    "StatusEncumbered": "Encumbered",
-    "StatusEthereal": "Ethereal",
-    "StatusExceedingCarryingCapacity": "Exceeding Carrying Capacity",
-    "StatusFalling": "Falling",
-    "StatusFlying": "Flying",
-    "StatusHalfCover": "Half Cover",
-    "StatusHeavilyEncumbered": "Heavily Encumbered",
-    "StatusHiding": "Hiding",
-    "StatusHovering": "Hovering",
-    "StatusMalnutrition": "Malnutrition",
-    "StatusMarked": "Marked",
-    "StatusSilenced": "Silenced",
-    "StatusSleeping": "Sleeping",
-    "StatusStable": "Stable",
-    "StatusSuffocation": "Suffocation",
-    "StatusSurprised": "Surprised",
-    "StatusThreeQuartersCover": "Three-Quarters Cover",
-    "StatusTotalCover": "Total Cover",
-    "StatusTransformed": "Transformed"
+    "StatusBleeding": "Стікає кров'ю",
+    "StatusBloodied": "Закривавлений",
+    "StatusBurning": "Горить",
+    "StatusBurrowing": "Заривається",
+    "StatusConcentrating": "Концентрується",
+    "StatusCursed": "Проклято",
+    "StatusDead": "Мрець",
+    "StatusDehydration": "Зневоднення",
+    "StatusDodging": "Ухиляється",
+    "StatusEncumbered": "Перевантаження",
+    "StatusEthereal": "Етемерний",
+    "StatusExceedingCarryingCapacity": "Перевищення вантажопідйомності",
+    "StatusFalling": "Падає",
+    "StatusFlying": "Літає",
+    "StatusHalfCover": "Пів укриття",
+    "StatusHeavilyEncumbered": "Сильно перевантажений",
+    "StatusHiding": "Ховається",
+    "StatusHovering": "Парить",
+    "StatusMalnutrition": "Недоїдання",
+    "StatusMarked": "Позначено",
+    "StatusSilenced": "Німота",
+    "StatusSleeping": "Спить",
+    "StatusStable": "Стабілізовано",
+    "StatusSuffocation": "Задихається",
+    "StatusSurprised": "Заскочено зненацька",
+    "StatusThreeQuartersCover": "Три чверті укриття",
+    "StatusTotalCover": "Повне укриття",
+    "StatusTransformed": "Перетворено"
   },
   "TYPES.JournalEntryPage.class": "Class Summary",
   "TYPES.JournalEntryPage.map": "Map Location",
@@ -4575,8 +4795,6 @@
   "MIGRATION.5eBegin": "Обробляємо дані системи DnD5E для версії {version}. Будь ласка, будьте терплячі та не закривайте вашу гру чи сервер.",
   "MIGRATION.5eComplete": "Оновлення системи DnD5E до версії {version} завершено!",
   "MIGRATION.5eVersionTooOldWarning": "Дані вашого світу DnD5e завантажені з занадто старої версії Foundry та не можуть бути надійно перенесені до останньої версії. Ви можете спробувати, але можуть виникнути помилки.",
-  "SETTINGS.5eAllowPolymorphingL": "Дозволити гравцям перевтілення власних акторів.",
-  "SETTINGS.5eAllowPolymorphingN": "Дозволити перевтілення",
   "SETTINGS.5eAutoCollapseCardL": "Автоматично згортати опис на картках предметів в чаті",
   "SETTINGS.5eAutoCollapseCardN": "Згортати картки предметів в чаті",
   "SETTINGS.5eAutoSpellTemplateL": "При створенні чарів буде автоматично створюватися вимірювальний шаблон (гравець повинен мати роль TRUSTED або вищу)",
@@ -4588,10 +4806,6 @@
   "SETTINGS.5eGridAlignedSquareTemplatesL": "When square templates are created as the result of casting a spell or using an item, they will be locked to the grid alignment and unable to be rotated.",
   "SETTINGS.5eGridAlignedSquareTemplatesN": "Grid-Aligned Square Templates",
   "SETTINGS.DND5E": {
-    "ALLOWSUMMONING": {
-      "Name": "Allow Summoning",
-      "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work."
-    },
     "BLOODIED": {
       "Name": "Bloodied Status",
       "Hint": "Configure whether the bloodied status is tracked automatically and its visibility.",
@@ -4676,6 +4890,16 @@
     "THEME": {
       "Name": "Theme",
       "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings."
+    },
+    "PERMISSIONS": {
+      "AllowSummoning": {
+        "Hint": "Allow players to use summoning abilities to summon actors. Players must also have the Create Token core permission for this to work.",
+        "Name": "Allow Summoning"
+      },
+      "AllowTransformation": {
+        "Hint": "Allow players to transform their own actors. Players must also have the Create Actor core permission for this to work.",
+        "Name": "Allow Transformation"
+      }
     },
     "RULESVERSION": {
       "Name": "Rules Version",
@@ -4763,6 +4987,8 @@
       "Light": "Light Mode"
     }
   },
-  "SOURCE.BOOK.SRD": "System Reference Document 5.1",
+  "SOURCE.BOOK.FreeRules": "Free Rules",
+  "SOURCE.BOOK.SRD51": "System Reference Document 5.1",
+  "SOURCE.BOOK.SRD52": "System Reference Document 5.2",
   "SIDEBAR.SortModePriority": "Sort by priority"
 }
