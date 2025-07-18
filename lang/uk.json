@@ -2656,9 +2656,9 @@
       "Physical": "Physical"
     },
     "Property": {
-      "Adamantine": "Adamantine",
+      "Adamantine": "Адамантієва",
       "Ammunition": "Ammunition",
-      "Concentration": "Concentration",
+      "Concentration": "Концентрація",
       "Finesse": "Finesse",
       "Firearm": "Firearm",
       "Focus": "Focus",
@@ -2666,12 +2666,12 @@
       "Light": "Light",
       "Loading": "Loading",
       "Material": "Material",
-      "Magical": "Magical",
+      "Magical": "Магічна",
       "Reach": "Reach",
       "Reload": "Reload",
       "Returning": "Returning",
       "Ritual": "Ritual",
-      "Silvered": "Silvered",
+      "Silvered": "Посріблена",
       "Somatic": "Somatic",
       "Special": "Special",
       "StealthDisadvantage": "Stealth Disadvantage",
@@ -2724,7 +2724,7 @@
   "DND5E.LAIR": {
     "Label": "Lair",
     "Action": {
-      "Label": "Lair Action",
+      "Label": "Дія лігва",
       "Initiative": "Lair Action Initiative Count",
       "Uses": "Uses Lair Action"
     },
@@ -2732,51 +2732,51 @@
     "Inside": "Inside Lair"
   },
   "DND5E.Language": {
-    "All": "All Languages",
-    "Label": "Language",
+    "All": "Усі мови",
+    "Label": "Мова",
     "Category": {
-      "Exotic": "Exotic Languages",
-      "Rare": "Rare Languages",
-      "Standard": "Standard Languages"
+      "Exotic": "Екзотичні мови",
+      "Rare": "Рідкісні мови",
+      "Standard": "Стандартні мови"
     },
     "Communication": {
-      "Label": "Ranged Communication",
-      "Telepathy": "Telepathy"
+      "Label": "Дальня комунікація",
+      "Telepathy": "Телепатія"
     },
     "Language": {
       "Aarakocra": "Ааракокрова",
       "Abyssal": "Безоднева",
       "Aquan": "Акванова",
-      "Auran": "Auran",
-      "Celestial": "Celestial",
-      "Common": "Common",
-      "CommonSign": "Common Sign Language",
-      "DeepSpeech": "Deep Speech",
-      "Draconic": "Draconic",
-      "Druidic": "Druidic",
-      "Dwarvish": "Dwarvish",
-      "Elvish": "Elvish",
-      "Giant": "Giant",
-      "Gith": "Gith",
-      "Gnoll": "Gnoll",
-      "Gnomish": "Gnomish",
-      "Goblin": "Goblin",
+      "Auran": "Ауранова",
+      "Celestial": "Небесна",
+      "Common": "Загальна",
+      "CommonSign": "Загальна мова жестів",
+      "DeepSpeech": "Глибинна",
+      "Draconic": "Драконяча",
+      "Druidic": "Друїдична",
+      "Dwarvish": "Дворфська",
+      "Elvish": "Ельфійська",
+      "Giant": "Велетська",
+      "Gith": "Ґітська",
+      "Gnoll": "Ґнолська",
+      "Gnomish": "Гномська",
+      "Goblin": "Гоблінська",
       "Halfling": "Halfling",
-      "Ignan": "Ignan",
-      "Infernal": "Infernal",
-      "Orc": "Orc",
-      "Primordial": "Primordial",
-      "Sylvan": "Sylvan",
-      "Terran": "Terran",
-      "ThievesCant": "Thieves' Cant",
-      "Undercommon": "Undercommon"
+      "Ignan": "Ігнанська",
+      "Infernal": "Пекельна",
+      "Orc": "Орча",
+      "Primordial": "Первісна",
+      "Sylvan": "Сильванська",
+      "Terran": "Терранська",
+      "ThievesCant": "Злодійський жаргон",
+      "Undercommon": "Підморокова"
     }
   },
   "DND5E.Languages": "Мови",
   "DND5E.LegendaryAction": {
     "Description": "Legendary Action Uses: {uses}.",
     "DescriptionLegacy": "The {name} can take {usesNamed}, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The {name} regains spent legendary actions at the start of its turn.",
-    "Label": "Legendary Action",
+    "Label": "Легендарна дія",
     "LairUses": "{normal} ({lair} in Lair)",
     "Max": "Maximum Legendary Actions",
     "Ordinal": {
@@ -2841,7 +2841,7 @@
   "DND5E.ModuleArtPriorityIncrease": "Increase Priority",
   "DND5E.Multiple": "Multiple",
   "DND5E.Multiplier": "Multiplier",
-  "DND5E.MythicActionLabel": "Mythic Action",
+  "DND5E.MythicActionLabel": "Міфічна дія",
   "DND5E.Name": "Ім'я персонажа",
   "DND5E.NameUnidentified": "Unidentified Name",
   "DND5E.NoCharges": "Немає зарядів",
@@ -2900,12 +2900,12 @@
       "prerequisites": {
         "label": "Prerequisites",
         "level": {
-          "label": "Required Level",
+          "label": "Необхідний рівень",
           "hint": "Character or class level required to select this feature when levelling up."
         },
         "repeatable": {
           "hint": "This feature can be chosen more than once.",
-          "label": "Repeatable"
+          "label": "Може повторюватися"
         }
       }
     }
@@ -2917,7 +2917,7 @@
   "DND5E.ProficiencyConfigurationHint": "Configure proficiency and bonuses.",
   "DND5E.ProficiencyConfigureTitle": "Configure {label}",
   "DND5E.ProficiencyLevel": "Рівень майстерності",
-  "DND5E.ProficiencyOther": "Other",
+  "DND5E.ProficiencyOther": "Інші",
   "DND5E.Proficient": "Опановано",
   "DND5E.Properties": "Властивості",
   "DND5E.PropertyBase": "Базовий",
@@ -2975,7 +2975,7 @@
   "DND5E.Recharge": "Перезарядка",
   "DND5E.RechargeLong": "Recharge after a Long Rest",
   "DND5E.RechargeShort": "Recharge after a Short or Long Rest",
-  "DND5E.Recovery": "Recovery",
+  "DND5E.Recovery": "Відновлення",
   "DND5E.RecoveryFormula": "Recovery Formula",
   "DND5E.RequiredMaterials": "Необхідні Матеріали",
   "DND5E.Requirements": "Вимоги",
@@ -2997,7 +2997,7 @@
       "None": "No Hit Dice remaining to roll during this rest.",
       "Select": "Select Dice to Roll"
     },
-    "Label": "Rest",
+    "Label": "Відпочинок",
     "Long": {
       "Abbreviation": "LR",
       "Hint": {
@@ -3039,7 +3039,7 @@
   "DND5E.RitualAbbr": "Р",
   "DND5E.ROLL": {
     "Range": {
-      "Label": "Roll Range",
+      "Label": "Діапазон кидка",
       "Maximum": "Maximum Roll",
       "Minimum": "Minimum Roll"
     },
@@ -3050,7 +3050,7 @@
   "DND5E.RollConfiguration": {
     "Title": "Configure Roll",
     "Configuration": "Configuration",
-    "Rolls": "Rolls"
+    "Rolls": "Кидок"
   },
   "DND5E.RollExample": "напр. 1d4",
   "DND5E.RollMode": "Режим Кидка",
@@ -3149,7 +3149,7 @@
   "DND5E.SenseBlindsight": "Сліпий зір",
   "DND5E.SenseTremorsense": "Чуття вібрацій",
   "DND5E.SenseTruesight": "Істинний зір",
-  "DND5E.SenseUnits": "Units",
+  "DND5E.SenseUnits": "Одиниці Виміру",
   "DND5E.SenseSpecial": "Особливі Відчуття",
   "DND5E.Shape": "Shape",
   "DND5E.SheetClassCharacter": "Стандартний 5e Аркуш Персонажа",
@@ -3209,7 +3209,7 @@
         "Hint": "These bonuses apply to passive scores & checks made with {label}."
       },
       "Global": {
-        "Label": "Global Bonuses",
+        "Label": "Глобальні бонуси",
         "Hint": "These bonuses apply to checks made with any skill."
       }
     }
@@ -3253,7 +3253,7 @@
   "DND5E.SOURCE": {
     "FIELDS": {
       "source": {
-        "label": "Source",
+        "label": "Джерело",
         "book": {
           "label": "Book"
         },
@@ -3286,7 +3286,7 @@
     }
   },
   "DND5E.Special": "Особливе",
-  "DND5E.SpecialHint": "Special values separated by semi-colons.",
+  "DND5E.SpecialHint": "Особливі значення, розділені крапкою з комою.",
   "DND5E.SpecialTraits": "Спеціальні риси",
   "DND5E.Species": {
     "Label": "Species",
@@ -3387,7 +3387,7 @@
   "DND5E.SpellUnprepared": "Непідготовано",
   "DND5E.SpellUsage": "Використання чарів",
   "DND5E.Spellbook": "Чари",
-  "DND5E.Spent": "Spent",
+  "DND5E.Spent": "Витрачено",
   "DND5E.StartingEquipment": {
     "Title": "Starting Equipment",
     "Action": {
@@ -3639,8 +3639,8 @@
           "hint": "Use these target values instead of the item's when using this activity."
         },
         "prompt": {
-          "label": "Measured Template Prompt",
-          "hint": "Should the player be prompted to place a measured template? Players will still be able to place templates from the chat card if prompt is disabled."
+          "label": "Підказка для шаблону зони дії",
+          "hint": "Чи потрібно підказувати гравцеві розмістити вимірювальний шаблон? Гравці зможуть розміщувати шаблони з картки чату навіть якщо підказка вимкнена."
         },
         "template": {
           "label": "Area of Effect",
@@ -3890,7 +3890,7 @@
         "Hint": "These bonuses apply to checks made with {label}."
       },
       "Global": {
-        "Label": "Global Bonuses",
+        "Label": "Глобальні бонуси",
         "Hint": "These bonuses apply to checks made with any tool."
       }
     }
@@ -3917,7 +3917,7 @@
   "DND5E.TraitArmorLegacyPlural.other": "Armor Proficiencies",
   "DND5E.TraitArmorLegacyProf": "Armor Proficiencies",
   "DND5E.TraitCIPlural.one": "Condition Immunity",
-  "DND5E.TraitCIPlural.other": "Condition Immunities",
+  "DND5E.TraitCIPlural.other": "Імунітет до станів",
   "DND5E.TraitConfig": "Налаштувати {trait}",
   "DND5E.TraitConfigChooseAnyCounted": "any {count} {type}",
   "DND5E.TraitConfigChooseAnyUncounted": "any {type}",
@@ -3926,7 +3926,7 @@
   "DND5E.TraitConfigChooseWrapper": "Choose {choices}",
   "DND5E.TraitDIPlural.one": "Damage Immunity",
   "DND5E.TraitDIPlural.other": "Damage Immunities",
-  "DND5E.TraitDMPlural.one": "Damage Modification",
+  "DND5E.TraitDMPlural.one": "Модифікатор шкоди",
   "DND5E.TraitDMPlural.other": "Damage Modifications",
   "DND5E.TraitDRPlural.one": "Damage Resistance",
   "DND5E.TraitDRPlural.other": "Опір до ушкоджень",
@@ -4218,19 +4218,19 @@
     "DISTANCE": {
       "Label": "Distance Units",
       "Foot": {
-        "Label": "Feet",
+        "Label": "Фути",
         "Abbreviation": "ft"
       },
       "Kilometer": {
-        "Label": "Kilometers",
+        "Label": "Кілометри",
         "Abbreviation": "km"
       },
       "Meter": {
-        "Label": "Meters",
+        "Label": "Метри",
         "Abbreviation": "m"
       },
       "Mile": {
-        "Label": "Miles",
+        "Label": "Милі",
         "Abbreviation": "mi"
       }
     },
@@ -4444,7 +4444,7 @@
         "Range": "Recharge {range}"
       },
       "Special": "Special",
-      "Time": "Time",
+      "Time": "Час",
       "Type": {
         "Formula": "Custom Formula",
         "LoseAll": "Lose All Uses",
@@ -4453,25 +4453,25 @@
     }
   },
   "DND5E.UTILITY": {
-    "Title": "Use",
+    "Title": "Використання",
     "FIELDS": {
       "roll": {
-        "label": "Roll",
+        "label": "Кидок",
         "formula": {
           "label": "Roll Formula",
-          "hint": "Formula for an arbitrary roll."
+          "hint": "Формула для довільного кидка."
         },
         "name": {
-          "label": "Roll Label",
-          "hint": "Display name for the rolling button."
+          "label": "Назва кидка",
+          "hint": "Назва, яка відображається на кнопці кидка."
         },
         "prompt": {
-          "label": "Roll Prompt",
-          "hint": "Should the roll configuration dialog be displayed when rolling?"
+          "label": "Запит кидка",
+          "hint": "Чи слід показувати діалогове вікно налаштувань перед кидком?"
         },
         "visible": {
-          "label": "Visible to All",
-          "hint": "Should the rolling button be visible to all players?"
+          "label": "Видима всім",
+          "hint": "Чи повинна кнопка кидка бути видимою для всіх гравців?"
         }
       }
     }
@@ -4640,13 +4640,13 @@
     "StatusDead": "Dead",
     "StatusDehydration": "Dehydration",
     "StatusDodging": "Dodging",
-    "StatusEncumbered": "Encumbered",
-    "StatusEthereal": "Ethereal",
-    "StatusExceedingCarryingCapacity": "Exceeding Carrying Capacity",
+    "StatusEncumbered": "Перевантаження",
+    "StatusEthereal": "Етемерний",
+    "StatusExceedingCarryingCapacity": "Перевищення вантажопідйомності",
     "StatusFalling": "Falling",
     "StatusFlying": "Flying",
     "StatusHalfCover": "Half Cover",
-    "StatusHeavilyEncumbered": "Heavily Encumbered",
+    "StatusHeavilyEncumbered": "Сильно перевантажений",
     "StatusHiding": "Hiding",
     "StatusHovering": "Hovering",
     "StatusMalnutrition": "Malnutrition",
