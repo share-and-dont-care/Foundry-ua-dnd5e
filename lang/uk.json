@@ -67,8 +67,8 @@
         "Hint": "These bonuses apply to checks & saves made with {ability}."
       },
       "Global": {
-        "Label": "Global Bonuses",
-        "Hint": "These bonuses apply to checks & saves made with any ability."
+        "Label": "Глобальні бонуси",
+        "Hint": "Ці бонуси застосовуються до перевірок і ряткидків з будь-якою характеристикою."
       },
       "Score": "{ability} Score"
     }
@@ -96,7 +96,7 @@
   "DND5E.AbilityScorePl": "Значення здібностей",
   "DND5E.AbilityScoreL": "Значення здібності {ability}",
   "DND5E.AbilityScoreMax": "Максимальне значення здібності",
-  "DND5E.AbilityScoreMaxShort": "Maximum",
+  "DND5E.AbilityScoreMaxShort": "Максимум",
   "DND5E.AbilityModifier": "Модифікатор здібності",
   "DND5E.AbilityModifierShort": "Mod",
   "DND5E.AbilityPromptText": "Який тип перевірки здібності {ability}?",
@@ -154,34 +154,34 @@
       }
     },
     "Category": {
-      "Combat": "Combat",
+      "Combat": "Бій",
       "Monster": "Монстр",
-      "Rest": "Rest",
+      "Rest": "Відпочинок",
       "Standard": "Стандарт",
       "Time": "Час",
       "Vehicle": "Транспорт"
     },
     "Type": {
       "Encounter": {
-        "Label": "Start of Encounter"
+        "Label": "Початок сутички"
       },
       "Legendary": {
         "Counted": {
-          "one": "{number} legendary action",
+          "one": "Легендарна дія {number}",
           "other": "{number} legendary actions"
         }
       },
       "LongRest": {
-        "Label": "End of a Long Rest"
+        "Label": "Після довгого відпочинку"
       },
       "ShortRest": {
-        "Label": "End of a Short Rest"
+        "Label": "Після короткого відпочинку"
       },
       "TurnEnd": {
-        "Label": "End of Turn"
+        "Label": "Кінець ходу"
       },
       "TurnStart": {
-        "Label": "Start of Turn"
+        "Label": "Початок ходу"
       }
     },
     "Warning": {
@@ -192,8 +192,8 @@
   "DND5E.ACTIVEEFFECT": {
     "FIELDS": {
       "statuses": {
-        "label": "Status Conditions",
-        "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions."
+        "label": "Стани",
+        "hint": "Поки діє цей Активний Ефект, ціль вважається такою, що має ці додаткові стани."
       }
     }
   },
@@ -645,7 +645,7 @@
   "DND5E.AdvancementSelectionTitle": "Виберіть тип розвитку",
   "DND5E.AdvancementTitle": "Розвиток",
   "DND5E.Advantage": "Перевага",
-  "DND5E.AdvantageMode": "Advantage Mode",
+  "DND5E.AdvantageMode": "Режим переваги",
   "DND5E.Age": "Age",
   "DND5E.Alignment": "Світогляд",
   "DND5E.AlignmentCE": "Хаотично Злий",
@@ -884,7 +884,7 @@
   "DND5E.BONUSES": {
     "FIELDS": {
       "bonuses": {
-        "label": "Global Bonuses",
+        "label": "Глобальні бонуси",
         "hint": "Global bonuses as formulas which are added to certain rolls.",
         "abilities": {
           "label": "Global Ability Bonuses",
@@ -892,7 +892,7 @@
             "label": "Global Ability Check Bonus"
           },
           "save": {
-            "label": "Global Saving Throw Bonus"
+            "label": "Глобальний бонус ряткидка"
           },
           "skill": {
             "label": "Global Skill Check Bonus"
@@ -1148,7 +1148,7 @@
       "Icon": "Icon",
       "Name": "Name",
       "Results": "Results",
-      "Source": "Source"
+      "Source": "Джерело"
     },
     "Filters": {
       "Label": "Filters",
@@ -1226,8 +1226,8 @@
   "DND5E.ConDiseased": "Хворий",
   "DND5E.CONDITIONS": {
     "RiderConditions": {
-      "label": "Separate Status Conditions",
-      "hint": "When this Active Effect is applied, these additional status conditions will be applied separately."
+      "label": "Окремі стани",
+      "hint": "Коли цей Активний Ефект застосовується, ці додаткові стани накладаються окремо."
     }
   },
   "DND5E.ConExhaustion": "Виснаження",
@@ -1498,7 +1498,7 @@
   "DND5E.CoverHalf": "Наполовину",
   "DND5E.CoverThreeQuarters": "На три четвертих",
   "DND5E.CoverTotal": "Повне",
-  "DND5E.Cost": "Cost",
+  "DND5E.Cost": "Вартість",
   "DND5E.CostGP": "Ціна (ЗМ)",
   "DND5E.CreatureAberration": "Аберація",
   "DND5E.CreatureAberrationPl": "Аберації",
@@ -1632,7 +1632,7 @@
               }
             },
             "types": {
-              "label": "Damage Types",
+              "label": "Типи шкоди",
               "hint": "Type of damage inflicted or multiple for the user to select from."
             }
           }
@@ -1654,7 +1654,7 @@
     }
   },
   "DND5E.DamImm": "Імунітет до ушкоджень",
-  "DND5E.DamMod": "Damage Modification",
+  "DND5E.DamMod": "Модифікатор шкоди",
   "DND5E.DamRes": "Опір до ушкоджень",
   "DND5E.DamVuln": "Вразливість до ушкоджень",
   "DND5E.Damage": "Ушкодження",
@@ -1676,15 +1676,15 @@
   "DND5E.DamageForce": "Чистою енергією",
   "DND5E.DamageLightning": "Блискавкою",
   "DND5E.DamageModification": {
-    "Label": "Damage Modification",
-    "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
+    "Label": "Модифікатор шкоди",
+    "Hint": "Формули значень, які буде додано до ушкоджень певного типу, застосованих до цього актора.\nВід’ємні значення зменшуватимуть отримані ушкодження.",
     "BypassHint": "These weapon properties will bypass damage modification for physical damage."
   },
   "DND5E.DamageNecrotic": "Некротичною енергією",
   "DND5E.DamagePiercing": "Колоті",
   "DND5E.DamagePhysical": "Не магічні фізичні",
-  "DND5E.DamagePhysicalBypass": "Physical Bypasses",
-  "DND5E.DamagePhysicalBypassHint": "These weapon properties will bypass damage resistance for physical damage.",
+  "DND5E.DamagePhysicalBypass": "Зброя, що долає опір",
+  "DND5E.DamagePhysicalBypassHint": "Властивості цієї зброї долатимуть стійкість до фізичних ушкоджень.",
   "DND5E.DamagePhysicalBypasses": "{damageTypes} from attacks that are not {bypassTypes}",
   "DND5E.DamagePhysicalBypassesShort": "Bypassed by {type} Sources",
   "DND5E.DamagePoison": "Отрутою",
@@ -1695,12 +1695,12 @@
   "DND5E.DamageThreshold": "Поріг ушкодження",
   "DND5E.DamageThunder": "Громом",
   "DND5E.DamageType": "Damage Type",
-  "DND5E.DamageTypes": "Damage Types",
+  "DND5E.DamageTypes": "Типи шкоди",
   "DND5E.Dawn": "Dawn",
   "DND5E.Day": "День",
   "DND5E.DeathSave": "Рятівний кидок від смерті",
-  "DND5E.DeathSaveBonus": "Death Save Bonus",
-  "DND5E.DeathSaveConfigure": "Configure Death Saves",
+  "DND5E.DeathSaveBonus": "Бонус ряткидків від смерті",
+  "DND5E.DeathSaveConfigure": "Налаштування ряткидка від смерті",
   "DND5E.DeathSaveCriticalSuccess": "{name} досяг критичного успіху в рятівному кидку від смерті та відновив 1 ПЗ!",
   "DND5E.DeathSaveHide": "Hide Death Saves",
   "DND5E.DeathSaveShow": "Show Death Saves",
@@ -1735,7 +1735,7 @@
   "DND5E.Disadvantage": "Перешкода",
   "DND5E.Discord": "Discord",
   "DND5E.Disclaimer": "Попередження",
-  "DND5E.DisplayCard": "Display in Chat",
+  "DND5E.DisplayCard": "Показати в чаті",
   "DND5E.DistAny": "Будь-яка",
   "DND5E.DistFt": "Фути",
   "DND5E.DistFtAbbr": "ft",
@@ -1752,10 +1752,10 @@
   "DND5E.DURATION": {
     "FIELDS": {
       "duration": {
-        "label": "Duration",
+        "label": "Тривалість",
         "concentration": {
-          "label": "Concentration",
-          "hint": "Creature must maintain concentration while active."
+          "label": "Концентрація",
+          "hint": "Істота повинна підтримувати концентрацію, поки ефект активний."
         },
         "override": {
           "label": "Override Duration",
@@ -1778,7 +1778,7 @@
   },
   "DND5E.Duration": "Тривалість",
   "DND5E.DurationPermanent": "Permanent",
-  "DND5E.DurationTime": "Time",
+  "DND5E.DurationTime": "Тривалість",
   "DND5E.DurationType": "Duration Type",
   "DND5E.DurationUnits": "Duration Units",
   "DND5E.DurationValue": "Duration Value",
@@ -1797,7 +1797,7 @@
   "DND5E.EffectsApplyTokens": "Apply to selected tokens",
   "DND5E.EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
   "DND5E.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
-  "DND5E.EffectsSearch": "Search effects",
+  "DND5E.EffectsSearch": "Пошук ефектів",
   "DND5E.ENCHANT": {
     "Title": "Зачарувати",
     "FIELDS": {
@@ -1941,7 +1941,7 @@
     "Period": {
       "AtWill": "At Will",
       "LongRest": "Long Rest",
-      "Never": "Never",
+      "Never": "Ніколи",
       "ShortRest": "Short Rest"
     },
     "Warning": {
