@@ -27,7 +27,7 @@
 [Foundry Shield 12]: https://img.shields.io/badge/Foundry-12-informational?style=flat-square
 [Foundry URL]: https://foundryvtt.com
 
-[Version]: https://img.shields.io/badge/Version-0.12.2-orange?style=flat-square
+[Version]: https://img.shields.io/badge/Version-0.13.0-orange?style=flat-square
 [Version URL]: https://github.com/GMonlineua/Foundry-ua-dnd5e
 
 [MIT License]: https://img.shields.io/badge/License-OGL-green?style=flat-square
