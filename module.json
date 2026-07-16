@@ -16,11 +16,11 @@
       "flags": {}
     }
   ],
-  "version": "0.13.0",
+  "version": "0.14.0",
   "compatibility": {
     "minimum": 10,
-    "verified": 12,
-    "maximum": 13
+    "verified": 14,
+    "maximum": 14
   },
   "url": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e",
   "license": "https://github.com/share-and-dont-care/Foundry-ua-dnd5e/blob/master/LICENSE.md",
@@ -34,7 +34,7 @@
         "type": "system",
         "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
         "compatibility": {
-          "verified": "4.4.4"
+          "verified": "5.3.3"
         }
       }
     ]

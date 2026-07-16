@@ -3683,6 +3683,8 @@
           "any": "будь-які союзники",
           "every": "кожен союзник",
           "one": "{number} союзник",
+          "few": "{number} союзники",
+          "many": "{number} союзників",
           "other": "{number} союзників"
         }
       },
@@ -3693,6 +3695,8 @@
         "Label": "Круг",
         "Counted": {
           "one": "{number} круг",
+          "few": "{number} круги",
+          "many": "{number} кругів",
           "other": "{number} кругів"
         }
       },
@@ -3700,6 +3704,8 @@
         "Label": "Конус",
         "Counted": {
           "one": "{number} конус",
+          "few": "{number} конуси",
+          "many": "{number} конусів",
           "other": "{number} конусів"
         }
       },
@@ -3709,6 +3715,8 @@
           "any": "будь-які істоти",
           "every": "кожна істота",
           "one": "{number} істота",
+          "few": "{number} істоти",
+          "many": "{number} істот",
           "other": "{number} істот"
         }
       },
@@ -3718,69 +3726,87 @@
           "any": "будь-які істоти або об’єкти",
           "every": "кожна істота або об’єкт",
           "one": "{number} істота або об’єкт",
-          "other": "{number} creatures or objects"
+          "few": "{number} істоти або об’єкти",
+          "many": "{number} істот або об’єктів",
+          "other": "{number} істот або об’єктів"
         }
       },
       "Cube": {
-        "Label": "Cube",
+        "Label": "Куб",
         "Counted": {
-          "one": "{number} cube",
-          "other": "{number} cubes"
+          "one": "{number} куб",
+          "few": "{number} куби",
+          "many": "{number} кубів",
+          "other": "{number} кубів"
         }
       },
       "Cylinder": {
-        "Label": "Cylinder",
+        "Label": "Циліндр",
         "Counted": {
-          "one": "{number} cylinder",
-          "other": "{number} cylinders"
+          "one": "{number} циліндр",
+          "few": "{number} циліндри",
+          "many": "{number} циліндрів",
+          "other": "{number} циліндрів"
         }
       },
       "Emanation": {
-        "Label": "Emanation",
+        "Label": "Еманація",
         "Counted": {
-          "one": "{number} emanation",
-          "other": "{number} emanations"
+          "one": "{number} еманація",
+          "few": "{number} еманації",
+          "many": "{number} еманацій",
+          "other": "{number} еманацій"
         }
       },
       "Enemy": {
-        "Label": "Enemy",
+        "Label": "Ворог",
         "Counted": {
-          "any": "any enemies",
-          "every": "every enemy",
-          "one": "{number} enemy",
-          "other": "{number} enemies"
+          "any": "будь-які вороги",
+          "every": "кожен ворог",
+          "one": "{number} ворог",
+          "few": "{number} вороги",
+          "many": "{number} ворогів",
+          "other": "{number} ворогів"
         }
       },
       "Line": {
-        "Label": "Line",
+        "Label": "Лінія",
         "Counted": {
-          "one": "{number} line",
-          "other": "{number} lines"
+          "one": "{number} лінія",
+          "few": "{number} лінії",
+          "many": "{number} ліній",
+          "other": "{number} ліній"
         }
       },
       "Object": {
-        "Label": "Object",
+        "Label": "Об’єкт",
         "Counted": {
-          "any": "any objects",
-          "every": "every object",
-          "one": "{number} object",
-          "other": "{number} objects"
+          "any": "будь-які об’єкти",
+          "every": "кожен об’єкт",
+          "one": "{number} об’єкт",
+          "few": "{number} об’єкти",
+          "many": "{number} об’єктів",
+          "other": "{number} об’єктів"
         }
       },
       "Radius": {
-        "Label": "Radius",
+        "Label": "Радіус",
         "Counted": {
-          "one": "{number} radius",
-          "other": "{number} radii"
+          "one": "{number} радіус",
+          "few": "{number} радіуси",
+          "many": "{number} радіусів",
+          "other": "{number} радіусів"
         }
       },
       "Self": {
-        "Label": "Self"
+        "Label": "Себе"
       },
       "Sphere": {
         "Label": "Сфера",
         "Counted": {
           "one": "{number} сфера",
+          "few": "{number} сфери",
+          "many": "{number} сфер",
           "other": "{number} сфер"
         }
       },
@@ -3790,6 +3816,8 @@
           "any": "будь-які простори",
           "every": "кожен простір",
           "one": "{number} простір",
+          "few": "{number} простори",
+          "many": "{number} просторів",
           "other": "{number} просторів"
         }
       },
@@ -3797,6 +3825,8 @@
         "Label": "Квадрат",
         "Counted": {
           "one": "{number} квадрат",
+          "few": "{number} квадрати",
+          "many": "{number} квадратів",
           "other": "{number} квадратів"
         }
       },
@@ -3806,6 +3836,8 @@
           "any": "будь-які цілі",
           "every": "кожна ціль",
           "one": "{number} ціль",
+          "few": "{number} цілі",
+          "many": "{number} цілей",
           "other": "{number} цілей"
         }
       },
@@ -3813,6 +3845,8 @@
         "Label": "Стіна",
         "Counted": {
           "one": "{number} стіна",
+          "few": "{number} стіни",
+          "many": "{number} стін",
           "other": "{number} стін"
         }
       },
@@ -3822,7 +3856,9 @@
           "any": "будь-які охочі істоти",
           "every": "кожна охоча істота",
           "one": "{number} охоча істота",
-          "other": "{number} охочі істоти"
+          "few": "{number} охочі істоти",
+          "many": "{number} охочих істот",
+          "other": "{number} охочих істот"
         }
       }
     },
